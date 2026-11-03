@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-29T16:25:47.019312+00:00",
+  "parent_protocol_sha256": "4ce267661157a7d374f0783c9219b2a635c7ad06b646fb2ce62ff9105caf9bcf",
+  "runner_sha256": "25aa5c147062cb1cda16b5358a4f0394e40fbb3db5d62f2f56428ca82ac92805",
+  "base_runner_sha256": "fba74833d170276b14d6c3869e8415c43c6c945b3b7fe4347660c9d1db61fe6f",
+  "processed_weather_sha256": "e33f413f8b979c7c5e6c2a50997023fbbdbe5407ac52cc37552ed6f559c97a54",
+  "timestamped_weather_sha256": "422673d3e0b4c35382c5e99e0ab0b8cfebcbc9823657663f0341137432d1bfa4",
+  "provenance_sha256": "b0521e060d0b0a92ce51738d0a848d9e24d43b6ef025d2eb536d7296910fc0fe",
+  "pilot_completion_sha256": "16ccc6ea39c5beb9f0073bcf8da3142018ac982fe2c31f0aff39881575436679",
+  "confirmation_started_at_lock": false
+}

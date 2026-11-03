@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and this software archive."
+type: software
+title: "JLC-R: Joint Listening-Credit Planning and Relay Protection for Fresh Data Collection in Solar-Powered Wireless Sensor Networks"
+authors:
+  - family-names: Ma
+    given-names: Zhongjun
+  - family-names: Feng
+    given-names: Pengfei
+  - family-names: Jin
+    given-names: Huiqing
+license: MIT
+repository-code: "https://github.com/mayanzu/JLC-R"
+keywords:
+  - wireless sensor networks
+  - energy harvesting
+  - information freshness
+  - listening scheduling
+  - multihop relay protection

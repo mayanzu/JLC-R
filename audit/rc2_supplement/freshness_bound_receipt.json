@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "logical_cases": 480,
+  "conditions_by_method": 40,
+  "equal_condition_seed_rows": 60,
+  "source_round_checks": 64512000,
+  "protocol_sha256": "c6c1a00987570912302446bf6f24fca18073a708102096fe23612a4c4d22f5b3",
+  "simulations_started": 0,
+  "interpretation": "Exact descriptive relaxation conditional on each method's realized sensing, not an achievable performance bound at common energy or a causal decomposition."
+}

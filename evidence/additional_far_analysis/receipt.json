@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Post hoc descriptive analysis of saved source coverages; no network simulations or hypothesis tests.",
+  "source_sha256": {
+    "runs": "f417f437b2f25d8d0bd53f12b7005f6b0d000a97f6782b853c9c1128bfc34951",
+    "nodes": "2211e5806bf727814fb17661b60c5dc0829556471d249342ecbb2c6e30600faa",
+    "configs": "debe82337a0c23f1fe7a7774c84104acd96fe12cd6a3a7ccdc5baa08ee8452e3",
+    "scenario_source": "c5cb4d946619529ca14a96bb2b2c650952d713920cf41c058bff4228acf6ea10"
+  },
+  "script_sha256": "3fcd48faf8e4736ea401c95816a764320aaebb509157c8e9a1c1a208e2e74433",
+  "numpy_version": "2.4.6",
+  "seed_count": 12,
+  "run_count": 480,
+  "node_record_count": 48000,
+  "source_distance_threshold_m": 200,
+  "far_nodes_min": 39,
+  "far_nodes_max": 42,
+  "max_whole_network_coverage_error_pp": 2.842170943040401e-14,
+  "summary": {
+    "winter_jlc_pct": 15.08534406806878,
+    "winter_eadcm_pct": 3.248818983112319,
+    "winter_difference_pp": 11.83652508495646,
+    "cell_difference_min_pp": 6.969401470980304,
+    "cell_difference_max_pp": 19.464582093032387
+  },
+  "limitations": "Topology is reconstructed from the archived seed and configuration; the summaries cannot localize where a packet failed."
+}

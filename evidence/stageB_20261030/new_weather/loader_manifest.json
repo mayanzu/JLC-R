@@ -1,0 +1,6 @@
+{
+  "rows": 1632,
+  "timestamped_sha256": "422673d3e0b4c35382c5e99e0ab0b8cfebcbc9823657663f0341137432d1bfa4",
+  "loader_sha256": "e33f413f8b979c7c5e6c2a50997023fbbdbe5407ac52cc37552ed6f559c97a54",
+  "transformation": "replace local standard timestamps by zero-based row indices; numeric irradiance unchanged"
+}

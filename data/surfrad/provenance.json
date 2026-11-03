@@ -1,0 +1,29 @@
+{
+  "inputs": {
+    "T1_table_mountain": {
+      "frozen_loader_path": "code/results/expansion_measured/weather/ghi_15min.csv",
+      "sha256": "aeeb6e6fb79f759cbe3be686ac7b258264512656f90eea0acb2e5ce467fd820e",
+      "source": "NOAA SURFRAD; processed 15-minute irradiance input",
+      "qc_records": [
+        "code/results/expansion_measured/weather/provenance.json"
+      ]
+    },
+    "T2_table_mountain": {
+      "frozen_loader_path": "code/results/strengthening_weather/T2/ghi_15min.csv",
+      "sha256": "b6928e4c84c5f3de49946f2ade4255a0994b2abd2e96db08e0d123d1a394143c",
+      "source": "NOAA SURFRAD; processed 15-minute irradiance input",
+      "qc_records": [
+        "code/results/strengthening_weather/T2/quality.json"
+      ]
+    },
+    "T3_bondville": {
+      "frozen_loader_path": "code/results/strengthening_weather/T3/ghi_15min.csv",
+      "sha256": "3b1a1176142fa665262ab1f36b56e3651f1d086785ee0a4d1f82f39bc2a837b4",
+      "source": "NOAA SURFRAD; processed 15-minute irradiance input",
+      "qc_records": [
+        "code/results/strengthening_weather/T3/quality.json"
+      ]
+    }
+  },
+  "raw_NOAA_files": "Archived offline; processed inputs retain their original bytes. See cited NOAA source and original processing metadata."
+}

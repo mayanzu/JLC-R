@@ -1,0 +1,162 @@
+{
+  "created_utc": "2026-10-30T01:00:31.645264+00:00",
+  "classification": "post hoc observational diagnostic, not a new confirmation or independent outcome",
+  "purpose": "observe source versus relay final packet holder and whether a forwarding hold was ever recorded",
+  "selection": "first three seeds in existing locked protocol, crossed with all three chosen winter cells",
+  "scope": "nine exact trajectory replays of already completed frozen JLC-R cases",
+  "safety": "instrumentation only; require exact original latest, battery and sample-status arrays and identical node ledgers",
+  "limitations": [
+    "The final holder and last reported block are descriptive, not causal attribution.",
+    "Nine cases do not estimate population-wide mechanism effects.",
+    "A recorded hold followed by delivery does not show that the hold caused delivery.",
+    "There is no downstream-aware cadence intervention in this diagnostic."
+  ],
+  "parent_protocol_sha256": "4ce267661157a7d374f0783c9219b2a635c7ad06b646fb2ce62ff9105caf9bcf",
+  "seeds": [
+    1748534244,
+    835849679,
+    1000582330
+  ],
+  "conditions": [
+    [
+      "WINTER_G20",
+      0.7
+    ],
+    [
+      "T3_G20",
+      1.0
+    ],
+    [
+      "T3_G20",
+      0.7
+    ]
+  ],
+  "cases": [
+    {
+      "index": 1,
+      "seed": 1748534244,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 19,
+      "reference_sha256": {
+        "record.json": "a57e2ceadeda11f5c9389a71beeb75468c1ea38555b52f2a6d74f8473dda1357",
+        "node_ledgers.csv": "5c5e7e3124adbafb322671c4930d0227edc6da5fc366bc45850505104fb03ba3",
+        "arrays.npz": "23d9b19061b35b96350dba7dd894115f3c9ea3501414d7f0f3a9ffd3b16b09d4"
+      }
+    },
+    {
+      "index": 2,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 37,
+      "reference_sha256": {
+        "record.json": "d361efd659d5445d9dfa1969733da5a5eb23dfaf01e79a9f52a1bb92c0a9f6cb",
+        "node_ledgers.csv": "641f7a58d894708dfab3a4ed30c894ef3b14e7801483128ccd77f50aab9ff2e2",
+        "arrays.npz": "f679f8c9f55995119888175884f3c78e08bc82c3564226cf47eeb6495276e6bd"
+      }
+    },
+    {
+      "index": 3,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 43,
+      "reference_sha256": {
+        "record.json": "152a4453282ba76f040f9829feb9effb6e1bd96fc71547db82fafb7f15b119ce",
+        "node_ledgers.csv": "95aa52c021d0ebfd9a60c4d6ac471cf3faa7cf9be0aca0b3b67e98f2d0d6e0d5",
+        "arrays.npz": "1c47775404f59c7ace626c0bf3a8013f319fd74142a0ee2a69f49afaccd62ad8"
+      }
+    },
+    {
+      "index": 4,
+      "seed": 835849679,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 67,
+      "reference_sha256": {
+        "record.json": "4982c08979d55437d2f6f9464ac89371053fd92165ac24efceccac63d6c4c9b2",
+        "node_ledgers.csv": "f422d661c5a3009b633b3f2de742c464bf9d8e8c59250d861d1175bf4e397f4f",
+        "arrays.npz": "6ea76d845d55b92b02be035db2c6c42fe38a3aa67f206b9c03bb45f057727530"
+      }
+    },
+    {
+      "index": 5,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 85,
+      "reference_sha256": {
+        "record.json": "eb052b11eca23bdc0b22eacb41db7d57c58384052133d94fcf7d6bd56ea6c5ea",
+        "node_ledgers.csv": "5ecb35baf246cefe664a1a769505deefec71106046f7f1fbe737edaf1b21ec01",
+        "arrays.npz": "ed4fdf5ea3f38f5f648f12e3db5a5ab96bad8b083390f48339f7ca7f3aa436b3"
+      }
+    },
+    {
+      "index": 6,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 91,
+      "reference_sha256": {
+        "record.json": "592b00bc8689fa8d7173cacd3716dee5b90653d8fc9858ca0fb5c3a007cb2160",
+        "node_ledgers.csv": "e7d2aac3a945d3a4a0eb5d7a0344cb75b4f38db6d039a8ff2dbd3610f23ff956",
+        "arrays.npz": "177f6c94045d4fa62085673fba3d43236fdc8b7cfa2d8a05172e2732954492ba"
+      }
+    },
+    {
+      "index": 7,
+      "seed": 1000582330,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 115,
+      "reference_sha256": {
+        "record.json": "31e250611382367ae5dd0917c305e487c523ae72e8942a4a08f979d74230d290",
+        "node_ledgers.csv": "909c61f05387bcaa8fa98ce772160a27f1ecdd246e677036c8ac7cb3eeb13827",
+        "arrays.npz": "bc3bdb9fa8c1baaee09483d56c21b5d2267cb4c345db4b592a8361eb9860afaf"
+      }
+    },
+    {
+      "index": 8,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 133,
+      "reference_sha256": {
+        "record.json": "7b6414015f13ddcf36a92d326a0b27a098fa9223ba2381007c19d2924941a40f",
+        "node_ledgers.csv": "e2545b2240cf3fb439861d4f65d51b202ede751735049dd817ad4b51798e3c04",
+        "arrays.npz": "2f6e5fdc0a2bce0c4f371618a07686a9ce5a1d8febbaa496cd12b70b59030c43"
+      }
+    },
+    {
+      "index": 9,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "TRACE-DIAG",
+      "days": 14,
+      "reference_index": 139,
+      "reference_sha256": {
+        "record.json": "0fe4f123b7ac3eb94abcbb0d70d9e86c106990dfb1daecd3cac08224b2bdd27c",
+        "node_ledgers.csv": "5c9226610ff0c677dfc2e1c473717f11c8c86e84405bc3a60699abd45e8cf0fa",
+        "arrays.npz": "f39488547a4682b2de697c924ea447b29d646acaa417f56cd760e310088d2196"
+      }
+    }
+  ]
+}

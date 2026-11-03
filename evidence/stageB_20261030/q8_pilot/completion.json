@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "completed": [
+    {
+      "index": 1,
+      "status": "PASS",
+      "method": "Q8-EXPLORE",
+      "seed": 60503,
+      "condition": "SYNTHETIC_G20"
+    },
+    {
+      "index": 2,
+      "status": "PASS",
+      "method": "Q8-EXPLORE",
+      "seed": 60705,
+      "condition": "SYNTHETIC_G20"
+    }
+  ],
+  "failure": null,
+  "planned_cases": 2
+}

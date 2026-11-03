@@ -1,0 +1,17 @@
+{
+  "adaptations": [
+    {
+      "file": "eadcm_host.py",
+      "before_sha256": "b527c64cf2b5e3d00d4fb566c96dd2b09b64246b971c4f8bb572ea5badcfa692",
+      "after_sha256": "d7db72abd2c3a54b55dbd74f9fbfdd62290722e84aabbfa06736f761c1052bad"
+    },
+    {
+      "file": "lantern_host.py",
+      "before_sha256": "48a3bb6bc5e873e5e61b32a1936595c138d8b348f9e923e31c72b236331834d8",
+      "after_sha256": "0f7082ebf6f18d99117adb6d504a65bfdffe640471cef21ff45f2837ce436eef"
+    }
+  ],
+  "reason": "Resolve common source from the staged repository root.",
+  "formal_source_snapshots_changed": false,
+  "behavior_change_intended": false
+}

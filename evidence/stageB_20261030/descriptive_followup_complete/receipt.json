@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "cases_read": 1728,
+  "n_seeds": 24,
+  "cell_count": 8,
+  "scope": "post hoc descriptions; underlying arrays and energy ledgers previously independently audited",
+  "delivery": "100 * delivered / fixed offered demand",
+  "sampling": "100 * (demand-unsensed) / demand",
+  "energy": "sum of base, data and control over all nodes",
+  "input_primary_receipt_sha256": "025f66e41799ad706f6f862229bc3ac2dcc20327b271fbec55936959663af00c",
+  "analysis_sha256": "92c4e7ee4d4e57ee11c38098c6d20a0d0b29fb588c17f6ceb15ef97e1b870bc4",
+  "outputs": {
+    "floor_hold_by_cell.csv": "1fb7d532e0aaeefb75eed7cff0ba403e1ea2c2d274f4e8933f2e2ecb09a1ae6d",
+    "method_means.csv": "9324a3483ac486c18b18fe006d2a74711cae1499d4bd671dc0f8f2993d07a4ac",
+    "paired_differences.csv": "60324739c4f9f4a3013a82d86c30116b2f0f6b41726876912117a44aea753856"
+  }
+}

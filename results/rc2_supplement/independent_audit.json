@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "new_cases_checked": 576,
+  "raw_files_hashed": 1728,
+  "endpoint_tests": 16,
+  "independent_factorial_contrasts_checked": 14,
+  "max_energy_accumulator_difference_j": 4.460798663785681e-08,
+  "max_recorded_node_energy_error_j": 5.636824340626845e-12,
+  "max_recorded_global_energy_error_j": 4.4354976580507355e-08,
+  "scope": "Arrays, saved scalar ledger maxima and outcomes checked; individual node ledgers were not saved for the 576 new component executions.",
+  "simulations_started": 0,
+  "checksums_sha256": "d61232633d5403becfffcaaf3dab17a9c7ac08b65ed136f0625d44d864f7ff28"
+}

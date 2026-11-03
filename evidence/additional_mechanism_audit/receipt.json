@@ -1,0 +1,50 @@
+{
+  "scope": "Saved full-JLC-R aggregate counters only; no new simulation or causal attribution.",
+  "aggregation": "Per 14-day 100-node run; equal means over 12 paired seeds and 8 weather-supply cells.",
+  "source_case_count": 96,
+  "confirmation_sha256": "f417f437b2f25d8d0bd53f12b7005f6b0d000a97f6782b853c9c1128bfc34951",
+  "script_sha256": "50852b5dd0e59ed6df6ef4546c680c3c3301466ddd439b1d5904b07489fe91f4",
+  "equal_condition_means_per_run": {
+    "guard_ready_requests": 43804.33333333333,
+    "guard_inactive_requests": 17319.447916666668,
+    "guard_paid_upstream_responses": 60766.90625,
+    "guard_protected_member_requests": 61123.78125,
+    "guard_additional_slot_only_denials": 5737.9375,
+    "recovery_attempts": 3387.9479166666665,
+    "recovery_successful_hops": 2260.40625,
+    "recovery_denied": 676.8958333333334,
+    "recovery_link_losses": 450.6458333333333,
+    "transit_protect_denials": 6866.291666666667,
+    "hold_created": 111154.98958333333,
+    "held_packet_actions": 88187.34375,
+    "held_packet_hop_successes": 67930.04166666667
+  },
+  "pooled_counts_across_96_runs": {
+    "guard_ready_requests": 4205216,
+    "guard_inactive_requests": 1662667,
+    "guard_paid_upstream_responses": 5833623,
+    "guard_protected_member_requests": 5867883,
+    "guard_additional_slot_only_denials": 550842,
+    "recovery_attempts": 325243,
+    "recovery_successful_hops": 216999,
+    "recovery_denied": 64982,
+    "recovery_link_losses": 43262,
+    "transit_protect_denials": 659164,
+    "hold_created": 10670879,
+    "held_packet_actions": 8465985,
+    "held_packet_hop_successes": 6521284
+  },
+  "interpretation": {
+    "guard_ready_requests": "Member requests at protected CHs where a reference upstream cache is ready; events, not distinct packets.",
+    "guard_additional_slot_only_denials": "Member requests rejected by the triggered extra slot threshold when the original guard and energy checks passed.",
+    "recovery_attempts": "Extra candidate actions attempted by the bounded recovery loop.",
+    "recovery_successful_hops": "Recovery actions that succeeded at the next hop, which may or may not be the sink.",
+    "held_packet_actions": "Actions involving an already held packet; not a count of priority-induced changes or saved packets."
+  },
+  "unavailable_from_aggregate_records": [
+    "final delivery and freshness of packets affected by individual Guard or recovery events",
+    "counterfactual outcome of each denied request",
+    "the number of actions changed specifically by committed-first priority",
+    "per-action bottleneck CH battery, credit and Guard balances"
+  ]
+}

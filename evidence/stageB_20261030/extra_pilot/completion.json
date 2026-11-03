@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETE",
+  "completed": [
+    {
+      "index": 1,
+      "status": "PASS",
+      "method": "CADENCE-ONLY",
+      "seed": 60503,
+      "condition": "SYNTHETIC_G20"
+    },
+    {
+      "index": 2,
+      "status": "PASS",
+      "method": "NO-JOINT-PADC",
+      "seed": 60503,
+      "condition": "SYNTHETIC_G20"
+    },
+    {
+      "index": 3,
+      "status": "PASS",
+      "method": "SIMPLE-PADC-CADENCE",
+      "seed": 60503,
+      "condition": "SYNTHETIC_G20"
+    },
+    {
+      "index": 4,
+      "status": "PASS",
+      "method": "CADENCE-ONLY",
+      "seed": 60705,
+      "condition": "SYNTHETIC_G20"
+    },
+    {
+      "index": 5,
+      "status": "PASS",
+      "method": "NO-JOINT-PADC",
+      "seed": 60705,
+      "condition": "SYNTHETIC_G20"
+    },
+    {
+      "index": 6,
+      "status": "PASS",
+      "method": "SIMPLE-PADC-CADENCE",
+      "seed": 60705,
+      "condition": "SYNTHETIC_G20"
+    }
+  ],
+  "failure": null,
+  "planned_cases": 6
+}

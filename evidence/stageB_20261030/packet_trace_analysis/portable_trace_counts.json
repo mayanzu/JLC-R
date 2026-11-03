@@ -1,0 +1,2802 @@
+[
+  {
+    "case": {
+      "index": 1,
+      "seed": 1748534244,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "reference_index": 19
+    },
+    "reference_sha256": {
+      "record.json": "a57e2ceadeda11f5c9389a71beeb75468c1ea38555b52f2a6d74f8473dda1357",
+      "node_ledgers.csv": "5c5e7e3124adbafb322671c4930d0227edc6da5fc366bc45850505104fb03ba3",
+      "arrays.npz": "23d9b19061b35b96350dba7dd894115f3c9ea3501414d7f0f3a9ffd3b16b09d4"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 10959
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 2329
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 17683
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 10
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 39473
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 7
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 148
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 244
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 44
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 1458
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 3395
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 2512
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 1304
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 7726
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 27
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 681
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 292
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 58
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 30
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 353
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 1790
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 13
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 4509
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 6204
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 43
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 22168
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 4315
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 245,
+          "sender_battery_sum_j": 118.2203462598198,
+          "sender_quota_sum_j": 967.9233182160334,
+          "sender_guard_sum": 476.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 44,
+          "sender_battery_sum_j": 17.31972485976722,
+          "sender_quota_sum_j": 175.98617318332757,
+          "sender_guard_sum": 57.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 2170,
+          "sender_battery_sum_j": 2410.8785509958516,
+          "sender_quota_sum_j": 4641.35089221943,
+          "sender_guard_sum": 9171.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 4290,
+          "sender_battery_sum_j": 4599.7916308473195,
+          "sender_quota_sum_j": 9397.522086098546,
+          "sender_guard_sum": 21582.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 5048,
+          "sender_battery_sum_j": 7511.782106267426,
+          "sender_quota_sum_j": 8377.908717689572,
+          "sender_guard_sum": 36557.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 1687,
+          "sender_battery_sum_j": 2142.3517493866057,
+          "sender_quota_sum_j": 3698.231090130743,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 48,
+          "sender_battery_sum_j": 51.227758024631534,
+          "sender_quota_sum_j": 0.0070417561111312124,
+          "sender_guard_sum": 81.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_energy",
+          "events": 4,
+          "sender_battery_sum_j": 0.5747678179392874,
+          "sender_quota_sum_j": 15.997765552881763,
+          "sender_guard_sum": 2.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 37,
+          "sender_battery_sum_j": 49.79230738190509,
+          "sender_quota_sum_j": 40.86123322741055,
+          "sender_guard_sum": 4.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 58,
+          "sender_battery_sum_j": 28.006196897887932,
+          "sender_quota_sum_j": 227.9960609217121,
+          "sender_guard_sum": 78.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 30,
+          "sender_battery_sum_j": 7.8265417061274665,
+          "sender_quota_sum_j": 119.99841348209405,
+          "sender_guard_sum": 15.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 989,
+          "sender_battery_sum_j": 1598.132157256903,
+          "sender_quota_sum_j": 1152.3466193523348,
+          "sender_guard_sum": 2050.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 7193,
+          "sender_battery_sum_j": 13681.240182025302,
+          "sender_quota_sum_j": 3766.9153362101315,
+          "sender_guard_sum": 9714.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 2871,
+          "sender_battery_sum_j": 5558.047872575169,
+          "sender_quota_sum_j": 2788.344921094427,
+          "sender_guard_sum": 7918.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 11215,
+          "sender_battery_sum_j": 11155.659513062225,
+          "sender_quota_sum_j": 27901.255621667784,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 3861,
+          "sender_battery_sum_j": 2477.534448915559,
+          "sender_quota_sum_j": 0.025104265469355402,
+          "sender_guard_sum": 101.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 47261,
+          "sender_battery_sum_j": 61658.54380937125,
+          "sender_quota_sum_j": 35139.0889743543,
+          "sender_guard_sum": 1493.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 14695,
+          "sender_battery_sum_j": 31257.38325327113,
+          "sender_quota_sum_j": 3813.3246388501043,
+          "sender_guard_sum": 13217.0
+        }
+      ]
+    },
+    "generated": 70609,
+    "expired": 57166,
+    "delivered": 13288,
+    "unmodified_replay_record_sha256": "8ea6ee4570612ed6d71da1d4159e69260a354817f372dadd9a27cc47a031ca41"
+  },
+  {
+    "case": {
+      "index": 2,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "reference_index": 37
+    },
+    "reference_sha256": {
+      "record.json": "d361efd659d5445d9dfa1969733da5a5eb23dfaf01e79a9f52a1bb92c0a9f6cb",
+      "node_ledgers.csv": "641f7a58d894708dfab3a4ed30c894ef3b14e7801483128ccd77f50aab9ff2e2",
+      "arrays.npz": "f679f8c9f55995119888175884f3c78e08bc82c3564226cf47eeb6495276e6bd"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 7695
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 1728
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 11696
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 6
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 34724
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 42
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 88
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 170
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 53
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 960
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 2083
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 1849
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 819
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 5173
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 17
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 413
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 159
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 211
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 159
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 333
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 1124
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 11
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 3505
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 3978
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 43
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 23133
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 2233
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 170,
+          "sender_battery_sum_j": 63.051449181245914,
+          "sender_quota_sum_j": 679.9495480177792,
+          "sender_guard_sum": 229.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 53,
+          "sender_battery_sum_j": 22.518230085791185,
+          "sender_quota_sum_j": 211.98725738819587,
+          "sender_guard_sum": 58.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 1485,
+          "sender_battery_sum_j": 1675.325738690702,
+          "sender_quota_sum_j": 3059.12134639883,
+          "sender_guard_sum": 6386.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 2787,
+          "sender_battery_sum_j": 2958.1629024583826,
+          "sender_quota_sum_j": 6196.841083161993,
+          "sender_guard_sum": 14247.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 3671,
+          "sender_battery_sum_j": 5427.188666513894,
+          "sender_quota_sum_j": 5953.287669848328,
+          "sender_guard_sum": 26880.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 1172,
+          "sender_battery_sum_j": 1488.475990566201,
+          "sender_quota_sum_j": 2496.405993100631,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 31,
+          "sender_battery_sum_j": 32.765347780606746,
+          "sender_quota_sum_j": 0.005446676285863605,
+          "sender_guard_sum": 43.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_energy",
+          "events": 5,
+          "sender_battery_sum_j": 0.6830642779624511,
+          "sender_quota_sum_j": 19.999353691130317,
+          "sender_guard_sum": 6.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 11,
+          "sender_battery_sum_j": 15.684126390769613,
+          "sender_quota_sum_j": 20.21166180214582,
+          "sender_guard_sum": 3.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 211,
+          "sender_battery_sum_j": 63.83984629710979,
+          "sender_quota_sum_j": 843.9959350656086,
+          "sender_guard_sum": 167.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 159,
+          "sender_battery_sum_j": 52.59227581556589,
+          "sender_quota_sum_j": 635.999347853524,
+          "sender_guard_sum": 132.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 798,
+          "sender_battery_sum_j": 961.6707607227863,
+          "sender_quota_sum_j": 1383.0331050998677,
+          "sender_guard_sum": 1396.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 6506,
+          "sender_battery_sum_j": 9752.651498855304,
+          "sender_quota_sum_j": 2752.9062380214696,
+          "sender_guard_sum": 6994.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 2100,
+          "sender_battery_sum_j": 3679.008006616137,
+          "sender_quota_sum_j": 2362.674742532236,
+          "sender_guard_sum": 6540.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 9537,
+          "sender_battery_sum_j": 8748.288375028373,
+          "sender_quota_sum_j": 22045.306293411966,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 6185,
+          "sender_battery_sum_j": 4283.250625122697,
+          "sender_quota_sum_j": 0.022229893426826443,
+          "sender_guard_sum": 110.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 56278,
+          "sender_battery_sum_j": 58617.59387973333,
+          "sender_quota_sum_j": 32686.255411437705,
+          "sender_guard_sum": 2280.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 8641,
+          "sender_battery_sum_j": 15675.408616950723,
+          "sender_quota_sum_j": 1657.9570303541243,
+          "sender_guard_sum": 7370.0
+        }
+      ]
+    },
+    "generated": 55979,
+    "expired": 46426,
+    "delivered": 9423,
+    "unmodified_replay_record_sha256": "2b9e7664072ea5e5a62200d3f60eabe81f92129bdcec92bdd0e1a6365447b86d"
+  },
+  {
+    "case": {
+      "index": 3,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "reference_index": 43
+    },
+    "reference_sha256": {
+      "record.json": "152a4453282ba76f040f9829feb9effb6e1bd96fc71547db82fafb7f15b119ce",
+      "node_ledgers.csv": "95aa52c021d0ebfd9a60c4d6ac471cf3faa7cf9be0aca0b3b67e98f2d0d6e0d5",
+      "arrays.npz": "1c47775404f59c7ace626c0bf3a8013f319fd74142a0ee2a69f49afaccd62ad8"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 5153
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 1369
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 6892
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 1
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 31943
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 7
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 111
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 160
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 38
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 572
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 1267
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 1172
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 474
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 2904
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 9
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 231
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 65
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 232
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 162
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 280
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 701
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 9
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 2710
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 2506
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 20
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 24591
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 733
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 162,
+          "sender_battery_sum_j": 56.674883138575,
+          "sender_quota_sum_j": 639.9622993475075,
+          "sender_guard_sum": 205.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 38,
+          "sender_battery_sum_j": 16.58771925902052,
+          "sender_quota_sum_j": 151.99051873844647,
+          "sender_guard_sum": 40.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 911,
+          "sender_battery_sum_j": 1078.4394755328444,
+          "sender_quota_sum_j": 1860.3844914018514,
+          "sender_guard_sum": 3855.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 1729,
+          "sender_battery_sum_j": 1903.8741556050725,
+          "sender_quota_sum_j": 3867.94504769131,
+          "sender_guard_sum": 9191.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 2594,
+          "sender_battery_sum_j": 4108.9278057926,
+          "sender_quota_sum_j": 4184.57110151706,
+          "sender_guard_sum": 20359.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 735,
+          "sender_battery_sum_j": 954.5473938956633,
+          "sender_quota_sum_j": 1708.3049087846903,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 24,
+          "sender_battery_sum_j": 25.83711374906873,
+          "sender_quota_sum_j": 0.005132002799664189,
+          "sender_guard_sum": 12.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_energy",
+          "events": 1,
+          "sender_battery_sum_j": 0.14314782499243286,
+          "sender_quota_sum_j": 4.0,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 10,
+          "sender_battery_sum_j": 13.652585890154189,
+          "sender_quota_sum_j": 20.037751689395627,
+          "sender_guard_sum": 1.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 233,
+          "sender_battery_sum_j": 65.84566500378511,
+          "sender_quota_sum_j": 931.9951965340708,
+          "sender_guard_sum": 215.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 162,
+          "sender_battery_sum_j": 54.580161791519274,
+          "sender_quota_sum_j": 647.9982280592909,
+          "sender_guard_sum": 127.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 629,
+          "sender_battery_sum_j": 665.0761868465678,
+          "sender_quota_sum_j": 1242.7679375873788,
+          "sender_guard_sum": 1086.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 4381,
+          "sender_battery_sum_j": 6024.173983890682,
+          "sender_quota_sum_j": 2484.2751259436054,
+          "sender_guard_sum": 4766.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 1444,
+          "sender_battery_sum_j": 2350.2381874003568,
+          "sender_quota_sum_j": 1917.4008437737573,
+          "sender_guard_sum": 5270.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 7438,
+          "sender_battery_sum_j": 6083.277069748892,
+          "sender_quota_sum_j": 19458.206503456808,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 11012,
+          "sender_battery_sum_j": 7180.122769363712,
+          "sender_quota_sum_j": 0.012776942399354407,
+          "sender_guard_sum": 33.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 62065,
+          "sender_battery_sum_j": 52411.5460040001,
+          "sender_quota_sum_j": 33075.24822088379,
+          "sender_guard_sum": 2605.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 4742,
+          "sender_battery_sum_j": 8036.852653780558,
+          "sender_quota_sum_j": 776.0362751126687,
+          "sender_guard_sum": 3980.0
+        }
+      ]
+    },
+    "generated": 45476,
+    "expired": 38836,
+    "delivered": 6522,
+    "unmodified_replay_record_sha256": "269b54655ff9eb36ef01d12012bac9bc08a52da3e2b3e51e99ac920d0c1e8110"
+  },
+  {
+    "case": {
+      "index": 4,
+      "seed": 835849679,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "reference_index": 67
+    },
+    "reference_sha256": {
+      "record.json": "4982c08979d55437d2f6f9464ac89371053fd92165ac24efceccac63d6c4c9b2",
+      "node_ledgers.csv": "f422d661c5a3009b633b3f2de742c464bf9d8e8c59250d861d1175bf4e397f4f",
+      "arrays.npz": "6ea76d845d55b92b02be035db2c6c42fe38a3aa67f206b9c03bb45f057727530"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 10679
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 1787
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 17339
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 3
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 41050
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 7
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 170
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 108
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 7
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 1513
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 3341
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 2685
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 1358
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 7047
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 31
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 839
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 410
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 176
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 92
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 344
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 2255
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 7
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 5516
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 5934
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 61
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 22659
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 4009
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 112,
+          "sender_battery_sum_j": 39.615110994211086,
+          "sender_quota_sum_j": 447.97269059521204,
+          "sender_guard_sum": 130.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 7,
+          "sender_battery_sum_j": 1.7311885955234338,
+          "sender_quota_sum_j": 27.998390734122765,
+          "sender_guard_sum": 7.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 2209,
+          "sender_battery_sum_j": 2416.8430211896907,
+          "sender_quota_sum_j": 4944.41174896066,
+          "sender_guard_sum": 9051.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 4127,
+          "sender_battery_sum_j": 4480.679608720359,
+          "sender_quota_sum_j": 9081.174110856178,
+          "sender_guard_sum": 18528.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 5003,
+          "sender_battery_sum_j": 7260.327215240134,
+          "sender_quota_sum_j": 8728.987494170604,
+          "sender_guard_sum": 32447.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 1731,
+          "sender_battery_sum_j": 2164.8768289193476,
+          "sender_quota_sum_j": 4038.1904333392854,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 64,
+          "sender_battery_sum_j": 73.04630676832184,
+          "sender_quota_sum_j": 0.008323044954064527,
+          "sender_guard_sum": 96.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_energy",
+          "events": 1,
+          "sender_battery_sum_j": 0.1392690010049203,
+          "sender_quota_sum_j": 4.0,
+          "sender_guard_sum": 2.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 40,
+          "sender_battery_sum_j": 62.79150432098903,
+          "sender_quota_sum_j": 41.34153447150605,
+          "sender_guard_sum": 10.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 176,
+          "sender_battery_sum_j": 52.06471933203711,
+          "sender_quota_sum_j": 703.9969521750226,
+          "sender_guard_sum": 143.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 92,
+          "sender_battery_sum_j": 23.965928333183676,
+          "sender_quota_sum_j": 368.0,
+          "sender_guard_sum": 65.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 959,
+          "sender_battery_sum_j": 1629.2712441939786,
+          "sender_quota_sum_j": 1220.7393560788614,
+          "sender_guard_sum": 1862.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 8645,
+          "sender_battery_sum_j": 16797.50837821475,
+          "sender_quota_sum_j": 4599.115505408586,
+          "sender_guard_sum": 11041.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 2583,
+          "sender_battery_sum_j": 5134.811158000689,
+          "sender_quota_sum_j": 2503.0129854879474,
+          "sender_guard_sum": 6898.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 12397,
+          "sender_battery_sum_j": 12101.219791399213,
+          "sender_quota_sum_j": 32698.280721861054,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 3908,
+          "sender_battery_sum_j": 2743.483170744727,
+          "sender_quota_sum_j": 0.024987017193419777,
+          "sender_guard_sum": 74.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 48173,
+          "sender_battery_sum_j": 63571.95818946584,
+          "sender_quota_sum_j": 41985.24835205078,
+          "sender_guard_sum": 1355.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 14714,
+          "sender_battery_sum_j": 31727.562061835877,
+          "sender_quota_sum_j": 3993.474649108529,
+          "sender_guard_sum": 13111.0
+        }
+      ]
+    },
+    "generated": 71035,
+    "expired": 58392,
+    "delivered": 12466,
+    "unmodified_replay_record_sha256": "9473be8ceb24430b96fb6fe91c61ed0ddd00bca926014b9ee558f5d44f90d480"
+  },
+  {
+    "case": {
+      "index": 5,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "reference_index": 85
+    },
+    "reference_sha256": {
+      "record.json": "eb052b11eca23bdc0b22eacb41db7d57c58384052133d94fcf7d6bd56ea6c5ea",
+      "node_ledgers.csv": "5ecb35baf246cefe664a1a769505deefec71106046f7f1fbe737edaf1b21ec01",
+      "arrays.npz": "ed4fdf5ea3f38f5f648f12e3db5a5ab96bad8b083390f48339f7ca7f3aa436b3"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 7572
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 1
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 1420
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 11302
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 35488
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 31
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 115
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 65
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 11
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 992
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 1953
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 1846
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 879
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 4792
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 35
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 532
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 197
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 231
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 139
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 298
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 1404
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 6
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 4059
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 3811
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 69
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 23294
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 2177
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 70,
+          "sender_battery_sum_j": 25.789559903404076,
+          "sender_quota_sum_j": 279.98190939682894,
+          "sender_guard_sum": 91.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 11,
+          "sender_battery_sum_j": 4.415347168811389,
+          "sender_quota_sum_j": 43.997477775296126,
+          "sender_guard_sum": 15.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 1502,
+          "sender_battery_sum_j": 1677.5902189701515,
+          "sender_quota_sum_j": 3192.1177951081822,
+          "sender_guard_sum": 6093.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 2602,
+          "sender_battery_sum_j": 2933.132589197919,
+          "sender_quota_sum_j": 5297.41840378338,
+          "sender_guard_sum": 12769.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 3717,
+          "sender_battery_sum_j": 5358.666798924538,
+          "sender_quota_sum_j": 6191.62616547275,
+          "sender_guard_sum": 25116.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 1250,
+          "sender_battery_sum_j": 1530.9113563084284,
+          "sender_quota_sum_j": 2920.8227192071267,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 60,
+          "sender_battery_sum_j": 62.34468842870008,
+          "sender_quota_sum_j": 0.007326616234491071,
+          "sender_guard_sum": 84.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_energy",
+          "events": 3,
+          "sender_battery_sum_j": 0.4368322164096475,
+          "sender_quota_sum_j": 12.0,
+          "sender_guard_sum": 4.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 23,
+          "sender_battery_sum_j": 39.777741590680904,
+          "sender_quota_sum_j": 13.331185509380072,
+          "sender_guard_sum": 6.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 233,
+          "sender_battery_sum_j": 58.04033354766823,
+          "sender_quota_sum_j": 931.9967719751714,
+          "sender_guard_sum": 172.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 139,
+          "sender_battery_sum_j": 39.15192810698737,
+          "sender_quota_sum_j": 555.9996931232039,
+          "sender_guard_sum": 84.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 753,
+          "sender_battery_sum_j": 1012.5538571834405,
+          "sender_quota_sum_j": 1101.7683043948373,
+          "sender_guard_sum": 1341.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 7289,
+          "sender_battery_sum_j": 11181.187676906475,
+          "sender_quota_sum_j": 3127.152892837653,
+          "sender_guard_sum": 8270.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 1839,
+          "sender_battery_sum_j": 3377.913841384696,
+          "sender_quota_sum_j": 1917.872232883886,
+          "sender_guard_sum": 5358.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 10149,
+          "sender_battery_sum_j": 9312.488745735136,
+          "sender_quota_sum_j": 24517.155866659956,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 5907,
+          "sender_battery_sum_j": 4088.389652889266,
+          "sender_quota_sum_j": 0.02341245336486889,
+          "sender_guard_sum": 71.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 56436,
+          "sender_battery_sum_j": 59567.41512661927,
+          "sender_quota_sum_j": 36223.70563909202,
+          "sender_guard_sum": 1974.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 8940,
+          "sender_battery_sum_j": 16263.933288902968,
+          "sender_quota_sum_j": 1766.7452733051255,
+          "sender_guard_sum": 7654.0
+        }
+      ]
+    },
+    "generated": 55929,
+    "expired": 46790,
+    "delivered": 8993,
+    "unmodified_replay_record_sha256": "c640e567a2ca7efe806c01aa34d1da5fb996a08e642f919bee54cd45dd18ecda"
+  },
+  {
+    "case": {
+      "index": 6,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "reference_index": 91
+    },
+    "reference_sha256": {
+      "record.json": "592b00bc8689fa8d7173cacd3716dee5b90653d8fc9858ca0fb5c3a007cb2160",
+      "node_ledgers.csv": "e7d2aac3a945d3a4a0eb5d7a0344cb75b4f38db6d039a8ff2dbd3610f23ff956",
+      "arrays.npz": "177f6c94045d4fa62085673fba3d43236fdc8b7cfa2d8a05172e2732954492ba"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 5199
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 1
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 1124
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 6685
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 32161
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 11
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 119
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 67
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 23
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 556
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 1170
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 1159
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 537
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 2733
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 15
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 340
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 85
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 218
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 126
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 296
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 785
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 6
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 3157
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 2364
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 49
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 24487
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 673
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 70,
+          "sender_battery_sum_j": 24.786952789627804,
+          "sender_quota_sum_j": 279.98239642874745,
+          "sender_guard_sum": 83.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 23,
+          "sender_battery_sum_j": 10.173672757044285,
+          "sender_quota_sum_j": 91.99371348679068,
+          "sender_guard_sum": 31.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 918,
+          "sender_battery_sum_j": 1115.872604715322,
+          "sender_quota_sum_j": 1868.645821781907,
+          "sender_guard_sum": 4220.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 1665,
+          "sender_battery_sum_j": 1978.5406023151168,
+          "sender_quota_sum_j": 3391.9005327692644,
+          "sender_guard_sum": 8463.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 2581,
+          "sender_battery_sum_j": 4070.7527423090364,
+          "sender_quota_sum_j": 4197.407352099145,
+          "sender_guard_sum": 19341.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 838,
+          "sender_battery_sum_j": 1088.4767175451732,
+          "sender_quota_sum_j": 2043.4081886123843,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 34,
+          "sender_battery_sum_j": 41.073119833512514,
+          "sender_quota_sum_j": 0.00561843532481352,
+          "sender_guard_sum": 85.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_energy",
+          "events": 3,
+          "sender_battery_sum_j": 0.41383991016778976,
+          "sender_quota_sum_j": 11.999559402887295,
+          "sender_guard_sum": 4.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 16,
+          "sender_battery_sum_j": 26.55745595416332,
+          "sender_quota_sum_j": 20.70520486382797,
+          "sender_guard_sum": 6.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 220,
+          "sender_battery_sum_j": 53.31611132840181,
+          "sender_quota_sum_j": 879.9984126160961,
+          "sender_guard_sum": 185.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 126,
+          "sender_battery_sum_j": 36.450574073325,
+          "sender_quota_sum_j": 503.99991699057796,
+          "sender_guard_sum": 79.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 608,
+          "sender_battery_sum_j": 633.1078545370825,
+          "sender_quota_sum_j": 1247.3128141908346,
+          "sender_guard_sum": 912.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 4702,
+          "sender_battery_sum_j": 6547.920838348391,
+          "sender_quota_sum_j": 2553.0604803341266,
+          "sender_guard_sum": 5589.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 1340,
+          "sender_battery_sum_j": 2257.058696306364,
+          "sender_quota_sum_j": 1804.9204972130278,
+          "sender_guard_sum": 4491.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 7879,
+          "sender_battery_sum_j": 6387.523312682262,
+          "sender_quota_sum_j": 21271.142904101343,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 10739,
+          "sender_battery_sum_j": 7056.424453789261,
+          "sender_quota_sum_j": 0.012725343375262821,
+          "sender_guard_sum": 40.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 61639,
+          "sender_battery_sum_j": 52708.04147192929,
+          "sender_quota_sum_j": 35836.706510464006,
+          "sender_guard_sum": 2285.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 4851,
+          "sender_battery_sum_j": 8193.256746550192,
+          "sender_quota_sum_j": 744.1694039261099,
+          "sender_guard_sum": 4124.0
+        }
+      ]
+    },
+    "generated": 45300,
+    "expired": 38846,
+    "delivered": 6324,
+    "unmodified_replay_record_sha256": "f99a0ae65cacf99bbbc1e6fe45d2b333c3261727d9c49bb32f79bbc7a497fe5d"
+  },
+  {
+    "case": {
+      "index": 7,
+      "seed": 1000582330,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "reference_index": 115
+    },
+    "reference_sha256": {
+      "record.json": "31e250611382367ae5dd0917c305e487c523ae72e8942a4a08f979d74230d290",
+      "node_ledgers.csv": "909c61f05387bcaa8fa98ce772160a27f1ecdd246e677036c8ac7cb3eeb13827",
+      "arrays.npz": "bc3bdb9fa8c1baaee09483d56c21b5d2267cb4c345db4b592a8361eb9860afaf"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 11623
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 1745
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 16989
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 2
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 39520
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 6
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 152
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 163
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 58
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 1665
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 2915
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 2875
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 1354
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 7013
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 20
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 615
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 311
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 142
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 69
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 407
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 1789
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 17
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 5201
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 6062
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 57
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 22033
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 3745
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 165,
+          "sender_battery_sum_j": 94.2523762762789,
+          "sender_quota_sum_j": 643.9694609218838,
+          "sender_guard_sum": 305.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 58,
+          "sender_battery_sum_j": 27.61152526580703,
+          "sender_quota_sum_j": 231.98666419858586,
+          "sender_guard_sum": 80.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 2434,
+          "sender_battery_sum_j": 2699.546680980293,
+          "sender_quota_sum_j": 5223.282951494567,
+          "sender_guard_sum": 9596.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 3936,
+          "sender_battery_sum_j": 4422.586469849258,
+          "sender_quota_sum_j": 8324.48897010875,
+          "sender_guard_sum": 17988.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 5729,
+          "sender_battery_sum_j": 8349.206481754292,
+          "sender_quota_sum_j": 10001.651856528475,
+          "sender_guard_sum": 40309.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 1885,
+          "sender_battery_sum_j": 2238.3352621436925,
+          "sender_quota_sum_j": 4646.898721801834,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 40,
+          "sender_battery_sum_j": 51.58760843073434,
+          "sender_quota_sum_j": 0.010787348831529991,
+          "sender_guard_sum": 103.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 42,
+          "sender_battery_sum_j": 65.16979019410398,
+          "sender_quota_sum_j": 26.39490969718395,
+          "sender_guard_sum": 12.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 142,
+          "sender_battery_sum_j": 50.65428629225262,
+          "sender_quota_sum_j": 567.9958711409558,
+          "sender_guard_sum": 147.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 69,
+          "sender_battery_sum_j": 25.066301992419774,
+          "sender_quota_sum_j": 275.99871262444765,
+          "sender_guard_sum": 69.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 994,
+          "sender_battery_sum_j": 1612.9272375463772,
+          "sender_quota_sum_j": 1295.4482075106832,
+          "sender_guard_sum": 2091.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 7071,
+          "sender_battery_sum_j": 13560.500643928297,
+          "sender_quota_sum_j": 3155.9410112558503,
+          "sender_guard_sum": 8869.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 2761,
+          "sender_battery_sum_j": 5400.411016312167,
+          "sender_quota_sum_j": 2598.1858447608565,
+          "sender_guard_sum": 7734.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 11889,
+          "sender_battery_sum_j": 11502.174939662975,
+          "sender_quota_sum_j": 30188.223288597186,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 4088,
+          "sender_battery_sum_j": 2643.679043055109,
+          "sender_quota_sum_j": 0.0307523247215256,
+          "sender_guard_sum": 69.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 47916,
+          "sender_battery_sum_j": 61689.00227198342,
+          "sender_quota_sum_j": 36670.85280818115,
+          "sender_guard_sum": 1424.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 13537,
+          "sender_battery_sum_j": 28454.830317120697,
+          "sender_quota_sum_j": 3437.2677993574052,
+          "sender_guard_sum": 12110.0
+        }
+      ]
+    },
+    "generated": 70037,
+    "expired": 56511,
+    "delivered": 13368,
+    "unmodified_replay_record_sha256": "9ca147af38049be16107303a21459a101ade4c26c8994de1f3c9c7f68348128d"
+  },
+  {
+    "case": {
+      "index": 8,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "reference_index": 133
+    },
+    "reference_sha256": {
+      "record.json": "7b6414015f13ddcf36a92d326a0b27a098fa9223ba2381007c19d2924941a40f",
+      "node_ledgers.csv": "e2545b2240cf3fb439861d4f65d51b202ede751735049dd817ad4b51798e3c04",
+      "arrays.npz": "2f6e5fdc0a2bce0c4f371618a07686a9ce5a1d8febbaa496cd12b70b59030c43"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 8258
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 1
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 1337
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 10933
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "ever-held",
+          "packets": 4
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 34962
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 30
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 98
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 96
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 53
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 1006
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 1772
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 2074
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 896
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 4467
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 22
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 394
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 153
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 271
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 161
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 330
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 1088
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 10
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 3839
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 3929
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 44
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 23187
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 2107
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 97,
+          "sender_battery_sum_j": 43.637942440471534,
+          "sender_quota_sum_j": 387.9731034804398,
+          "sender_guard_sum": 134.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 53,
+          "sender_battery_sum_j": 21.283525642031186,
+          "sender_quota_sum_j": 211.98770363270532,
+          "sender_guard_sum": 67.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 1631,
+          "sender_battery_sum_j": 1839.2942866228268,
+          "sender_quota_sum_j": 3193.549775307498,
+          "sender_guard_sum": 6292.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 2571,
+          "sender_battery_sum_j": 2916.7413141908464,
+          "sender_quota_sum_j": 5187.4070580708685,
+          "sender_guard_sum": 11676.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 4241,
+          "sender_battery_sum_j": 6102.995482095887,
+          "sender_quota_sum_j": 6935.389062415845,
+          "sender_guard_sum": 30289.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 1314,
+          "sender_battery_sum_j": 1557.4674387403877,
+          "sender_quota_sum_j": 3136.3859379308187,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 46,
+          "sender_battery_sum_j": 52.242261388014015,
+          "sender_quota_sum_j": 0.006012373461453793,
+          "sender_guard_sum": 38.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_energy",
+          "events": 3,
+          "sender_battery_sum_j": 0.4355617094385662,
+          "sender_quota_sum_j": 12.0,
+          "sender_guard_sum": 4.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 19,
+          "sender_battery_sum_j": 31.14742960711763,
+          "sender_quota_sum_j": 9.180148739984356,
+          "sender_guard_sum": 8.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 271,
+          "sender_battery_sum_j": 77.3930129081664,
+          "sender_quota_sum_j": 1083.9963793167412,
+          "sender_guard_sum": 187.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 161,
+          "sender_battery_sum_j": 47.85658000712606,
+          "sender_quota_sum_j": 643.9983584896718,
+          "sender_guard_sum": 84.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 759,
+          "sender_battery_sum_j": 948.6235066842702,
+          "sender_quota_sum_j": 1261.2151493149938,
+          "sender_guard_sum": 1294.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 6240,
+          "sender_battery_sum_j": 9338.752779860088,
+          "sender_quota_sum_j": 2500.3344095446173,
+          "sender_guard_sum": 6584.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 1908,
+          "sender_battery_sum_j": 3369.697574364664,
+          "sender_quota_sum_j": 2131.5337099979192,
+          "sender_guard_sum": 6226.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 9872,
+          "sender_battery_sum_j": 9087.294747706525,
+          "sender_quota_sum_j": 22401.13075511932,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 6399,
+          "sender_battery_sum_j": 4483.3140469033415,
+          "sender_quota_sum_j": 0.02453279801799948,
+          "sender_guard_sum": 108.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 56696,
+          "sender_battery_sum_j": 58380.90582851395,
+          "sender_quota_sum_j": 33026.351269736035,
+          "sender_guard_sum": 2087.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 8356,
+          "sender_battery_sum_j": 15110.412328553064,
+          "sender_quota_sum_j": 1597.0034815931858,
+          "sender_guard_sum": 7127.0
+        }
+      ]
+    },
+    "generated": 55623,
+    "expired": 45899,
+    "delivered": 9596,
+    "unmodified_replay_record_sha256": "bdcd9c4cddd30b51239bd3ba875213d98dada0bf53732901a3111c818ef1e09f"
+  },
+  {
+    "case": {
+      "index": 9,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "reference_index": 139
+    },
+    "reference_sha256": {
+      "record.json": "0fe4f123b7ac3eb94abcbb0d70d9e86c106990dfb1daecd3cac08224b2bdd27c",
+      "node_ledgers.csv": "5c9226610ff0c677dfc2e1c473717f11c8c86e84405bc3a60699abd45e8cf0fa",
+      "arrays.npz": "f39488547a4682b2de697c924ea447b29d646acaa417f56cd760e310088d2196"
+    },
+    "trace": {
+      "terminal": [
+        {
+          "status": "delivered",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 5513
+        },
+        {
+          "status": "delivered",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 1119
+        },
+        {
+          "status": "expired",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 6459
+        },
+        {
+          "status": "expired",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 32023
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "relay",
+          "hold_history": "ever-held",
+          "packets": 8
+        },
+        {
+          "status": "outstanding",
+          "last_holder": "source",
+          "hold_history": "no-observed-hold",
+          "packets": 109
+        }
+      ],
+      "expired_last_reason": [
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_receiver_energy",
+          "packets": 94
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "cached_unavailable",
+          "packets": 38
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "forward_reserve",
+          "packets": 579
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "grant_denied",
+          "packets": 1093
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "link_loss",
+          "packets": 1305
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "listen_capacity",
+          "packets": 503
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "never_attempted",
+          "packets": 2525
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_credit",
+          "packets": 8
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "sender_energy",
+          "packets": 253
+        },
+        {
+          "last_holder": "relay",
+          "last_reason": "transit_protect",
+          "packets": 61
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_receiver_energy",
+          "packets": 275
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "cached_unavailable",
+          "packets": 130
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "forward_reserve",
+          "packets": 291
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "grant_denied",
+          "packets": 719
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "link_loss",
+          "packets": 6
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "listen_capacity",
+          "packets": 3040
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "never_attempted",
+          "packets": 2365
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_credit",
+          "packets": 50
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "sender_energy",
+          "packets": 24456
+        },
+        {
+          "last_holder": "source",
+          "last_reason": "transit_protect",
+          "packets": 691
+        }
+      ],
+      "block_events": [
+        {
+          "sender_role": "relay",
+          "reason": "cached_receiver_energy",
+          "events": 95,
+          "sender_battery_sum_j": 37.88815927735261,
+          "sender_quota_sum_j": 379.9741240564324,
+          "sender_guard_sum": 119.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "cached_unavailable",
+          "events": 38,
+          "sender_battery_sum_j": 17.393820780342597,
+          "sender_quota_sum_j": 151.990949443944,
+          "sender_guard_sum": 47.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "forward_reserve",
+          "events": 944,
+          "sender_battery_sum_j": 1117.4590870864133,
+          "sender_quota_sum_j": 1892.935010227277,
+          "sender_guard_sum": 3689.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "grant_denied",
+          "events": 1657,
+          "sender_battery_sum_j": 1938.602686764212,
+          "sender_quota_sum_j": 3435.1698432330068,
+          "sender_guard_sum": 7292.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "link_loss",
+          "events": 2928,
+          "sender_battery_sum_j": 4550.980268289845,
+          "sender_quota_sum_j": 4711.386747793923,
+          "sender_guard_sum": 22916.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "listen_capacity",
+          "events": 801,
+          "sender_battery_sum_j": 1001.553677716152,
+          "sender_quota_sum_j": 1955.3416790760425,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_credit",
+          "events": 22,
+          "sender_battery_sum_j": 24.46161013095963,
+          "sender_quota_sum_j": 0.002969333301800006,
+          "sender_guard_sum": 43.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "sender_energy",
+          "events": 11,
+          "sender_battery_sum_j": 1.5402837894638308,
+          "sender_quota_sum_j": 43.9985717380542,
+          "sender_guard_sum": 18.0
+        },
+        {
+          "sender_role": "relay",
+          "reason": "transit_protect",
+          "events": 12,
+          "sender_battery_sum_j": 19.991523182803935,
+          "sender_quota_sum_j": 20.381283133537146,
+          "sender_guard_sum": 2.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_receiver_energy",
+          "events": 276,
+          "sender_battery_sum_j": 74.66108588463942,
+          "sender_quota_sum_j": 1103.996226225186,
+          "sender_guard_sum": 171.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "cached_unavailable",
+          "events": 130,
+          "sender_battery_sum_j": 38.49037520451405,
+          "sender_quota_sum_j": 519.9990153302649,
+          "sender_guard_sum": 62.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "forward_reserve",
+          "events": 560,
+          "sender_battery_sum_j": 593.8493205352308,
+          "sender_quota_sum_j": 1203.83292641748,
+          "sender_guard_sum": 885.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "grant_denied",
+          "events": 4224,
+          "sender_battery_sum_j": 5848.971659819634,
+          "sender_quota_sum_j": 2149.3831538505606,
+          "sender_guard_sum": 4792.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "link_loss",
+          "events": 1385,
+          "sender_battery_sum_j": 2289.02865360022,
+          "sender_quota_sum_j": 1891.0246406337324,
+          "sender_guard_sum": 5404.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "listen_capacity",
+          "events": 7715,
+          "sender_battery_sum_j": 6203.916891554024,
+          "sender_quota_sum_j": 20586.411959544508,
+          "sender_guard_sum": 0.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_credit",
+          "events": 11202,
+          "sender_battery_sum_j": 7204.235214730292,
+          "sender_quota_sum_j": 0.013988434302212164,
+          "sender_guard_sum": 55.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "sender_energy",
+          "events": 62003,
+          "sender_battery_sum_j": 51580.35033430662,
+          "sender_quota_sum_j": 34069.17711995887,
+          "sender_guard_sum": 2492.0
+        },
+        {
+          "sender_role": "source",
+          "reason": "transit_protect",
+          "events": 4578,
+          "sender_battery_sum_j": 7795.073224502651,
+          "sender_quota_sum_j": 718.9206808369839,
+          "sender_guard_sum": 3855.0
+        }
+      ]
+    },
+    "generated": 45231,
+    "expired": 38482,
+    "delivered": 6632,
+    "unmodified_replay_record_sha256": "1361137d2e8be7efe38633c32a5c776cc023ed8dcdede13eca248185555cecd6"
+  }
+]

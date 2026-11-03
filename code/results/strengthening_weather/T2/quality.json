@@ -1,0 +1,141 @@
+{
+  "trajectory": "T2",
+  "station": "Boulder_CO",
+  "local_start": "2024-04-01T00:00:00",
+  "local_end_exclusive": "2024-04-18T00:00:00",
+  "utc_offset_hours": -7,
+  "time_basis": "local standard time; UTC input; no DST",
+  "warmup_days": 2,
+  "scored_days": 14,
+  "forecast_tail_days": 1,
+  "source_files": [
+    {
+      "file": "tbl24092.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24092.dat",
+      "sha256": "6ab4564d662af457ac5fc546c50c457178a961b4d1a4cc2f8b5ea88180fa3f30"
+    },
+    {
+      "file": "tbl24093.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24093.dat",
+      "sha256": "2068ca814e209d917cc111a2edf690812dacd6afe4a318e04d403d17958e459a"
+    },
+    {
+      "file": "tbl24094.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24094.dat",
+      "sha256": "947dc4d0d9278bed6641d75cc193d7fac2daf2008936347ee0c79ed2d96a5b87"
+    },
+    {
+      "file": "tbl24095.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24095.dat",
+      "sha256": "91117910155fbda5b4ad720c6ccae146c842ee72511b87db6697428d07cdac09"
+    },
+    {
+      "file": "tbl24096.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24096.dat",
+      "sha256": "76c05930fb6f573681d6e34d6d297876f30829813fc3d7e7e7296d83160f1fa8"
+    },
+    {
+      "file": "tbl24097.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24097.dat",
+      "sha256": "90da5e446cb579ee16f4cb564f1e5c860b83882839845ea74a61ddb4bd8bae9f"
+    },
+    {
+      "file": "tbl24098.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24098.dat",
+      "sha256": "96bad3e83bda07eed76785283e5796e786a5a15c1d692476af37a44f35f00faa"
+    },
+    {
+      "file": "tbl24099.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24099.dat",
+      "sha256": "16e3e06141fc8160def08a019454d6126bc58fa6be7aa3813324e8d80ffc091e"
+    },
+    {
+      "file": "tbl24100.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24100.dat",
+      "sha256": "b971d9602a4475e4a3238b226df15d621c402aa6afcd9586adb0518b79e19a43"
+    },
+    {
+      "file": "tbl24101.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24101.dat",
+      "sha256": "5e5f23e20b34919ad3224ae8f3c09d98cb3c7bab76e38ca6eb859a91aa8281f2"
+    },
+    {
+      "file": "tbl24102.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24102.dat",
+      "sha256": "91a7e039f00ebbe58d415ee6c10fd942aa9514e282644aaec82cc82b09828d31"
+    },
+    {
+      "file": "tbl24103.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24103.dat",
+      "sha256": "8458a4fc861fb72503a0d10fea5ced7434d57d852a03990bab98a33ff2d5a4b8"
+    },
+    {
+      "file": "tbl24104.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24104.dat",
+      "sha256": "17d8db3412e41a02c4768be5a039e81d91e08267a377fe92917baae93ad15073"
+    },
+    {
+      "file": "tbl24105.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24105.dat",
+      "sha256": "2e8d3215533202cc6d18260a7e1fc9a4f3c12e8d237548c877cf4fda3ab62a59"
+    },
+    {
+      "file": "tbl24106.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24106.dat",
+      "sha256": "38c46d3df2cc1f198d493401b84f31844e5d9237a5f6459f389aa485b974c5ef"
+    },
+    {
+      "file": "tbl24107.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24107.dat",
+      "sha256": "58d1466c6114e4b207415f068092a5a4e6e303a85356ec0ae062e70c4c5ac975"
+    },
+    {
+      "file": "tbl24108.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24108.dat",
+      "sha256": "82d8bdfbb6b2e65be38bd872632d3682cad01f5cf95fbbc401912349740616d7"
+    },
+    {
+      "file": "tbl24109.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Boulder_CO/2024/tbl24109.dat",
+      "sha256": "2900c63ae43ce6db0af9c529cd7457d8a8474e1d36ad7bcfe11525b6708af7c0"
+    }
+  ],
+  "minutes": 24480,
+  "missing_ghi_qc_minutes": 1,
+  "reconstructed_minutes": 0,
+  "unresolved_minutes": 0,
+  "invalid_after_reconstruction_minutes": 1,
+  "negative_valid_clamped_minutes": 10463,
+  "interpolated_minutes": 1,
+  "max_interpolated_gap_minutes": 1,
+  "qc_rule": "QC0 GHI; otherwise QC0 DNI*cos(zenith)+QC0 DHI; negatives clamped; interior gaps <=5 min linearly interpolated, larger/edge gaps fail",
+  "missing_fraction": 4.0849673202614376e-05,
+  "normalization_min": 0.03621792538637315,
+  "normalization_max": 1.5058535761310485,
+  "normalization_finite": true,
+  "normalization_rule": "update only for g>0.1, completed observations, unchanged 06:00-18:00 reference",
+  "point_clip_fraction": 0.005952380952380952,
+  "scenario_clip_fraction": 0.07211061507936507,
+  "forecast_rmse_j_per_round": 0.0163737350151695,
+  "measured_daylight_hours": 13.25,
+  "processed_sha256": "b6928e4c84c5f3de49946f2ade4255a0994b2abd2e96db08e0d123d1a394143c",
+  "old_winter_numeric_equivalence": null,
+  "conversion": "H_i=s*shade_i*0.12*GHI/1000; no second daylight multiplier",
+  "scored_mean_daily_irradiation_kwh_m2": 6.179891547619047,
+  "scored_daily_irradiation_kwh_m2": [
+    5.875521666666667,
+    6.981003333333334,
+    5.516961666666666,
+    3.5182183333333334,
+    7.00999,
+    6.5523516666666675,
+    7.317903333333334,
+    4.903666666666666,
+    7.3366566666666655,
+    7.287213333333334,
+    4.871598333333333,
+    7.433401666666667,
+    6.2246966666666665,
+    5.689298333333334
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "study": "Strawberry field moisture and valve-operation observational replay",
+  "source_doi": "10.17632/cjb4vy4mzj.3",
+  "source_licence": "CC BY 4.0",
+  "windows_utc": [
+    "2022-07-13T00:00:00Z",
+    "2022-07-27T00:00:00Z",
+    "2022-08-10T00:00:00Z",
+    "2022-08-24T00:00:00Z"
+  ],
+  "window_selection": "Four consecutive nonoverlapping 14-day windows beginning at the first full UTC midnight after the available series begins, selected from timestamps before outcomes were computed.",
+  "rounds_per_window": 1344,
+  "round_minutes": 15,
+  "simulated_sources": 100,
+  "field_truth": "At each round, latest observed soil moisture not older than 30 minutes and latest valve command not older than 10 minutes; no interpolation. Exclude rounds missing either ground-truth observation.",
+  "delivered_value": "Read field moisture available at each simulated delivery birth; it is usable when the delivered birth is at most four rounds old and the field measurement at that birth is not older than 30 minutes.",
+  "pairing": "Same four 2022 strawberry-farm windows paired by elapsed round with each of 480 previously saved network runs. Field and simulated weather are not contemporaneous or colocated, and a single field series is replicated to all sources.",
+  "endpoints": [
+    "overall usable fraction on truth-valid source-rounds",
+    "usable fraction during observed open-valve source-rounds",
+    "absolute soil-moisture error conditional on a usable state, overall and during valve opening"
+  ],
+  "interpretation": "Descriptive retrospective open-loop data availability and reconstruction, not closed-loop control, irrigation need, crop damage, field testing of JLC-R, or independent farm replication.",
+  "analysis": "40 method-by-condition/supply cells and four windows; 12 existing paired network seeds; descriptive summaries only; no hypothesis test or new independent seeds.",
+  "source_sha256": {
+    "temp/current_research/strawberry_replay_20261028/raw/D_moisture.txt": "bdf8b175ea68c720a75c22a91998320339923a4737e8bb342c416fd9b6f0a2cc",
+    "temp/current_research/strawberry_replay_20261028/raw/D_valve.txt": "133cde7618a570dbdb3281e8ea1455071791fdbbc35de4514864f66f565afd28",
+    "temp/current_research/strawberry_replay_20261028/raw/D_flowmeter.txt": "bb0d9c15df892d5477b158bfe6683c27324ba335a89aacce61d1b015921e81b1",
+    "temp/current_research/strawberry_replay_20261028/raw/dataset_metadata.json": "8bad008134671fa6be2526762a2e6f37a7df4562c0650c04f228ad4b48aba2c0",
+    "temp/current_research/strawberry_replay_20261028/download_receipt.json": "080c34abc914d9e491aaa38b2717c41925e1a41fe134f34238a19381c3efc00d",
+    "code/experiments/rc2_confirmation/raw/rc2_formal_raw.zip": "5c78899a7916cb5b8a0faeb2cb763c6c20b101cefeb9f956305b7ab771ba3b06",
+    "code/experiments/rc2_confirmation/results/confirmation_480.csv": "f417f437b2f25d8d0bd53f12b7005f6b0d000a97f6782b853c9c1128bfc34951",
+    "temp/current_research/strawberry_replay_20261028/replay.py": "67a0b037f136a1a46f20b066943fba169bf7a94331a260df11722bbd31aca34f"
+  }
+}

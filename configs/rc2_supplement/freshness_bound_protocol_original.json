@@ -1,0 +1,30 @@
+{
+  "study": "Conditional observed-sampling, instantaneous-delivery freshness ceiling",
+  "scope": "Descriptive retrospective decomposition of existing 480 formal trajectories. No simulation, new seeds, parameter changes, hypothesis tests or causal treatment effects.",
+  "sample_status": {
+    "delivered": 1,
+    "expired": 2,
+    "overflow": 3,
+    "outstanding": 4,
+    "unsensed": 5,
+    "routing_drop": 6
+  },
+  "threshold_rounds": 4,
+  "initial_condition": "No prior sensed or delivered sample before round zero.",
+  "oracle": "For each observed sensing trajectory, every sensed sample is delivered instantaneously with no extra energy, link, queue, capacity, or contention constraints. It is not an implementable or energy-matched policy.",
+  "components": [
+    "actual fresh source-rounds",
+    "observed-sample-fresh but not delivered-fresh source-rounds",
+    "source-rounds without a sample within the freshness window"
+  ],
+  "aggregation": "Each run is one network-seed/condition/method record; equal-condition summaries average eight cells within each seed, then average 12 seeds.",
+  "source_sha256": {
+    "code/experiments/rc2_confirmation/raw/rc2_formal_raw.zip": "5c78899a7916cb5b8a0faeb2cb763c6c20b101cefeb9f956305b7ab771ba3b06",
+    "code/experiments/rc2_confirmation/results/confirmation_480.csv": "f417f437b2f25d8d0bd53f12b7005f6b0d000a97f6782b853c9c1128bfc34951",
+    "code/simulation/diagnostic.py": "c5cb4d946619529ca14a96bb2b2c650952d713920cf41c058bff4228acf6ea10",
+    "code/simulation/cadence.py": "eadde4b8559ec9b418e7111380290187d887b64923aa3b3e9654c356ffc30668",
+    "code/simulation/eadcm_host.py": "d7db72abd2c3a54b55dbd74f9fbfdd62290722e84aabbfa06736f761c1052bad",
+    "code/simulation/lantern_host.py": "0f7082ebf6f18d99117adb6d504a65bfdffe640471cef21ff45f2837ce436eef",
+    "temp/current_research/freshness_bound_20261028_v2/analyze.py": "1349ca0c01b267762d7adee0e317d5c7ec7edd24e116434e62d071e57cba943f"
+  }
+}

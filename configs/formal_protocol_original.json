@@ -1,0 +1,4335 @@
+{
+  "status": "RC2_LOCKED_AWAITING_288_EXECUTION_AUTHORIZATION",
+  "locked_beijing": "2026-10-27T09:16:33.940726+08:00",
+  "design": "Staged five-method comparison;192 existing internal+288 prospective full/external; not a new blind480 experiment",
+  "formal_execution_authorized": false,
+  "formal_runs_started": 0,
+  "methods": [
+    "JLC-R-RC2",
+    "EADCM-CE",
+    "LANTERN-CE",
+    "Base-hybrid",
+    "Pre-recovery-JLC-R"
+  ],
+  "method_entries": {
+    "JLC-R-RC2": {
+      "entry": "temp/current_research/coverage_cadence_20261027_081600/cadence.py:ReserveCadenceCandidate",
+      "kwargs": {
+        "horizon_days": 3,
+        "trigger_mode": "reference",
+        "v63_mechanism": "relay_repair"
+      }
+    },
+    "EADCM-CE": {
+      "entry": "temp/current_research/eadcm_common_executor_20261027_003004/src/eadcm_host.py:EADCMCommonHost",
+      "kwargs": {
+        "forecast_days": 5,
+        "target_fraction": 0.2
+      }
+    },
+    "LANTERN-CE": {
+      "entry": "temp/current_research/lantern_router_mac_20261027_013347/src/lantern_host.py:LanternCommonHost",
+      "kwargs": {
+        "maximum_reward": 32.0,
+        "trickle_redundancy": 1,
+        "data_header_bits": 64,
+        "uniform_listen_s": 0.56
+      }
+    },
+    "Base-hybrid": {
+      "entry": "code/simulation/v6_model.py:HYBSimulator",
+      "kwargs": {}
+    },
+    "Pre-recovery-JLC-R": {
+      "entry": "code/simulation/v63_model.py:RelayRepairHYB",
+      "kwargs": {
+        "v63_mechanism": "relay_repair"
+      }
+    }
+  },
+  "method_configuration_sha256": {
+    "JLC-R-RC2": "2bb56b4bcb991646cea0401ac9d00a37a1d1e6f718c4d3d28c64ad2425816850",
+    "EADCM-CE": "bc8bc03415f1d2f27e2e4663a5891b42d293d88631c7ce6cd26259dd54a36219",
+    "LANTERN-CE": "1992e17321e6d44f35a61eaa5de645cf5d0288b95c44e6b0496e6619d68dc156",
+    "Base-hybrid": "bd12794104dc6dfb99ab28bbe568325454c220f09f58c336f5ca40e460f6d6eb",
+    "Pre-recovery-JLC-R": "4c1e590035f36a89d97845c81fe05462006b07321de45fb2c117a57ca2797560"
+  },
+  "conditions": [
+    {
+      "config": {
+        "fdc_enabled": true,
+        "fdc_selective": true,
+        "guard_listen_s": 0.02,
+        "hyb_enabled": true,
+        "hyb_exit_scale": 0.7,
+        "hyb_thin_scale": 0.6,
+        "joint_sync_execution": true,
+        "sync_extra_listen_s": 0.08,
+        "sync_interval_s": 200,
+        "sync_jitter_s": 0.008,
+        "sync_turnaround_s": 0.001,
+        "sync_window_count": 5
+      },
+      "name": "SYNTHETIC_G20"
+    },
+    {
+      "config": {
+        "fdc_enabled": true,
+        "fdc_selective": true,
+        "guard_listen_s": 0.02,
+        "hyb_enabled": true,
+        "hyb_exit_scale": 0.7,
+        "hyb_thin_scale": 0.6,
+        "joint_sync_execution": true,
+        "sync_extra_listen_s": 0.08,
+        "sync_interval_s": 200,
+        "sync_jitter_s": 0.008,
+        "sync_turnaround_s": 0.001,
+        "sync_window_count": 5
+      },
+      "name": "WINTER_G20",
+      "weather_file": "code/results/expansion_measured/weather/ghi_15min.csv"
+    },
+    {
+      "config": {
+        "fdc_enabled": true,
+        "fdc_selective": true,
+        "guard_listen_s": 0.02,
+        "hyb_enabled": true,
+        "hyb_exit_scale": 0.7,
+        "hyb_thin_scale": 0.6,
+        "joint_sync_execution": true,
+        "sync_extra_listen_s": 0.08,
+        "sync_interval_s": 200,
+        "sync_jitter_s": 0.008,
+        "sync_turnaround_s": 0.001,
+        "sync_window_count": 5
+      },
+      "name": "T2_G20",
+      "weather_file": "code/results/strengthening_weather/T2/ghi_15min.csv"
+    },
+    {
+      "config": {
+        "fdc_enabled": true,
+        "fdc_selective": true,
+        "guard_listen_s": 0.02,
+        "hyb_enabled": true,
+        "hyb_exit_scale": 0.7,
+        "hyb_thin_scale": 0.6,
+        "joint_sync_execution": true,
+        "sync_extra_listen_s": 0.08,
+        "sync_interval_s": 200,
+        "sync_jitter_s": 0.008,
+        "sync_turnaround_s": 0.001,
+        "sync_window_count": 5
+      },
+      "name": "T3_G20",
+      "weather_file": "code/results/strengthening_weather/T3/ghi_15min.csv"
+    }
+  ],
+  "supplies": [
+    1.0,
+    0.7
+  ],
+  "seeds": [
+    1320352547,
+    779221758,
+    1778732729,
+    885552201,
+    1749537619,
+    571662030,
+    984132646,
+    1150725878,
+    619323988,
+    142362949,
+    771434129,
+    1757298122
+  ],
+  "days": 14,
+  "rounds": 1344,
+  "nodes": 100,
+  "independent_n": 12,
+  "software": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-11-10.0.26340-SP0"
+  },
+  "cases": [
+    {
+      "index": 0,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 1,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 2,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 3,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 2
+    },
+    {
+      "index": 4,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 1
+    },
+    {
+      "index": 5,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 6,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 7,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 8,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 8
+    },
+    {
+      "index": 9,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 7
+    },
+    {
+      "index": 10,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 11,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 12,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 13,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 14
+    },
+    {
+      "index": 14,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 13
+    },
+    {
+      "index": 15,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 16,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 17,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 18,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 20
+    },
+    {
+      "index": 19,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 19
+    },
+    {
+      "index": 20,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 21,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 22,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 23,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 26
+    },
+    {
+      "index": 24,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 25
+    },
+    {
+      "index": 25,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 26,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 27,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 28,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 32
+    },
+    {
+      "index": 29,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 31
+    },
+    {
+      "index": 30,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 31,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 32,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 33,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 38
+    },
+    {
+      "index": 34,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 37
+    },
+    {
+      "index": 35,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 36,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 37,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 38,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 44
+    },
+    {
+      "index": 39,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 43
+    },
+    {
+      "index": 40,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 41,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 42,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 43,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 50
+    },
+    {
+      "index": 44,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 49
+    },
+    {
+      "index": 45,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 46,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 47,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 48,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 56
+    },
+    {
+      "index": 49,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 55
+    },
+    {
+      "index": 50,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 51,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 52,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 53,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 62
+    },
+    {
+      "index": 54,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 61
+    },
+    {
+      "index": 55,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 56,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 57,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 58,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 68
+    },
+    {
+      "index": 59,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 67
+    },
+    {
+      "index": 60,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 61,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 62,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 63,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 74
+    },
+    {
+      "index": 64,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 73
+    },
+    {
+      "index": 65,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 66,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 67,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 68,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 80
+    },
+    {
+      "index": 69,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 79
+    },
+    {
+      "index": 70,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 71,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 72,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 73,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 86
+    },
+    {
+      "index": 74,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 85
+    },
+    {
+      "index": 75,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 76,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 77,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 78,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 92
+    },
+    {
+      "index": 79,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 91
+    },
+    {
+      "index": 80,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 81,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 82,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 83,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 98
+    },
+    {
+      "index": 84,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 97
+    },
+    {
+      "index": 85,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 86,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 87,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 88,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 104
+    },
+    {
+      "index": 89,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 103
+    },
+    {
+      "index": 90,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 91,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 92,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 93,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 110
+    },
+    {
+      "index": 94,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 109
+    },
+    {
+      "index": 95,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 96,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 97,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 98,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 116
+    },
+    {
+      "index": 99,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 115
+    },
+    {
+      "index": 100,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 101,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 102,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 103,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 122
+    },
+    {
+      "index": 104,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 121
+    },
+    {
+      "index": 105,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 106,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 107,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 108,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 128
+    },
+    {
+      "index": 109,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 127
+    },
+    {
+      "index": 110,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 111,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 112,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 113,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 134
+    },
+    {
+      "index": 114,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 133
+    },
+    {
+      "index": 115,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 116,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 117,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 118,
+      "method": "Base-hybrid",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 140
+    },
+    {
+      "index": 119,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 139
+    },
+    {
+      "index": 120,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 121,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 122,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 123,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 146
+    },
+    {
+      "index": 124,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 145
+    },
+    {
+      "index": 125,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 126,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 127,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 128,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 152
+    },
+    {
+      "index": 129,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 151
+    },
+    {
+      "index": 130,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 131,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 132,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 133,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 158
+    },
+    {
+      "index": 134,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 157
+    },
+    {
+      "index": 135,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 136,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 137,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 138,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 164
+    },
+    {
+      "index": 139,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 163
+    },
+    {
+      "index": 140,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 141,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 142,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 143,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 170
+    },
+    {
+      "index": 144,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 169
+    },
+    {
+      "index": 145,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 146,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 147,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 148,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 176
+    },
+    {
+      "index": 149,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 175
+    },
+    {
+      "index": 150,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 151,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 152,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 153,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 182
+    },
+    {
+      "index": 154,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 181
+    },
+    {
+      "index": 155,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 156,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 157,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 158,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 188
+    },
+    {
+      "index": 159,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 187
+    },
+    {
+      "index": 160,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 161,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 162,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 163,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 194
+    },
+    {
+      "index": 164,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 193
+    },
+    {
+      "index": 165,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 166,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 167,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 168,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 200
+    },
+    {
+      "index": 169,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 199
+    },
+    {
+      "index": 170,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 171,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 172,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 173,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 206
+    },
+    {
+      "index": 174,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 205
+    },
+    {
+      "index": 175,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 176,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 177,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 178,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 212
+    },
+    {
+      "index": 179,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 211
+    },
+    {
+      "index": 180,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 181,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 182,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 183,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 218
+    },
+    {
+      "index": 184,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 217
+    },
+    {
+      "index": 185,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 186,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 187,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 188,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 224
+    },
+    {
+      "index": 189,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 223
+    },
+    {
+      "index": 190,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 191,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 192,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 193,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 230
+    },
+    {
+      "index": 194,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 229
+    },
+    {
+      "index": 195,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 196,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 197,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 198,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 236
+    },
+    {
+      "index": 199,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 235
+    },
+    {
+      "index": 200,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 201,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 202,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 203,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 242
+    },
+    {
+      "index": 204,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 241
+    },
+    {
+      "index": 205,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 206,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 207,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 208,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 248
+    },
+    {
+      "index": 209,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 247
+    },
+    {
+      "index": 210,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 211,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 212,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 213,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 254
+    },
+    {
+      "index": 214,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 253
+    },
+    {
+      "index": 215,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 216,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 217,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 218,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 260
+    },
+    {
+      "index": 219,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 259
+    },
+    {
+      "index": 220,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 221,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 222,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 223,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 266
+    },
+    {
+      "index": 224,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 265
+    },
+    {
+      "index": 225,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 226,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 227,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 228,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 272
+    },
+    {
+      "index": 229,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 271
+    },
+    {
+      "index": 230,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 231,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 232,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 233,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 278
+    },
+    {
+      "index": 234,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 277
+    },
+    {
+      "index": 235,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 236,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 237,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 238,
+      "method": "Base-hybrid",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 284
+    },
+    {
+      "index": 239,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 283
+    },
+    {
+      "index": 240,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 241,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 242,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 243,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 290
+    },
+    {
+      "index": 244,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 289
+    },
+    {
+      "index": 245,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 246,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 247,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 248,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 296
+    },
+    {
+      "index": 249,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 295
+    },
+    {
+      "index": 250,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 251,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 252,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 253,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 302
+    },
+    {
+      "index": 254,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 301
+    },
+    {
+      "index": 255,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 256,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 257,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 258,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 308
+    },
+    {
+      "index": 259,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 307
+    },
+    {
+      "index": 260,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 261,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 262,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 263,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 314
+    },
+    {
+      "index": 264,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 313
+    },
+    {
+      "index": 265,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 266,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 267,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 268,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 320
+    },
+    {
+      "index": 269,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 319
+    },
+    {
+      "index": 270,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 271,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 272,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 273,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 326
+    },
+    {
+      "index": 274,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 325
+    },
+    {
+      "index": 275,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 276,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 277,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 278,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 332
+    },
+    {
+      "index": 279,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 331
+    },
+    {
+      "index": 280,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 281,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 282,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 283,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 338
+    },
+    {
+      "index": 284,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 337
+    },
+    {
+      "index": 285,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 286,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 287,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 288,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 344
+    },
+    {
+      "index": 289,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 343
+    },
+    {
+      "index": 290,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 291,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 292,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 293,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 350
+    },
+    {
+      "index": 294,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 349
+    },
+    {
+      "index": 295,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 296,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 297,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 298,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 356
+    },
+    {
+      "index": 299,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 355
+    },
+    {
+      "index": 300,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 301,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 302,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 303,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 362
+    },
+    {
+      "index": 304,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 361
+    },
+    {
+      "index": 305,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 306,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 307,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 308,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 368
+    },
+    {
+      "index": 309,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 367
+    },
+    {
+      "index": 310,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 311,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 312,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 313,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 374
+    },
+    {
+      "index": 314,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 373
+    },
+    {
+      "index": 315,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 316,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 317,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 318,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 380
+    },
+    {
+      "index": 319,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 379
+    },
+    {
+      "index": 320,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 321,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 322,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 323,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 386
+    },
+    {
+      "index": 324,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 385
+    },
+    {
+      "index": 325,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 326,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 327,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 328,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 392
+    },
+    {
+      "index": 329,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 391
+    },
+    {
+      "index": 330,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 331,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 332,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 333,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 398
+    },
+    {
+      "index": 334,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 397
+    },
+    {
+      "index": 335,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 336,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 337,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 338,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 404
+    },
+    {
+      "index": 339,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 403
+    },
+    {
+      "index": 340,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 341,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 342,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 343,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 410
+    },
+    {
+      "index": 344,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 409
+    },
+    {
+      "index": 345,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 346,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 347,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 348,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 416
+    },
+    {
+      "index": 349,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 415
+    },
+    {
+      "index": 350,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 351,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 352,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 353,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 422
+    },
+    {
+      "index": 354,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 421
+    },
+    {
+      "index": 355,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 356,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 357,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 358,
+      "method": "Base-hybrid",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 428
+    },
+    {
+      "index": 359,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 427
+    },
+    {
+      "index": 360,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 361,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 362,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 363,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 434
+    },
+    {
+      "index": 364,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 433
+    },
+    {
+      "index": 365,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 366,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 367,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 368,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 440
+    },
+    {
+      "index": 369,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 439
+    },
+    {
+      "index": 370,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 371,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 372,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 373,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 446
+    },
+    {
+      "index": 374,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 445
+    },
+    {
+      "index": 375,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 376,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 377,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 378,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 452
+    },
+    {
+      "index": 379,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 451
+    },
+    {
+      "index": 380,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 381,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 382,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 383,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 458
+    },
+    {
+      "index": 384,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 457
+    },
+    {
+      "index": 385,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 386,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 387,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 388,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 464
+    },
+    {
+      "index": 389,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 463
+    },
+    {
+      "index": 390,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 391,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 392,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 393,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 470
+    },
+    {
+      "index": 394,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 469
+    },
+    {
+      "index": 395,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 396,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 397,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 398,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 476
+    },
+    {
+      "index": 399,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 475
+    },
+    {
+      "index": 400,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 401,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 402,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 403,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 482
+    },
+    {
+      "index": 404,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 481
+    },
+    {
+      "index": 405,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 406,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 407,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 408,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 488
+    },
+    {
+      "index": 409,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 487
+    },
+    {
+      "index": 410,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 411,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 412,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 413,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 494
+    },
+    {
+      "index": 414,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 493
+    },
+    {
+      "index": 415,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 416,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 417,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 418,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 500
+    },
+    {
+      "index": 419,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 499
+    },
+    {
+      "index": 420,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 421,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 422,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "new_execution"
+    },
+    {
+      "index": 423,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 506
+    },
+    {
+      "index": 424,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "execution": "reuse",
+      "reuse_original_index": 505
+    },
+    {
+      "index": 425,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 426,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 427,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "new_execution"
+    },
+    {
+      "index": 428,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 512
+    },
+    {
+      "index": 429,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 779221758,
+      "execution": "reuse",
+      "reuse_original_index": 511
+    },
+    {
+      "index": 430,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 431,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 432,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "new_execution"
+    },
+    {
+      "index": 433,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 518
+    },
+    {
+      "index": 434,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1778732729,
+      "execution": "reuse",
+      "reuse_original_index": 517
+    },
+    {
+      "index": 435,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 436,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 437,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "new_execution"
+    },
+    {
+      "index": 438,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 524
+    },
+    {
+      "index": 439,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 885552201,
+      "execution": "reuse",
+      "reuse_original_index": 523
+    },
+    {
+      "index": 440,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 441,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 442,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "new_execution"
+    },
+    {
+      "index": 443,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 530
+    },
+    {
+      "index": 444,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1749537619,
+      "execution": "reuse",
+      "reuse_original_index": 529
+    },
+    {
+      "index": 445,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 446,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 447,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "new_execution"
+    },
+    {
+      "index": 448,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 536
+    },
+    {
+      "index": 449,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 571662030,
+      "execution": "reuse",
+      "reuse_original_index": 535
+    },
+    {
+      "index": 450,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 451,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 452,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "new_execution"
+    },
+    {
+      "index": 453,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 542
+    },
+    {
+      "index": 454,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 984132646,
+      "execution": "reuse",
+      "reuse_original_index": 541
+    },
+    {
+      "index": 455,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 456,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 457,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "new_execution"
+    },
+    {
+      "index": 458,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 548
+    },
+    {
+      "index": 459,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1150725878,
+      "execution": "reuse",
+      "reuse_original_index": 547
+    },
+    {
+      "index": 460,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 461,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 462,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "new_execution"
+    },
+    {
+      "index": 463,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 554
+    },
+    {
+      "index": 464,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 619323988,
+      "execution": "reuse",
+      "reuse_original_index": 553
+    },
+    {
+      "index": 465,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 466,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 467,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "new_execution"
+    },
+    {
+      "index": 468,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 560
+    },
+    {
+      "index": 469,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 142362949,
+      "execution": "reuse",
+      "reuse_original_index": 559
+    },
+    {
+      "index": 470,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 471,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 472,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "new_execution"
+    },
+    {
+      "index": 473,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 566
+    },
+    {
+      "index": 474,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 771434129,
+      "execution": "reuse",
+      "reuse_original_index": 565
+    },
+    {
+      "index": 475,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 476,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 477,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "new_execution"
+    },
+    {
+      "index": 478,
+      "method": "Base-hybrid",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 572
+    },
+    {
+      "index": 479,
+      "method": "Pre-recovery-JLC-R",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1757298122,
+      "execution": "reuse",
+      "reuse_original_index": 571
+    }
+  ],
+  "source_sha256": {
+    "temp/current_research/jlcr2_demand_guard_20261025_221513/trigger_controls.py": "8dd3bb9a3053b7c12c466cbeb9e8800d167d7897108509b674cf76d3853f4664",
+    "temp/current_research/jlcr2_demand_guard_20261025_221513/guard_controls.py": "5671c12a5cc3b5a716024d0d4b82887d55e9bb4bb37f32e02957a6b80377247f",
+    "temp/current_research/jlcr2_demand_guard_20261025_221513/dependencies.py": "aebf5f318c7392c00bbc9a3f7f3586c179005116f4841e0da398d5b9711a5693",
+    "temp/current_research/jlcr2_demand_guard_20261025_221513/prefix_candidate.py": "3df999ade56e4d7d6549b7388153488a0261f558e20d82e9d7ff6c8caaf654a2",
+    "temp/current_research/jlcr2_demand_guard_20261025_221513/feedback_base.py": "c4ca8ce5096db5a5cbca12d961d18a504d79c6fd9760b2383cc32e97bffe4f2e",
+    "code/simulation/canopy_model.py": "25ba1acf5f7e8a61ee3bade7c519d201965ebcfe1bfbd2db79433b3afa6a822c",
+    "code/simulation/config.json": "e1c9bc6738ce19eb3f4f992ca1288f2f97b59c55e29bba4b7fa12257940e47b2",
+    "code/simulation/current_design.json": "7f09d3001138afc7f3564e4737d7b90ac3936c6de42731db8b6749207d52d5f6",
+    "code/simulation/current_io.py": "63b3a322970c7e97278c898fb92c5cee3fb6e5b9f604ff89c7cf16329402dc22",
+    "code/simulation/diagnostic.py": "c5cb4d946619529ca14a96bb2b2c650952d713920cf41c058bff4228acf6ea10",
+    "code/simulation/extension_model.py": "5fca9d02f46877698cb09b70494bb8b0a9408e74042589be234e8a84ef239cc2",
+    "code/simulation/fast_execution.py": "71671418da5b410adfa24a2402eb060f5a75b0f46ee4986b27345df7e3633d46",
+    "code/simulation/followup_model.py": "23a0df553c9b3e76608d6d24ecfb1f30b8937e3f25e624b6590af9b3fa28fa58",
+    "code/simulation/jlc_r.py": "24ba494197c7a037919f57bf6d82873e77270cb86d7532df278dec7314e82f91",
+    "code/simulation/joint_model.py": "40537a3902c8e7a9be7f064d2a99d13a375aed190d78d15adaf4620c6aa17026",
+    "code/simulation/matched_age_baseline.py": "434cd89195e2f7d3678ff16ddab0ae7822c99eaf8bba71ddef67d549ad7eece2",
+    "code/simulation/model.py": "f6cd3e75fa57976dc2d90f656d8b4ff6546c4a44b411e9b610bcf70510264b97",
+    "code/simulation/optimized_model.py": "751b3b33460760eb2568772e905d51563ce7ecc3edaf5b140075db3783e1a9ca",
+    "code/simulation/README.md": "1f3795099aa9c58fbd1b1cbfe81d2e427bf8ba9a8053e63010e4d1023d237c35",
+    "code/simulation/recent_baselines.py": "479ea23bdd0f379440934a7e43c84e58a617a7f337629c3c776cb765b7f5c805",
+    "code/simulation/review_model.py": "bb7eb282d85a5288abfea80b1b2bcba0f9531e95a1950c3fd00b095b9b580216",
+    "code/simulation/revision_model.py": "a59f59a164e41a233dcd018488601cac8ee8129dd47632c3f6619c281690e585",
+    "code/simulation/run_jlc_r.py": "c86bc3a3d2e80338d3b2f3c066ce90f69f5a2e70b0bc502b6d92dba4874c905a",
+    "code/simulation/service_model.py": "3486148d772d81ac109040f1ab519b0011a4deadf23e04da08b2241a0804c42f",
+    "code/simulation/simulator.py": "8fd1104eb19a7423ca11fd97224357aee2ef99f732158d97e9e84bd2be3f67ee",
+    "code/simulation/strengthening_model.py": "792bb7f51dab7ffe11dbfe2244c770b153e2495699a5c405ec4831cb35327d63",
+    "code/simulation/test_v63.py": "bd3a5a8c0091629e5c63245280f9b4f426d061f243ea59cbf0e11dc481a11aa8",
+    "code/simulation/v4_diagnostics.py": "b2b7e99d689bbb02dbcccfb10fe48b3b34346e3aad1092165a846c1431f9780b",
+    "code/simulation/V63_ATTRIBUTION_SPEC.md": "58955a469b3bc1df375e770eb2584a5a82a9d05b29074782c563c29452eb5104",
+    "code/simulation/V63_CANDIDATE_SPEC.md": "06d64ebad40e616cb66f17e083bf727da6ac74e128b447611c9cae02a229f8cb",
+    "code/simulation/V63_CONFIRM_SPEC.md": "2545d07fa858e63fb9cd861657b0b9423538b95d5f46d853c1f50feb9a36ed24",
+    "code/simulation/v63_model.py": "4f7c06f88ce833ad73c3557577d0c5cc8ceea0a0c99ad3b9a0450be689a199ec",
+    "code/simulation/v63_observer.py": "629d9eeaa9a07f01eb3b7268892e93c40d3173aa687911eff804026af89d8a32",
+    "code/simulation/v6_model.py": "d9646dc14a9ef778fda608ab41878358cc5594b2c48a4c27ec81a6369bf74283",
+    "code/simulation/validation_model.py": "52bb2e92f9711724e7669dc2f4d17be904eb023c40908cbd58d1b1e5037dfeea",
+    "temp/current_research/coverage_cadence_20261027_081600/cadence.py": "eadde4b8559ec9b418e7111380290187d887b64923aa3b3e9654c356ffc30668",
+    "temp/current_research/coverage_cadence_20261027_081600/bootstrap.py": "b8fac283faaed3c229c1898cd8a0c99b91f43181e4eaf833bf03f133e232f61b",
+    "temp/current_research/efr_common_executor_20261026_233900/src/development_inputs.py": "5e2b18dc32393ee4f5675d339d12e3d9c95855e1bb5451e9e2a62873fc4cbad6",
+    "temp/current_research/eadcm_common_executor_20261027_003004/src/eadcm_host.py": "b527c64cf2b5e3d00d4fb566c96dd2b09b64246b971c4f8bb572ea5badcfa692",
+    "temp/current_research/eadcm_common_executor_20261027_003004/src/eadcm_policy.py": "f922a47719ab2736d65decbff73f51ab9859ab2baf0cd415bcb014cdacd18fe7",
+    "temp/current_research/lantern_router_mac_20261027_013347/src/lantern_host.py": "48a3bb6bc5e873e5e61b32a1936595c138d8b348f9e923e31c72b236331834d8",
+    "temp/current_research/lantern_router_mac_20261027_013347/src/lantern_policy.py": "e2c6e5c148ce74221ca856604576ae24f01bc4f1874bd8dea5310295b2aef5d8",
+    "temp/current_research/lantern_router_mac_20261027_013347/src/rpl_upward.py": "50ba7341ab80880b0f1220c6798c05ccbfe6d6c4b2ecfbb7b673f274785b8cb1",
+    "temp/current_research/lantern_router_mac_20261027_013347/src/rpl_trickle.py": "e952fcbafb8cc26eacc068c2e319fbd5b51a4ca57558169e0d3ef635775c3d65",
+    "temp/current_research/lantern_router_mac_20261027_013347/src/causal_meter.py": "5b5c446c2527aa3fab78c0ac2ed6c52f6d98f0bb1c5167c3b4d17486dde442d1",
+    "temp/current_research/lantern_router_mac_20261027_013347/src/router_mac.py": "d748996276eabcc4788a8e602dbaa746185843dcdafc885b56293e7782e478a2"
+  },
+  "input_sha256": {
+    "code/simulation/config.json": "e1c9bc6738ce19eb3f4f992ca1288f2f97b59c55e29bba4b7fa12257940e47b2",
+    "code/simulation/current_design.json": "7f09d3001138afc7f3564e4737d7b90ac3936c6de42731db8b6749207d52d5f6",
+    "code/results/expansion_measured/weather/ghi_15min.csv": "aeeb6e6fb79f759cbe3be686ac7b258264512656f90eea0acb2e5ce467fd820e",
+    "code/results/strengthening_weather/T2/ghi_15min.csv": "b6928e4c84c5f3de49946f2ade4255a0994b2abd2e96db08e0d123d1a394143c",
+    "code/results/strengthening_weather/T3/ghi_15min.csv": "3b1a1176142fa665262ab1f36b56e3651f1d086785ee0a4d1f82f39bc2a837b4"
+  },
+  "execution_source_sha256": {
+    "rc2_runtime.py": "e0ba6e2a19dd890c5c39d692c48bea2cd2bb7e8e0035c87f89d8a8be381781e3",
+    "rc2_execute.py": "e6a35a73c6cb6a3ca745457ef673f6933bf3d636f9212e196daaa7961f1f2616",
+    "rc2_matrix.py": "376eb1b15b3fdc563fc962626f7ee38c931c3a7c84d802cd46d3a1df96e952cd",
+    "verify_lock.py": "05d28e6a97c46295264e02c231ae8d16c0c584107691f18000da89ab7e193d75",
+    "analyze.py": "bed6457675319d005aef133c533b2d8891f81d281a7b337d7bd441f3d84e2f7d"
+  },
+  "primary_endpoints": {
+    "network_task_coverage_pct": "Mean over source-rounds with latest delivered birth>=0 and t-birth+1<=4; fixed100sources and all1344round obligations for every controller, including unsensed slots.",
+    "source_P5_pct": "5th percentile (linear interpolation) of100 per-source task coverages, one value per network seed/cell."
+  },
+  "primary_family": {
+    "unit": "Independent network seed, n12; average the eight prespecified cells with equal weights within each seed",
+    "contrasts": "Complete JLC-R versus each of the four controls, two primary endpoints",
+    "hypotheses": 8,
+    "test": "two-sided paired t test df11, Holm8 at0.05; report signed absolute changes and nominal95% paired t intervals",
+    "success_interpretation": "Do not require all metrics/cells significant. State which corrected comparisons support a positive effect, their absolute size, and all tradeoffs.",
+    "sensitivity": "4096 exhaustive paired sign flips per contrast, separately corrected Holm8; sensitivity does not replace failed primary tests.",
+    "zero_variance": "Record undefined t inference, Holm input1, exact sign-flip sensitivity and deterministic observed difference separately; never assign p0 or claim estimated variance certainty."
+  },
+  "secondary_families": [
+    {
+      "purpose": "Cell-specific coverage/P5 heterogeneity",
+      "tests": 64,
+      "formula": "4controls*8cells*2endpoints",
+      "correction": "Holm64, paired within cell, n12; secondary results cannot rescue a failed primary aggregate claim"
+    },
+    {
+      "purpose": "Fairness and freshness",
+      "tests": 72,
+      "formula": "4controls*(8cells+equal-weight8cell aggregate)*2endpoints",
+      "endpoints": [
+        "Jain index of per-source coverages (all-zero vector explicitly reported as0 with degeneracy flag)",
+        "Mean AoI minutes with initial no-delivery age=t+1"
+      ],
+      "correction": "Holm72; AoI gain sign is baseline minus full JLC-R"
+    }
+  ],
+  "reporting": [
+    "All8cells and all5methods, complete per-seed records",
+    "Nominal95% intervals identified as non-simultaneous; adjusted decisions separately",
+    "No pseudoreplication using nodes, packets or time samples as independent networks",
+    "Historical480/agriculture864 evidence keeps true implementation identities"
+  ],
+  "failure_missing_rerun": {
+    "persist_before_validation": true,
+    "do_not_overwrite": true,
+    "same_seed_only_for_technical_rerun": true,
+    "retain_failure_and_attempt_ids": true,
+    "no_replacement_by_performance": true,
+    "missing_pairs": "Stop confirmatory inference until resolved; do not silently drop seeds or impute favorable values. If irrecoverable, report protocol deviation and exact missingness."
+  },
+  "resource_tolerances": {
+    "global_energy_balance_j": 1e-06,
+    "node_energy_balance_j": 1e-08,
+    "hold_j": 1e-08,
+    "slot": 0,
+    "timing": 0
+  },
+  "reuse_inventory_sha256": "d1bf764a6d06e689bedb2204ff985f4199aa9a5289cb82bf105fccfd6694b977",
+  "initialization_audit_sha256": "4c3e280c23375372f6b9564448aa11c705302ade18a5a163f1635baec0a46f28",
+  "previous_protocol": {
+    "path": "temp/current_research/jlcr_rgp_confirmation_retry_20261026_155216/protocol.json",
+    "sha256": "0f528759ec48481971e144f15836d294c3b6440a6a8980077d8897210bb98d0f",
+    "old_cases": 576,
+    "renamed": false
+  },
+  "development_separation": {
+    "weather": "2023 only; train/validation dates disjoint",
+    "network_seeds": [
+      140101,
+      140202,
+      140303
+    ],
+    "formal_effects_used_for_selection": false,
+    "parameter_search_closed": true,
+    "author_parameter_vs_adaptation": "See external method audits; no original system replication claimed"
+  },
+  "causal_information": "Historical observations only; identical warm-up and input processes. LANTERN uses prior-macro rates; EADCM uses common past-only forecast. No future energy credit.",
+  "randomness": "Frozen keyed_uniform(seed,t,sender,receiver,packet.sequence,attempt); route/action differences can change which keys are consumed. Same exogenous field, not forced identical outcomes on different paths. LANTERN exploration/Trickle/control use separate SeedSequence/key namespaces.",
+  "scope_exclusions": [
+    "No agriculture/864 rerun",
+    "No new independent network seeds",
+    "No physical coefficient changes",
+    "No candidate public push"
+  ],
+  "workflow": "verify_lock.py is read-only. rc2_matrix.py requires authorization.json matching this exact protocol hash and refuses existing run directories.",
+  "effective_configs_sha256": "debe82337a0c23f1fe7a7774c84104acd96fe12cd6a3a7ccdc5baa08ee8452e3"
+}

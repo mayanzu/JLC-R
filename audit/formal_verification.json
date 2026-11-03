@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "partial": false,
+  "new_cases": 288,
+  "reused_cases": 192,
+  "logical_cases": 480,
+  "network_n": 12,
+  "blocks": 96,
+  "four_metrics_from_arrays": true,
+  "node_ledgers": 48000,
+  "source_input_config_hashes": true,
+  "terminal_counts_match": true,
+  "control_frames_verified": 2481227,
+  "causal_DIO_meters_verified": 2298477,
+  "cadence_node_plans_verified": 3225600,
+  "intentional_sleep_rows_verified": 3940392,
+  "max_node_energy_error_j": 5.6313842478061815e-12,
+  "max_global_energy_error_j": 8.87438247332284e-08,
+  "max_independent_control_invoice_error_j": 6.131983809609665e-12,
+  "simulations_started": 0
+}

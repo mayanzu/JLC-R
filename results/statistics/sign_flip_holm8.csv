@@ -1,0 +1,9 @@
+control,endpoint,n,patterns,p,adjusted_p,family,replaces_primary_decision
+EADCM-CE,coverage_pct,12,4096,0.00048828125,0.00390625,Holm8_sign_flip_sensitivity,False
+EADCM-CE,source_coverage_p5_pct,12,4096,0.00048828125,0.00390625,Holm8_sign_flip_sensitivity,False
+LANTERN-CE,coverage_pct,12,4096,0.00048828125,0.00390625,Holm8_sign_flip_sensitivity,False
+LANTERN-CE,source_coverage_p5_pct,12,4096,0.00146484375,0.00390625,Holm8_sign_flip_sensitivity,False
+Base-hybrid,coverage_pct,12,4096,0.00048828125,0.00390625,Holm8_sign_flip_sensitivity,False
+Base-hybrid,source_coverage_p5_pct,12,4096,0.00048828125,0.00390625,Holm8_sign_flip_sensitivity,False
+Pre-recovery-JLC-R,coverage_pct,12,4096,0.00048828125,0.00390625,Holm8_sign_flip_sensitivity,False
+Pre-recovery-JLC-R,source_coverage_p5_pct,12,4096,0.00048828125,0.00390625,Holm8_sign_flip_sensitivity,False

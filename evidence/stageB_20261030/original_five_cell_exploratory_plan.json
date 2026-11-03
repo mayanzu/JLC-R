@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-30T00:40:59.887486+00:00",
+  "status": "post hoc exploratory specification; written after aggregate floor/hold results were inspected",
+  "parent_protocol_sha256": "87aa363f9dab72534fb650c03d8cc4985bf8040f61f97c46f7f14cac5fba9da8",
+  "family": "4 controls x 8 condition/supply cells x 2 endpoints = 64 paired t tests",
+  "adjustment": "Holm across all 64 tests; nominal individual paired t intervals",
+  "independent_unit": "24 paired network seeds per cell",
+  "purpose": "show and qualify condition-specific contrasts including adverse outcomes",
+  "classification": "exploratory; does not replace the prespecified Holm-2 or additional equal-cell Holm-8 families"
+}

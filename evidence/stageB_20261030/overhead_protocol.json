@@ -1,0 +1,3096 @@
+{
+  "created_utc": "2026-10-29T16:40:23.240167+00:00",
+  "parent_protocol_sha256": "4ce267661157a7d374f0783c9219b2a635c7ad06b646fb2ce62ff9105caf9bcf",
+  "factor": 1.32,
+  "factor_derivation": "5 data MAC frames of 115 bytes plus 5 ACK MAC frames of 5 bytes, with 6 PHY bytes per frame, divided by 500 application bytes",
+  "evidence": "the no-loss ns-3 single-sender PHY traces count five 115-byte data MAC frames and five 5-byte ACK MAC frames; the 6-byte preamble/SFD/PHR is additional",
+  "physical_basis_url": "https://www.ti.com/lit/ug/swru191f/swru191f.pdf",
+  "mapping": "multiply common first-order electronic and propagation energy coefficients by 1.32 and divide effective bitrate by 1.32; keep sensing bits, battery, harvest, Guard and existing per-hop probability unchanged",
+  "important_limitations": [
+    "post-microtest exploratory stress, not calibrated full protocol",
+    "uniform coefficient scaling also affects control exchanges; it does not allocate reverse ACK energy exactly by endpoint",
+    "the 1.32 factor is a loss-free frame-byte overhead, not a model of backoff, hidden-terminal loss, retransmissions, synchronization or application reassembly",
+    "first-order radio energy coefficients are not CC2420 state-energy calibration",
+    "effective bitrate is an accounting surrogate in the abstract model, not a claim that the physical PHY runs at a lower bitrate"
+  ],
+  "scope": "two methods, all eight original weather/supply cells, same 24 paired candidate seeds; compare against unmodified main matrix",
+  "methods": [
+    "JLC-R",
+    "EADCM-CE"
+  ],
+  "cases": [
+    {
+      "index": 1,
+      "seed": 1748534244,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 2,
+      "seed": 1748534244,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 3,
+      "seed": 1748534244,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 4,
+      "seed": 1748534244,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 5,
+      "seed": 1748534244,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 6,
+      "seed": 1748534244,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 7,
+      "seed": 1748534244,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 8,
+      "seed": 1748534244,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 9,
+      "seed": 1748534244,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 10,
+      "seed": 1748534244,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 11,
+      "seed": 1748534244,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 12,
+      "seed": 1748534244,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 13,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 14,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 15,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 16,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 17,
+      "seed": 835849679,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 18,
+      "seed": 835849679,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 19,
+      "seed": 835849679,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 20,
+      "seed": 835849679,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 21,
+      "seed": 835849679,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 22,
+      "seed": 835849679,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 23,
+      "seed": 835849679,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 24,
+      "seed": 835849679,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 25,
+      "seed": 835849679,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 26,
+      "seed": 835849679,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 27,
+      "seed": 835849679,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 28,
+      "seed": 835849679,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 29,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 30,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 31,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 32,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 33,
+      "seed": 1000582330,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 34,
+      "seed": 1000582330,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 35,
+      "seed": 1000582330,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 36,
+      "seed": 1000582330,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 37,
+      "seed": 1000582330,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 38,
+      "seed": 1000582330,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 39,
+      "seed": 1000582330,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 40,
+      "seed": 1000582330,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 41,
+      "seed": 1000582330,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 42,
+      "seed": 1000582330,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 43,
+      "seed": 1000582330,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 44,
+      "seed": 1000582330,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 45,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 46,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 47,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 48,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 49,
+      "seed": 920450264,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 50,
+      "seed": 920450264,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 51,
+      "seed": 920450264,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 52,
+      "seed": 920450264,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 53,
+      "seed": 920450264,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 54,
+      "seed": 920450264,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 55,
+      "seed": 920450264,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 56,
+      "seed": 920450264,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 57,
+      "seed": 920450264,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 58,
+      "seed": 920450264,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 59,
+      "seed": 920450264,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 60,
+      "seed": 920450264,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 61,
+      "seed": 920450264,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 62,
+      "seed": 920450264,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 63,
+      "seed": 920450264,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 64,
+      "seed": 920450264,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 65,
+      "seed": 231902713,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 66,
+      "seed": 231902713,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 67,
+      "seed": 231902713,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 68,
+      "seed": 231902713,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 69,
+      "seed": 231902713,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 70,
+      "seed": 231902713,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 71,
+      "seed": 231902713,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 72,
+      "seed": 231902713,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 73,
+      "seed": 231902713,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 74,
+      "seed": 231902713,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 75,
+      "seed": 231902713,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 76,
+      "seed": 231902713,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 77,
+      "seed": 231902713,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 78,
+      "seed": 231902713,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 79,
+      "seed": 231902713,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 80,
+      "seed": 231902713,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 81,
+      "seed": 1483785876,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 82,
+      "seed": 1483785876,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 83,
+      "seed": 1483785876,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 84,
+      "seed": 1483785876,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 85,
+      "seed": 1483785876,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 86,
+      "seed": 1483785876,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 87,
+      "seed": 1483785876,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 88,
+      "seed": 1483785876,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 89,
+      "seed": 1483785876,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 90,
+      "seed": 1483785876,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 91,
+      "seed": 1483785876,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 92,
+      "seed": 1483785876,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 93,
+      "seed": 1483785876,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 94,
+      "seed": 1483785876,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 95,
+      "seed": 1483785876,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 96,
+      "seed": 1483785876,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 97,
+      "seed": 1941847355,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 98,
+      "seed": 1941847355,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 99,
+      "seed": 1941847355,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 100,
+      "seed": 1941847355,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 101,
+      "seed": 1941847355,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 102,
+      "seed": 1941847355,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 103,
+      "seed": 1941847355,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 104,
+      "seed": 1941847355,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 105,
+      "seed": 1941847355,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 106,
+      "seed": 1941847355,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 107,
+      "seed": 1941847355,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 108,
+      "seed": 1941847355,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 109,
+      "seed": 1941847355,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 110,
+      "seed": 1941847355,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 111,
+      "seed": 1941847355,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 112,
+      "seed": 1941847355,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 113,
+      "seed": 913708622,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 114,
+      "seed": 913708622,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 115,
+      "seed": 913708622,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 116,
+      "seed": 913708622,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 117,
+      "seed": 913708622,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 118,
+      "seed": 913708622,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 119,
+      "seed": 913708622,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 120,
+      "seed": 913708622,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 121,
+      "seed": 913708622,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 122,
+      "seed": 913708622,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 123,
+      "seed": 913708622,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 124,
+      "seed": 913708622,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 125,
+      "seed": 913708622,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 126,
+      "seed": 913708622,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 127,
+      "seed": 913708622,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 128,
+      "seed": 913708622,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 129,
+      "seed": 386998876,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 130,
+      "seed": 386998876,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 131,
+      "seed": 386998876,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 132,
+      "seed": 386998876,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 133,
+      "seed": 386998876,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 134,
+      "seed": 386998876,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 135,
+      "seed": 386998876,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 136,
+      "seed": 386998876,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 137,
+      "seed": 386998876,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 138,
+      "seed": 386998876,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 139,
+      "seed": 386998876,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 140,
+      "seed": 386998876,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 141,
+      "seed": 386998876,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 142,
+      "seed": 386998876,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 143,
+      "seed": 386998876,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 144,
+      "seed": 386998876,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 145,
+      "seed": 898918533,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 146,
+      "seed": 898918533,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 147,
+      "seed": 898918533,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 148,
+      "seed": 898918533,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 149,
+      "seed": 898918533,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 150,
+      "seed": 898918533,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 151,
+      "seed": 898918533,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 152,
+      "seed": 898918533,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 153,
+      "seed": 898918533,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 154,
+      "seed": 898918533,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 155,
+      "seed": 898918533,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 156,
+      "seed": 898918533,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 157,
+      "seed": 898918533,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 158,
+      "seed": 898918533,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 159,
+      "seed": 898918533,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 160,
+      "seed": 898918533,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 161,
+      "seed": 1680186066,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 162,
+      "seed": 1680186066,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 163,
+      "seed": 1680186066,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 164,
+      "seed": 1680186066,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 165,
+      "seed": 1680186066,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 166,
+      "seed": 1680186066,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 167,
+      "seed": 1680186066,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 168,
+      "seed": 1680186066,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 169,
+      "seed": 1680186066,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 170,
+      "seed": 1680186066,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 171,
+      "seed": 1680186066,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 172,
+      "seed": 1680186066,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 173,
+      "seed": 1680186066,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 174,
+      "seed": 1680186066,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 175,
+      "seed": 1680186066,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 176,
+      "seed": 1680186066,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 177,
+      "seed": 1451653314,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 178,
+      "seed": 1451653314,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 179,
+      "seed": 1451653314,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 180,
+      "seed": 1451653314,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 181,
+      "seed": 1451653314,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 182,
+      "seed": 1451653314,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 183,
+      "seed": 1451653314,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 184,
+      "seed": 1451653314,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 185,
+      "seed": 1451653314,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 186,
+      "seed": 1451653314,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 187,
+      "seed": 1451653314,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 188,
+      "seed": 1451653314,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 189,
+      "seed": 1451653314,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 190,
+      "seed": 1451653314,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 191,
+      "seed": 1451653314,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 192,
+      "seed": 1451653314,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 193,
+      "seed": 812369146,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 194,
+      "seed": 812369146,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 195,
+      "seed": 812369146,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 196,
+      "seed": 812369146,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 197,
+      "seed": 812369146,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 198,
+      "seed": 812369146,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 199,
+      "seed": 812369146,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 200,
+      "seed": 812369146,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 201,
+      "seed": 812369146,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 202,
+      "seed": 812369146,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 203,
+      "seed": 812369146,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 204,
+      "seed": 812369146,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 205,
+      "seed": 812369146,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 206,
+      "seed": 812369146,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 207,
+      "seed": 812369146,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 208,
+      "seed": 812369146,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 209,
+      "seed": 1391824157,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 210,
+      "seed": 1391824157,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 211,
+      "seed": 1391824157,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 212,
+      "seed": 1391824157,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 213,
+      "seed": 1391824157,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 214,
+      "seed": 1391824157,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 215,
+      "seed": 1391824157,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 216,
+      "seed": 1391824157,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 217,
+      "seed": 1391824157,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 218,
+      "seed": 1391824157,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 219,
+      "seed": 1391824157,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 220,
+      "seed": 1391824157,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 221,
+      "seed": 1391824157,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 222,
+      "seed": 1391824157,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 223,
+      "seed": 1391824157,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 224,
+      "seed": 1391824157,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 225,
+      "seed": 1997766978,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 226,
+      "seed": 1997766978,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 227,
+      "seed": 1997766978,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 228,
+      "seed": 1997766978,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 229,
+      "seed": 1997766978,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 230,
+      "seed": 1997766978,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 231,
+      "seed": 1997766978,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 232,
+      "seed": 1997766978,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 233,
+      "seed": 1997766978,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 234,
+      "seed": 1997766978,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 235,
+      "seed": 1997766978,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 236,
+      "seed": 1997766978,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 237,
+      "seed": 1997766978,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 238,
+      "seed": 1997766978,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 239,
+      "seed": 1997766978,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 240,
+      "seed": 1997766978,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 241,
+      "seed": 14865404,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 242,
+      "seed": 14865404,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 243,
+      "seed": 14865404,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 244,
+      "seed": 14865404,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 245,
+      "seed": 14865404,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 246,
+      "seed": 14865404,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 247,
+      "seed": 14865404,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 248,
+      "seed": 14865404,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 249,
+      "seed": 14865404,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 250,
+      "seed": 14865404,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 251,
+      "seed": 14865404,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 252,
+      "seed": 14865404,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 253,
+      "seed": 14865404,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 254,
+      "seed": 14865404,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 255,
+      "seed": 14865404,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 256,
+      "seed": 14865404,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 257,
+      "seed": 1898751957,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 258,
+      "seed": 1898751957,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 259,
+      "seed": 1898751957,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 260,
+      "seed": 1898751957,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 261,
+      "seed": 1898751957,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 262,
+      "seed": 1898751957,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 263,
+      "seed": 1898751957,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 264,
+      "seed": 1898751957,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 265,
+      "seed": 1898751957,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 266,
+      "seed": 1898751957,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 267,
+      "seed": 1898751957,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 268,
+      "seed": 1898751957,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 269,
+      "seed": 1898751957,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 270,
+      "seed": 1898751957,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 271,
+      "seed": 1898751957,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 272,
+      "seed": 1898751957,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 273,
+      "seed": 745211033,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 274,
+      "seed": 745211033,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 275,
+      "seed": 745211033,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 276,
+      "seed": 745211033,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 277,
+      "seed": 745211033,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 278,
+      "seed": 745211033,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 279,
+      "seed": 745211033,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 280,
+      "seed": 745211033,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 281,
+      "seed": 745211033,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 282,
+      "seed": 745211033,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 283,
+      "seed": 745211033,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 284,
+      "seed": 745211033,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 285,
+      "seed": 745211033,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 286,
+      "seed": 745211033,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 287,
+      "seed": 745211033,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 288,
+      "seed": 745211033,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 289,
+      "seed": 925663036,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 290,
+      "seed": 925663036,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 291,
+      "seed": 925663036,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 292,
+      "seed": 925663036,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 293,
+      "seed": 925663036,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 294,
+      "seed": 925663036,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 295,
+      "seed": 925663036,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 296,
+      "seed": 925663036,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 297,
+      "seed": 925663036,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 298,
+      "seed": 925663036,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 299,
+      "seed": 925663036,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 300,
+      "seed": 925663036,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 301,
+      "seed": 925663036,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 302,
+      "seed": 925663036,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 303,
+      "seed": 925663036,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 304,
+      "seed": 925663036,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 305,
+      "seed": 1235410029,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 306,
+      "seed": 1235410029,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 307,
+      "seed": 1235410029,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 308,
+      "seed": 1235410029,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 309,
+      "seed": 1235410029,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 310,
+      "seed": 1235410029,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 311,
+      "seed": 1235410029,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 312,
+      "seed": 1235410029,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 313,
+      "seed": 1235410029,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 314,
+      "seed": 1235410029,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 315,
+      "seed": 1235410029,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 316,
+      "seed": 1235410029,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 317,
+      "seed": 1235410029,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 318,
+      "seed": 1235410029,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 319,
+      "seed": 1235410029,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 320,
+      "seed": 1235410029,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 321,
+      "seed": 1550035512,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 322,
+      "seed": 1550035512,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 323,
+      "seed": 1550035512,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 324,
+      "seed": 1550035512,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 325,
+      "seed": 1550035512,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 326,
+      "seed": 1550035512,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 327,
+      "seed": 1550035512,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 328,
+      "seed": 1550035512,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 329,
+      "seed": 1550035512,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 330,
+      "seed": 1550035512,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 331,
+      "seed": 1550035512,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 332,
+      "seed": 1550035512,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 333,
+      "seed": 1550035512,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 334,
+      "seed": 1550035512,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 335,
+      "seed": 1550035512,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 336,
+      "seed": 1550035512,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 337,
+      "seed": 1833848891,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 338,
+      "seed": 1833848891,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 339,
+      "seed": 1833848891,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 340,
+      "seed": 1833848891,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 341,
+      "seed": 1833848891,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 342,
+      "seed": 1833848891,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 343,
+      "seed": 1833848891,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 344,
+      "seed": 1833848891,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 345,
+      "seed": 1833848891,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 346,
+      "seed": 1833848891,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 347,
+      "seed": 1833848891,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 348,
+      "seed": 1833848891,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 349,
+      "seed": 1833848891,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 350,
+      "seed": 1833848891,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 351,
+      "seed": 1833848891,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 352,
+      "seed": 1833848891,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 353,
+      "seed": 1244000941,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 354,
+      "seed": 1244000941,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 355,
+      "seed": 1244000941,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 356,
+      "seed": 1244000941,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 357,
+      "seed": 1244000941,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 358,
+      "seed": 1244000941,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 359,
+      "seed": 1244000941,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 360,
+      "seed": 1244000941,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 361,
+      "seed": 1244000941,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 362,
+      "seed": 1244000941,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 363,
+      "seed": 1244000941,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 364,
+      "seed": 1244000941,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 365,
+      "seed": 1244000941,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 366,
+      "seed": 1244000941,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 367,
+      "seed": 1244000941,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 368,
+      "seed": 1244000941,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 369,
+      "seed": 821278684,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 370,
+      "seed": 821278684,
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 371,
+      "seed": 821278684,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 372,
+      "seed": 821278684,
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 373,
+      "seed": 821278684,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 374,
+      "seed": 821278684,
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 375,
+      "seed": 821278684,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 376,
+      "seed": 821278684,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 377,
+      "seed": 821278684,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 378,
+      "seed": 821278684,
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 379,
+      "seed": 821278684,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 380,
+      "seed": 821278684,
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 381,
+      "seed": 821278684,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 382,
+      "seed": 821278684,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "EADCM-CE",
+      "days": 14
+    },
+    {
+      "index": 383,
+      "seed": 821278684,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "JLC-R",
+      "days": 14
+    },
+    {
+      "index": 384,
+      "seed": 821278684,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "EADCM-CE",
+      "days": 14
+    }
+  ],
+  "analysis": "descriptive paired contrasts and nominal intervals; no primary significance claim or automatic algorithm replacement"
+}

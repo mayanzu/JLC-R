@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "classification": "post hoc robustness sensitivity; primary paired-t family unchanged",
+  "assumption": "symmetry of seed-level differences under the null",
+  "input_sha256": "36c1d19851629bbeb5cda1825b4bf6503097f84be7198759c1de421562d49369",
+  "output_sha256": "ef8c7f1a3afe88520a18caa16130c5ec09dc46440512063d889218bff04bbf20"
+}

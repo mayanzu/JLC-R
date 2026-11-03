@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 830" width="440pt" height="326.071429pt" font-family="Cambria, Times New Roman, Times, serif" font-size="32" fill="#111111">
+<defs>
+<marker id="arB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111" /></marker>
+<marker id="arR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7a0019" /></marker>
+<marker id="arG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f6b2f" /></marker>
+<marker id="arY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#888888" /></marker>
+
+</defs>
+<rect x="0" y="0" width="1120" height="830" fill="#ffffff" />
+
+
+<text x="50" y="40" font-size="15" letter-spacing="2" fill="#555555" font-weight="700">JLC-R  ·  TWO-TIMESCALE SERVICE BUDGETING AND RELAY-PROTECTED EXECUTION</text>
+<line x1="30" y1="52" x2="1090" y2="52" stroke="#111111" stroke-width="1" />
+
+
+<rect x="30" y="70" width="1060" height="202" rx="8" ry="8" fill="#ffffff" stroke="#111111" stroke-width="1.4" />
+<text x="62" y="102" font-size="22" font-weight="700" letter-spacing="3" fill="#222222">PLANNING  ::  credit-period clock  (every T<tspan baseline-shift="sub" font-size="14">L</tspan> = 4 rounds)</text>
+<text x="62" y="124" font-size="13.5" font-style="italic" fill="#555555">once per credit period; horizon H = 96; roles and reference loads fixed</text>
+<rect x="70" y="142" width="220" height="80" rx="5" ry="5" fill="#ffffff" stroke="#111111" stroke-width="1.2" />
+<rect x="70" y="142" width="220" height="28" rx="5" ry="5" fill="#111111" />
+<rect x="70" y="162" width="220" height="8" fill="#111111" />
+<text x="180" y="164" font-size="18.5" font-weight="700" fill="#ffffff" text-anchor="middle">Causal forecast</text>
+<text x="180" y="192" font-size="13" font-style="italic" text-anchor="middle" fill="#111111">Past observations · Residuals</text>
+<text x="180" y="209" font-size="13" text-anchor="middle" fill="#555555">EWMA state; Eqs. (9)–(10); M = 4</text>
+<rect x="325" y="142" width="220" height="80" rx="5" ry="5" fill="#ffffff" stroke="#111111" stroke-width="1.2" />
+<rect x="325" y="142" width="220" height="28" rx="5" ry="5" fill="#111111" />
+<rect x="325" y="162" width="220" height="8" fill="#111111" />
+<text x="435" y="164" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">Joint prefix plan</text>
+<text x="435" y="192" font-size="13" font-style="italic" text-anchor="middle" fill="#111111">Listening · Credit floor · Demand</text>
+<text x="435" y="209" font-size="13" text-anchor="middle" fill="#555555">Integer guards; Eqs. (11)–(15); η = 1.25</text>
+<rect x="580" y="142" width="220" height="80" rx="5" ry="5" fill="#ffffff" stroke="#7a0019" stroke-width="1.4" />
+<rect x="580" y="142" width="220" height="28" rx="5" ry="5" fill="#7a0019" />
+<rect x="580" y="162" width="220" height="8" fill="#7a0019" />
+<text x="690" y="164" font-size="18.5" font-weight="700" fill="#ffffff" text-anchor="middle">Mode gate</text>
+<text x="690" y="192" font-size="13" font-style="italic" text-anchor="middle" fill="#7a0019">Local demand or planned CH K &lt; 2</text>
+<text x="690" y="209" font-size="13" text-anchor="middle" fill="#7a0019">Two-slot demand; hysteresis; Alg. 1</text>
+<rect x="835" y="142" width="220" height="80" rx="5" ry="5" fill="#ffffff" stroke="#111111" stroke-width="1.2" />
+<rect x="835" y="142" width="220" height="28" rx="5" ry="5" fill="#111111" />
+<rect x="835" y="162" width="220" height="8" fill="#111111" />
+<text x="945" y="164" font-size="14.5" font-weight="700" fill="#ffffff" text-anchor="middle">Issue credits and plans</text>
+<text x="945" y="192" font-size="13" font-style="italic" text-anchor="middle" fill="#111111">Fixed rotation · Round release</text>
+<text x="945" y="209" font-size="13" text-anchor="middle" fill="#555555">Alg. 1; release x / T_L</text>
+<line x1="294" y1="182" x2="318" y2="182" stroke="#111111" stroke-width="2" marker-end="url(#arB)" />
+<line x1="549" y1="182" x2="573" y2="182" stroke="#111111" stroke-width="2" marker-end="url(#arB)" />
+<line x1="804" y1="182" x2="828" y2="182" stroke="#111111" stroke-width="2" marker-end="url(#arB)" />
+<text x="70" y="252" font-size="15.5" font-style="italic" fill="#7a0019">If the base prefix is infeasible or thin: gate to the PADC reactive branch. Execution cannot borrow future harvest.</text>
+
+
+<rect x="30" y="292" width="1060" height="426" rx="8" ry="8" fill="#ffffff" stroke="#111111" stroke-width="1.4" />
+<text x="62" y="326" font-size="22" font-weight="700" letter-spacing="3" fill="#222222">EXECUTION  ::  round clock  (every 900 s round)</text>
+<text x="1070" y="325" font-size="16" font-style="italic" fill="#555555" text-anchor="end">Direct sink: no intersensor grant</text>
+<rect x="65" y="362" width="175" height="80" rx="5" ry="5" fill="#ffffff" stroke="#111111" stroke-width="1.2" />
+<rect x="65" y="362" width="175" height="28" rx="5" ry="5" fill="#111111" />
+<rect x="65" y="382" width="175" height="8" fill="#111111" />
+<text x="152.5" y="384" font-size="17.5" font-weight="700" fill="#ffffff" text-anchor="middle">Debit base tasks</text>
+<text x="152.5" y="412" font-size="13" font-style="italic" text-anchor="middle" fill="#111111">Pay sense · sync · slots</text>
+<text x="152.5" y="429" font-size="13" text-anchor="middle" fill="#555555">S200 windows; Alg. 2: base</text>
+<rect x="255" y="362" width="175" height="80" rx="5" ry="5" fill="#ffffff" stroke="#111111" stroke-width="1.2" />
+<rect x="255" y="362" width="175" height="28" rx="5" ry="5" fill="#111111" />
+<rect x="255" y="382" width="175" height="8" fill="#111111" />
+<text x="342.5" y="384" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Select and request</text>
+<text x="342.5" y="412" font-size="13" font-style="italic" text-anchor="middle" fill="#111111">Committed first · local age</text>
+<text x="342.5" y="429" font-size="13" text-anchor="middle" fill="#555555">Queue: §3.4; next hop: Eq. (18)</text>
+<rect x="445" y="362" width="175" height="80" rx="5" ry="5" fill="#ffffff" stroke="#7a0019" stroke-width="1.4" />
+<rect x="445" y="362" width="175" height="28" rx="5" ry="5" fill="#7a0019" />
+<rect x="445" y="382" width="175" height="8" fill="#7a0019" />
+<text x="532.5" y="384" font-size="16.5" font-weight="700" fill="#ffffff" text-anchor="middle">Protect CH transit</text>
+<text x="532.5" y="412" font-size="13" font-style="italic" text-anchor="middle" fill="#7a0019">Member-to-CH before response</text>
+<text x="532.5" y="429" font-size="13" text-anchor="middle" fill="#7a0019">Transit margin; §3.3; Alg. 2</text>
+<rect x="875" y="362" width="185" height="80" rx="5" ry="5" fill="#ffffff" stroke="#111111" stroke-width="1.2" />
+<rect x="875" y="362" width="185" height="28" rx="5" ry="5" fill="#111111" />
+<rect x="875" y="382" width="185" height="8" fill="#111111" />
+<text x="967.5" y="384" font-size="15.5" font-weight="700" fill="#ffffff" text-anchor="middle">Transmit / receive</text>
+<text x="967.5" y="412" font-size="13.5" font-style="italic" text-anchor="middle" fill="#111111">Reserve the next hop</text>
+<text x="967.5" y="429" font-size="13" text-anchor="middle" fill="#555555">Alg. 2: data + hold</text>
+<line x1="242" y1="402" x2="251" y2="402" stroke="#111111" stroke-width="2" marker-end="url(#arB)" />
+<line x1="432" y1="402" x2="441" y2="402" stroke="#111111" stroke-width="2" marker-end="url(#arB)" />
+
+<polygon points="710,348 798,402 710,456 622,402" fill="#ffffff" stroke="#7a0019" stroke-width="2.2" />
+<text x="710" y="394" font-size="20" font-weight="700" text-anchor="middle" fill="#111111">Receiver</text>
+<text x="710" y="422" font-size="20" font-weight="700" text-anchor="middle" fill="#7a0019">grant?</text>
+<text x="710" y="439" font-size="13" text-anchor="middle" fill="#7a0019">Eq. (17)</text>
+<line x1="620" y1="402" x2="627" y2="402" stroke="#111111" stroke-width="2" marker-end="url(#arB)" />
+<line x1="798" y1="402" x2="868" y2="402" stroke="#111111" stroke-width="2" marker-end="url(#arB)" />
+<text x="833" y="386" font-size="18" font-weight="700" text-anchor="middle" fill="#7a0019">Yes</text>
+
+<line x1="710" y1="461" x2="710" y2="504" stroke="#7a0019" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arR)" />
+<text x="729" y="492" font-size="18" font-weight="700" fill="#7a0019">No</text>
+<path d="M 342,442 L 342,543 L 540,543" stroke="#7a0019" stroke-width="2" fill="none" stroke-dasharray="6 4" marker-end="url(#arR)" />
+<text x="350" y="520" font-size="14" fill="#7a0019">Unavailable</text>
+<text x="65" y="562" font-size="13" font-style="italic" fill="#7a0019">Rejected request stays paid;</text>
+<text x="65" y="580" font-size="13" font-style="italic" fill="#7a0019">response charged only if reached</text>
+
+<rect x="550" y="510" width="320" height="66" rx="5" ry="5" fill="#ffffff" stroke="#888888" stroke-width="1.2" stroke-dasharray="5 4" />
+<rect x="550" y="510" width="320" height="26" rx="5" ry="5" fill="#888888" />
+<rect x="550" y="528" width="320" height="8" fill="#888888" />
+<text x="710" y="530" font-size="17.5" font-weight="700" fill="#ffffff" text-anchor="middle">Wait or record failure</text>
+<text x="710" y="566" font-size="13.5" font-style="italic" text-anchor="middle" fill="#555555">Keep queued · Account on expiry</text>
+<line x1="710" y1="576" x2="710" y2="604" stroke="#888888" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arY)" />
+<line x1="967" y1="442" x2="967" y2="604" stroke="#111111" stroke-width="2" marker-end="url(#arB)" />
+<text x="986" y="545" font-size="14" fill="#555555">Round end</text>
+
+<rect x="430" y="604" width="625" height="86" rx="5" ry="5" fill="#ffffff" stroke="#2f6b2f" stroke-width="1.2" />
+<rect x="430" y="604" width="625" height="30" rx="5" ry="5" fill="#2f6b2f" />
+<rect x="430" y="626" width="625" height="8" fill="#2f6b2f" />
+<text x="742.5" y="626" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">Account for costs, delivery, and unmet demand</text>
+<text x="742.5" y="662" font-size="14" font-style="italic" text-anchor="middle" fill="#2f6b2f">Harvest · Spill · Conservation; keep the demand denominator</text>
+<text x="742.5" y="677" font-size="13" text-anchor="middle" fill="#555555">Alg. 2: energy and demand ledgers</text>
+
+<path d="M 430,647 L 44,647 L 44,182 L 62,182" stroke="#7a0019" stroke-width="2" fill="none" stroke-dasharray="6 4" marker-end="url(#arR)" />
+<text x="54" y="742" font-size="18" fill="#7a0019">Replan from current battery and queues at the next credit period</text>
+
+
+<line x1="30" y1="762" x2="1090" y2="762" stroke="#bbbbbb" stroke-width="0.6" />
+<g font-size="14">
+<line x1="60" y1="782" x2="130" y2="782" stroke="#111111" stroke-width="1.8" marker-end="url(#arB)" />
+<text x="140" y="787">physical flow</text>
+<line x1="330" y1="782" x2="400" y2="782" stroke="#7a0019" stroke-width="1.8" stroke-dasharray="6 3" marker-end="url(#arR)" />
+<text x="410" y="787" fill="#7a0019">control and replanning flow</text>
+</g>
+<text x="54" y="814" font-size="14" font-style="italic" fill="#555555">Grants reserve one local hop; committed packets are served first. Unexecuted commitments expire before the next round; delivery is not guaranteed.</text>
+</svg>

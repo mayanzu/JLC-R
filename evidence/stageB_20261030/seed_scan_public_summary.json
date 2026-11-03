@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "inventory_sha256": "ef725ca0e36fcfb8355d3947cde3298dfc06d7622ea13d81065ccb521f73f26d",
+  "inventory_records": 34961,
+  "unique_content_hashes": 9183,
+  "verified_unchanged_unique_content": 272,
+  "unavailable_or_changed_unique_content": 8911,
+  "verified_bytes": 3005640,
+  "opaque_bundles_7z_rar": "not parsed",
+  "interpretation": "Only verified unchanged readable content covered; do not claim exhaustive historical novelty if unavailable content exists",
+  "content_hit_count": 0,
+  "filename_hit_count": 0
+}

@@ -1,0 +1,635 @@
+{
+  "created_utc": "2026-10-29T16:34:43.245876+00:00",
+  "parent_protocol_sha256": "4ce267661157a7d374f0783c9219b2a635c7ad06b646fb2ce62ff9105caf9bcf",
+  "control": "frozen JLC-R matching condition, supply and network seed from primary matrix",
+  "intervention": "existing causal budget-fraction cadence rule: q=1 if f>=1, q=2 if f>=0.5, q=4 if f>=0.25, otherwise q=8; all other controller and resource settings unchanged",
+  "threshold_basis": "natural 1/q activity-fraction discretization, specified before running q=8; not optimized on performance",
+  "scope": "exploratory winter sensitivity, not part of the primary Holm family and not an automatic algorithm upgrade",
+  "conditions": [
+    [
+      "WINTER_G20",
+      0.7
+    ],
+    [
+      "T3_G20",
+      1.0
+    ],
+    [
+      "T3_G20",
+      0.7
+    ]
+  ],
+  "seeds": [
+    1748534244,
+    835849679,
+    1000582330,
+    920450264,
+    231902713,
+    1483785876,
+    1941847355,
+    913708622,
+    386998876,
+    898918533,
+    1680186066,
+    1451653314,
+    812369146,
+    1391824157,
+    1997766978,
+    14865404,
+    1898751957,
+    745211033,
+    925663036,
+    1235410029,
+    1550035512,
+    1833848891,
+    1244000941,
+    821278684
+  ],
+  "cases": [
+    {
+      "index": 1,
+      "seed": 1748534244,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 2,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 3,
+      "seed": 1748534244,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 4,
+      "seed": 835849679,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 5,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 6,
+      "seed": 835849679,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 7,
+      "seed": 1000582330,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 8,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 9,
+      "seed": 1000582330,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 10,
+      "seed": 920450264,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 11,
+      "seed": 920450264,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 12,
+      "seed": 920450264,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 13,
+      "seed": 231902713,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 14,
+      "seed": 231902713,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 15,
+      "seed": 231902713,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 16,
+      "seed": 1483785876,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 17,
+      "seed": 1483785876,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 18,
+      "seed": 1483785876,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 19,
+      "seed": 1941847355,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 20,
+      "seed": 1941847355,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 21,
+      "seed": 1941847355,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 22,
+      "seed": 913708622,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 23,
+      "seed": 913708622,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 24,
+      "seed": 913708622,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 25,
+      "seed": 386998876,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 26,
+      "seed": 386998876,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 27,
+      "seed": 386998876,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 28,
+      "seed": 898918533,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 29,
+      "seed": 898918533,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 30,
+      "seed": 898918533,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 31,
+      "seed": 1680186066,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 32,
+      "seed": 1680186066,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 33,
+      "seed": 1680186066,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 34,
+      "seed": 1451653314,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 35,
+      "seed": 1451653314,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 36,
+      "seed": 1451653314,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 37,
+      "seed": 812369146,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 38,
+      "seed": 812369146,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 39,
+      "seed": 812369146,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 40,
+      "seed": 1391824157,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 41,
+      "seed": 1391824157,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 42,
+      "seed": 1391824157,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 43,
+      "seed": 1997766978,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 44,
+      "seed": 1997766978,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 45,
+      "seed": 1997766978,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 46,
+      "seed": 14865404,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 47,
+      "seed": 14865404,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 48,
+      "seed": 14865404,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 49,
+      "seed": 1898751957,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 50,
+      "seed": 1898751957,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 51,
+      "seed": 1898751957,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 52,
+      "seed": 745211033,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 53,
+      "seed": 745211033,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 54,
+      "seed": 745211033,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 55,
+      "seed": 925663036,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 56,
+      "seed": 925663036,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 57,
+      "seed": 925663036,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 58,
+      "seed": 1235410029,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 59,
+      "seed": 1235410029,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 60,
+      "seed": 1235410029,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 61,
+      "seed": 1550035512,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 62,
+      "seed": 1550035512,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 63,
+      "seed": 1550035512,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 64,
+      "seed": 1833848891,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 65,
+      "seed": 1833848891,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 66,
+      "seed": 1833848891,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 67,
+      "seed": 1244000941,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 68,
+      "seed": 1244000941,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 69,
+      "seed": 1244000941,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 70,
+      "seed": 821278684,
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 71,
+      "seed": 821278684,
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    },
+    {
+      "index": 72,
+      "seed": 821278684,
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "method": "Q8-EXPLORE",
+      "days": 14
+    }
+  ],
+  "outcomes": [
+    "coverage_pct",
+    "source_coverage_p5_pct",
+    "far-node coverage >=200 m",
+    "fixed-demand delivery",
+    "energy consumed",
+    "source P95 longest fresh-data gap"
+  ],
+  "caveat": "q=8 ideal 50% applies only to a strict fixed periodic source with immediate success; CH exemptions and time-varying q can invalidate that bound for this dynamic controller"
+}

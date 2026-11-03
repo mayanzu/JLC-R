@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-29T16:34:58.313875+00:00",
+  "protocol_sha256": "24f03809b8dd1100f251b7ac634a43af9a374117d0d3630d40b20b64342c175a",
+  "parent_protocol_sha256": "4ce267661157a7d374f0783c9219b2a635c7ad06b646fb2ce62ff9105caf9bcf",
+  "runner_sha256": "378a46b918133a814fb1ba2ba9c93d1c771475615ae1554e131547305778c02c",
+  "base_runner_sha256": "fba74833d170276b14d6c3869e8415c43c6c945b3b7fe4347660c9d1db61fe6f",
+  "pilot_completion_sha256": "25b1306737f58fcbd13c2d63b56fc3f60e74f5b15e459560e0f42080bf0f7eeb",
+  "execution_started_at_lock": false
+}

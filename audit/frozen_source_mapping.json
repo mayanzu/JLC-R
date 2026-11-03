@@ -1,0 +1,261 @@
+{
+  "original_protocol_sha256": "2d06b8a6d96e16ae2c0e8d40b3ddcf6fe743201f3f7e4e053c87cddcef5e2f53",
+  "sources": [
+    {
+      "original_identity": "temp/current_research/jlcr2_demand_guard_20261025_221513/trigger_controls.py",
+      "sha256": "8dd3bb9a3053b7c12c466cbeb9e8800d167d7897108509b674cf76d3853f4664",
+      "package_path": "code/simulation/trigger_controls.py"
+    },
+    {
+      "original_identity": "temp/current_research/jlcr2_demand_guard_20261025_221513/guard_controls.py",
+      "sha256": "5671c12a5cc3b5a716024d0d4b82887d55e9bb4bb37f32e02957a6b80377247f",
+      "package_path": "audit/execution_sources/guard_controls.py"
+    },
+    {
+      "original_identity": "temp/current_research/jlcr2_demand_guard_20261025_221513/dependencies.py",
+      "sha256": "aebf5f318c7392c00bbc9a3f7f3586c179005116f4841e0da398d5b9711a5693",
+      "package_path": "code/simulation/dependencies.py"
+    },
+    {
+      "original_identity": "temp/current_research/jlcr2_demand_guard_20261025_221513/prefix_candidate.py",
+      "sha256": "3df999ade56e4d7d6549b7388153488a0261f558e20d82e9d7ff6c8caaf654a2",
+      "package_path": "code/simulation/prefix_candidate.py"
+    },
+    {
+      "original_identity": "temp/current_research/jlcr2_demand_guard_20261025_221513/feedback_base.py",
+      "sha256": "c4ca8ce5096db5a5cbca12d961d18a504d79c6fd9760b2383cc32e97bffe4f2e",
+      "package_path": "audit/execution_sources/feedback_base.py"
+    },
+    {
+      "original_identity": "code/simulation/canopy_model.py",
+      "sha256": "25ba1acf5f7e8a61ee3bade7c519d201965ebcfe1bfbd2db79433b3afa6a822c",
+      "package_path": "audit/execution_sources/canopy_model.py"
+    },
+    {
+      "original_identity": "code/simulation/config.json",
+      "sha256": "e1c9bc6738ce19eb3f4f992ca1288f2f97b59c55e29bba4b7fa12257940e47b2",
+      "package_path": "code/simulation/config.json"
+    },
+    {
+      "original_identity": "code/simulation/current_design.json",
+      "sha256": "7f09d3001138afc7f3564e4737d7b90ac3936c6de42731db8b6749207d52d5f6",
+      "package_path": "code/simulation/current_design.json"
+    },
+    {
+      "original_identity": "code/simulation/current_io.py",
+      "sha256": "63b3a322970c7e97278c898fb92c5cee3fb6e5b9f604ff89c7cf16329402dc22",
+      "package_path": "code/simulation/current_io.py"
+    },
+    {
+      "original_identity": "code/simulation/diagnostic.py",
+      "sha256": "c5cb4d946619529ca14a96bb2b2c650952d713920cf41c058bff4228acf6ea10",
+      "package_path": "code/simulation/diagnostic.py"
+    },
+    {
+      "original_identity": "code/simulation/extension_model.py",
+      "sha256": "5fca9d02f46877698cb09b70494bb8b0a9408e74042589be234e8a84ef239cc2",
+      "package_path": "code/simulation/extension_model.py"
+    },
+    {
+      "original_identity": "code/simulation/fast_execution.py",
+      "sha256": "71671418da5b410adfa24a2402eb060f5a75b0f46ee4986b27345df7e3633d46",
+      "package_path": "code/simulation/fast_execution.py"
+    },
+    {
+      "original_identity": "code/simulation/followup_model.py",
+      "sha256": "23a0df553c9b3e76608d6d24ecfb1f30b8937e3f25e624b6590af9b3fa28fa58",
+      "package_path": "code/simulation/followup_model.py"
+    },
+    {
+      "original_identity": "code/simulation/jlc_r.py",
+      "sha256": "24ba494197c7a037919f57bf6d82873e77270cb86d7532df278dec7314e82f91",
+      "package_path": "audit/execution_sources/jlc_r.py"
+    },
+    {
+      "original_identity": "code/simulation/joint_model.py",
+      "sha256": "40537a3902c8e7a9be7f064d2a99d13a375aed190d78d15adaf4620c6aa17026",
+      "package_path": "code/simulation/joint_model.py"
+    },
+    {
+      "original_identity": "code/simulation/matched_age_baseline.py",
+      "sha256": "434cd89195e2f7d3678ff16ddab0ae7822c99eaf8bba71ddef67d549ad7eece2",
+      "package_path": "code/simulation/matched_age_baseline.py"
+    },
+    {
+      "original_identity": "code/simulation/model.py",
+      "sha256": "f6cd3e75fa57976dc2d90f656d8b4ff6546c4a44b411e9b610bcf70510264b97",
+      "package_path": "code/simulation/model.py"
+    },
+    {
+      "original_identity": "code/simulation/optimized_model.py",
+      "sha256": "751b3b33460760eb2568772e905d51563ce7ecc3edaf5b140075db3783e1a9ca",
+      "package_path": "code/simulation/optimized_model.py"
+    },
+    {
+      "original_identity": "code/simulation/README.md",
+      "sha256": "1f3795099aa9c58fbd1b1cbfe81d2e427bf8ba9a8053e63010e4d1023d237c35",
+      "package_path": "audit/execution_sources/README.md"
+    },
+    {
+      "original_identity": "code/simulation/recent_baselines.py",
+      "sha256": "479ea23bdd0f379440934a7e43c84e58a617a7f337629c3c776cb765b7f5c805",
+      "package_path": "code/simulation/recent_baselines.py"
+    },
+    {
+      "original_identity": "code/simulation/review_model.py",
+      "sha256": "bb7eb282d85a5288abfea80b1b2bcba0f9531e95a1950c3fd00b095b9b580216",
+      "package_path": "code/simulation/review_model.py"
+    },
+    {
+      "original_identity": "code/simulation/revision_model.py",
+      "sha256": "a59f59a164e41a233dcd018488601cac8ee8129dd47632c3f6619c281690e585",
+      "package_path": "code/simulation/revision_model.py"
+    },
+    {
+      "original_identity": "code/simulation/run_jlc_r.py",
+      "sha256": "c86bc3a3d2e80338d3b2f3c066ce90f69f5a2e70b0bc502b6d92dba4874c905a",
+      "package_path": "audit/execution_sources/run_jlc_r.py"
+    },
+    {
+      "original_identity": "code/simulation/service_model.py",
+      "sha256": "3486148d772d81ac109040f1ab519b0011a4deadf23e04da08b2241a0804c42f",
+      "package_path": "code/simulation/service_model.py"
+    },
+    {
+      "original_identity": "code/simulation/simulator.py",
+      "sha256": "8fd1104eb19a7423ca11fd97224357aee2ef99f732158d97e9e84bd2be3f67ee",
+      "package_path": "code/simulation/simulator.py"
+    },
+    {
+      "original_identity": "code/simulation/strengthening_model.py",
+      "sha256": "792bb7f51dab7ffe11dbfe2244c770b153e2495699a5c405ec4831cb35327d63",
+      "package_path": "code/simulation/strengthening_model.py"
+    },
+    {
+      "original_identity": "code/simulation/test_v63.py",
+      "sha256": "bd3a5a8c0091629e5c63245280f9b4f426d061f243ea59cbf0e11dc481a11aa8",
+      "package_path": "audit/execution_sources/test_v63.py"
+    },
+    {
+      "original_identity": "code/simulation/v4_diagnostics.py",
+      "sha256": "b2b7e99d689bbb02dbcccfb10fe48b3b34346e3aad1092165a846c1431f9780b",
+      "package_path": "code/simulation/v4_diagnostics.py"
+    },
+    {
+      "original_identity": "code/simulation/V63_ATTRIBUTION_SPEC.md",
+      "sha256": "58955a469b3bc1df375e770eb2584a5a82a9d05b29074782c563c29452eb5104",
+      "package_path": "audit/execution_sources/V63_ATTRIBUTION_SPEC.md"
+    },
+    {
+      "original_identity": "code/simulation/V63_CANDIDATE_SPEC.md",
+      "sha256": "06d64ebad40e616cb66f17e083bf727da6ac74e128b447611c9cae02a229f8cb",
+      "package_path": "audit/execution_sources/V63_CANDIDATE_SPEC.md"
+    },
+    {
+      "original_identity": "code/simulation/V63_CONFIRM_SPEC.md",
+      "sha256": "2545d07fa858e63fb9cd861657b0b9423538b95d5f46d853c1f50feb9a36ed24",
+      "package_path": "audit/execution_sources/V63_CONFIRM_SPEC.md"
+    },
+    {
+      "original_identity": "code/simulation/v63_model.py",
+      "sha256": "4f7c06f88ce833ad73c3557577d0c5cc8ceea0a0c99ad3b9a0450be689a199ec",
+      "package_path": "code/simulation/v63_model.py"
+    },
+    {
+      "original_identity": "code/simulation/v63_observer.py",
+      "sha256": "629d9eeaa9a07f01eb3b7268892e93c40d3173aa687911eff804026af89d8a32",
+      "package_path": "audit/execution_sources/v63_observer.py"
+    },
+    {
+      "original_identity": "code/simulation/v6_model.py",
+      "sha256": "d9646dc14a9ef778fda608ab41878358cc5594b2c48a4c27ec81a6369bf74283",
+      "package_path": "code/simulation/v6_model.py"
+    },
+    {
+      "original_identity": "code/simulation/validation_model.py",
+      "sha256": "52bb2e92f9711724e7669dc2f4d17be904eb023c40908cbd58d1b1e5037dfeea",
+      "package_path": "code/simulation/validation_model.py"
+    },
+    {
+      "original_identity": "temp/current_research/coverage_cadence_20261027_081600/cadence.py",
+      "sha256": "eadde4b8559ec9b418e7111380290187d887b64923aa3b3e9654c356ffc30668",
+      "package_path": "code/simulation/cadence.py"
+    },
+    {
+      "original_identity": "temp/current_research/coverage_cadence_20261027_081600/bootstrap.py",
+      "sha256": "b8fac283faaed3c229c1898cd8a0c99b91f43181e4eaf833bf03f133e232f61b",
+      "package_path": "audit/execution_sources/bootstrap.py"
+    },
+    {
+      "original_identity": "temp/current_research/efr_common_executor_20261026_233900/src/development_inputs.py",
+      "sha256": "5e2b18dc32393ee4f5675d339d12e3d9c95855e1bb5451e9e2a62873fc4cbad6",
+      "package_path": "audit/execution_sources/development_inputs.py"
+    },
+    {
+      "original_identity": "temp/current_research/eadcm_common_executor_20261027_003004/src/eadcm_host.py",
+      "sha256": "b527c64cf2b5e3d00d4fb566c96dd2b09b64246b971c4f8bb572ea5badcfa692",
+      "package_path": "audit/execution_sources/eadcm_host.py"
+    },
+    {
+      "original_identity": "temp/current_research/eadcm_common_executor_20261027_003004/src/eadcm_policy.py",
+      "sha256": "f922a47719ab2736d65decbff73f51ab9859ab2baf0cd415bcb014cdacd18fe7",
+      "package_path": "code/simulation/eadcm_policy.py"
+    },
+    {
+      "original_identity": "temp/current_research/lantern_router_mac_20261027_013347/src/lantern_host.py",
+      "sha256": "48a3bb6bc5e873e5e61b32a1936595c138d8b348f9e923e31c72b236331834d8",
+      "package_path": "audit/execution_sources/lantern_host.py"
+    },
+    {
+      "original_identity": "temp/current_research/lantern_router_mac_20261027_013347/src/lantern_policy.py",
+      "sha256": "e2c6e5c148ce74221ca856604576ae24f01bc4f1874bd8dea5310295b2aef5d8",
+      "package_path": "code/simulation/lantern_policy.py"
+    },
+    {
+      "original_identity": "temp/current_research/lantern_router_mac_20261027_013347/src/rpl_upward.py",
+      "sha256": "50ba7341ab80880b0f1220c6798c05ccbfe6d6c4b2ecfbb7b673f274785b8cb1",
+      "package_path": "code/simulation/rpl_upward.py"
+    },
+    {
+      "original_identity": "temp/current_research/lantern_router_mac_20261027_013347/src/rpl_trickle.py",
+      "sha256": "e952fcbafb8cc26eacc068c2e319fbd5b51a4ca57558169e0d3ef635775c3d65",
+      "package_path": "code/simulation/rpl_trickle.py"
+    },
+    {
+      "original_identity": "temp/current_research/lantern_router_mac_20261027_013347/src/causal_meter.py",
+      "sha256": "5b5c446c2527aa3fab78c0ac2ed6c52f6d98f0bb1c5167c3b4d17486dde442d1",
+      "package_path": "code/simulation/causal_meter.py"
+    },
+    {
+      "original_identity": "temp/current_research/lantern_router_mac_20261027_013347/src/router_mac.py",
+      "sha256": "d748996276eabcc4788a8e602dbaa746185843dcdafc885b56293e7782e478a2",
+      "package_path": "code/simulation/router_mac.py"
+    },
+    {
+      "original_identity": "execution-protocol/rc2_runtime.py",
+      "sha256": "e0ba6e2a19dd890c5c39d692c48bea2cd2bb7e8e0035c87f89d8a8be381781e3",
+      "package_path": "audit/execution_protocol_sources/rc2_runtime.py"
+    },
+    {
+      "original_identity": "execution-protocol/rc2_execute.py",
+      "sha256": "e6a35a73c6cb6a3ca745457ef673f6933bf3d636f9212e196daaa7961f1f2616",
+      "package_path": "audit/execution_protocol_sources/rc2_execute.py"
+    },
+    {
+      "original_identity": "execution-protocol/rc2_matrix.py",
+      "sha256": "376eb1b15b3fdc563fc962626f7ee38c931c3a7c84d802cd46d3a1df96e952cd",
+      "package_path": "audit/execution_protocol_sources/rc2_matrix.py"
+    },
+    {
+      "original_identity": "execution-protocol/verify_lock.py",
+      "sha256": "05d28e6a97c46295264e02c231ae8d16c0c584107691f18000da89ab7e193d75",
+      "package_path": "audit/execution_protocol_sources/verify_lock.py"
+    },
+    {
+      "original_identity": "execution-protocol/analyze.py",
+      "sha256": "bed6457675319d005aef133c533b2d8891f81d281a7b337d7bd441f3d84e2f7d",
+      "package_path": "audit/execution_protocol_sources/analyze.py"
+    }
+  ],
+  "path_note": "Original identities describe execution provenance; package_path identifies the retained bytes."
+}

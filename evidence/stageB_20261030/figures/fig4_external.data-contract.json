@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "network_seeds_per_cell": 24,
+  "shown_cells": 16,
+  "full_corrected_family": 64,
+  "scope": "post hoc exploratory",
+  "uncertainty": "nominal paired t 95% interval; undefined for zero-variance differences",
+  "alignment": "not applicable: one semantic heatmap panel with colorbar",
+  "intentional_overlay": "mean and interval labels are centered inside their heatmap cells"
+}

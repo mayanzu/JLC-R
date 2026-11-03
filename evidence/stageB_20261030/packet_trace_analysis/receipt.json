@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "cases": 9,
+  "seeds_per_cell": 3,
+  "validation": "latest, battery and sample-status arrays exactly matched; node-ledger bytes identical",
+  "sampling": "same first three parent seeds crossed with three selected winter cells",
+  "interpretation": "post hoc diagnostic replays of existing cases; terminal holder and hold history are observational, not causal",
+  "limitations": "Only nine cases; no downstream-aware intervention; raw arrays retained outside supplement.",
+  "analysis_sha256": "c9ab9eb77f45a0e05550a205105cfaef8e9a3a6ec0505145a2a41d464e7a31a8",
+  "outputs": {
+    "case_counts.csv": "a674a8f887086e7bdbbc13f449197ec60c75445c6a9cf40bb9ed725095423bc6",
+    "condition_summary.csv": "b88fd34a681b833e61e20b18f7e9fdb143d53d0c6f6d882ca2aead59f0f67e18",
+    "portable_trace_counts.json": "533416e316777e168c6fdbd7b0aad2446bbac9a73dac7900fd63fb0f4c18803e"
+  }
+}

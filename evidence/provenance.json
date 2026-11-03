@@ -1,0 +1,12 @@
+{
+  "source_archive_sha256": "e9fd2d8e9d4623111a00d1c6fff5f3a428379badcb20fcbe8f63314fd9a9f0a1",
+  "stage_b_case_records": 2664,
+  "stage_c_case_records": 960,
+  "removed_from_copy": [
+    "assets/fig4_factorial.pdf",
+    "assets/fig4_factorial.svg",
+    "assets/figure1_core.pdf"
+  ],
+  "stage_c_round_arrays_included": false,
+  "stage_b_round_arrays_included": false
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "field_timestamps_checked": 5376,
+  "stratified_network_cases": 40,
+  "case_window_checks": 160,
+  "endpoint_checks": 960,
+  "condition_summaries_checked": 40,
+  "simulations_started": 0,
+  "independent_weather_farms": 1
+}

@@ -1,0 +1,5 @@
+mode,independent_rng_runs,sender_messages,messages_received_pct,all_frames_acked_pct,mean_confirm_ms,median_confirm_ms,median_reassembly_ms_given_success,p95_reassembly_ms_given_success,successful_messages_over_20ms_pct,mean_sender_phy_frames,mean_sender_phy_mac_bytes,no_ack_confirmations,channel_access_fail_confirmations,mean_group_modeled_rf_energy_j
+single,128,128,100.0,100.0,32.07334,32.00334,31.459006,34.339006,100.0,5.0,575.0,0,0,0.0038741007241199998
+serial,128,256,100.0,100.0,31.87334,32.00334,31.459006,34.019006,100.0,5.0,575.0,0,0,0.0242950379377
+contending,128,256,76.5625,76.171875,52.6361112890625,53.761837,52.96167,67.5377535,100.0,5.31640625,611.38671875,0,63,0.010996567735895
+hidden,128,256,58.59375,58.984375,53.594878640625005,56.386672,47.747006,69.18700599999998,100.0,8.5625,984.6875,107,0,0.011279207505537344

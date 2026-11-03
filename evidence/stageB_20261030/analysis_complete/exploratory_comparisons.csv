@@ -1,0 +1,25 @@
+comparison,endpoint,n,mean_difference,ci95_low,ci95_high,interpretation
+JLC-R minus NO-FLOOR-NO-HOLD,coverage_pct,24,7.638233971974205,6.989561659694822,8.286906284253588,exploratory; nominal interval; no multiplicity decision
+JLC-R minus EADCM-CE,coverage_pct,24,10.053036644345235,8.56947621018726,11.536597078503211,exploratory; nominal interval; no multiplicity decision
+JLC-R minus LANTERN-CE,coverage_pct,24,18.778444320436506,16.317401017289278,21.239487623583734,exploratory; nominal interval; no multiplicity decision
+JLC-R minus CADENCE-ONLY,coverage_pct,24,1.0105716765872998,0.8715716061226444,1.1495717470519553,exploratory; nominal interval; no multiplicity decision
+JLC-R minus NO-JOINT-PADC,coverage_pct,24,1.657896980406745,1.4726055477074511,1.8431884131060388,exploratory; nominal interval; no multiplicity decision
+JLC-R minus SIMPLE-PADC-CADENCE,coverage_pct,24,5.316382998511902,4.902036131235434,5.730729865788371,exploratory; nominal interval; no multiplicity decision
+JLC-R minus NO-FLOOR-NO-HOLD,source_coverage_p5_pct,24,0.5580938430059526,-0.32176478663564023,1.4379524726475452,exploratory; nominal interval; no multiplicity decision
+JLC-R minus EADCM-CE,source_coverage_p5_pct,24,15.15865265376984,12.921573511207345,17.395731796332335,exploratory; nominal interval; no multiplicity decision
+JLC-R minus LANTERN-CE,source_coverage_p5_pct,24,6.845509362599206,4.307529439867695,9.383489285330716,exploratory; nominal interval; no multiplicity decision
+JLC-R minus CADENCE-ONLY,source_coverage_p5_pct,24,1.2966386098710319,0.8271752474482563,1.7661019722938074,exploratory; nominal interval; no multiplicity decision
+JLC-R minus NO-JOINT-PADC,source_coverage_p5_pct,24,1.2032257564484123,0.849520884234434,1.5569306286623907,exploratory; nominal interval; no multiplicity decision
+JLC-R minus SIMPLE-PADC-CADENCE,source_coverage_p5_pct,24,1.781470889136905,0.7690661180931109,2.7938756601806993,exploratory; nominal interval; no multiplicity decision
+JLC-R minus NO-FLOOR-NO-HOLD,source_coverage_jain,24,0.06011516071440302,0.0534885827290669,0.06674173869973914,exploratory; nominal interval; no multiplicity decision
+JLC-R minus EADCM-CE,source_coverage_jain,24,0.2437703953537591,0.22815405627058644,0.2593867344369318,exploratory; nominal interval; no multiplicity decision
+JLC-R minus LANTERN-CE,source_coverage_jain,24,-0.0779089584442484,-0.09999339623725137,-0.05582452065124544,exploratory; nominal interval; no multiplicity decision
+JLC-R minus CADENCE-ONLY,source_coverage_jain,24,0.04470389057127596,0.03735460709982234,0.05205317404272958,exploratory; nominal interval; no multiplicity decision
+JLC-R minus NO-JOINT-PADC,source_coverage_jain,24,-0.0005698848618464943,-0.0029517830763366314,0.0018120133526436425,exploratory; nominal interval; no multiplicity decision
+JLC-R minus SIMPLE-PADC-CADENCE,source_coverage_jain,24,0.04077453170632551,0.033312005821795616,0.0482370575908554,exploratory; nominal interval; no multiplicity decision
+JLC-R minus NO-FLOOR-NO-HOLD,aoi_mean_minutes,24,-55.54073835100447,-92.74181134440947,-18.339665357599472,exploratory; nominal interval; no multiplicity decision
+JLC-R minus EADCM-CE,aoi_mean_minutes,24,-1070.1571172805059,-1207.0956377933387,-933.218596767673,exploratory; nominal interval; no multiplicity decision
+JLC-R minus LANTERN-CE,aoi_mean_minutes,24,-119.64678083147321,-206.90970406259038,-32.38385760035602,exploratory; nominal interval; no multiplicity decision
+JLC-R minus CADENCE-ONLY,aoi_mean_minutes,24,-165.42629801432292,-202.58927922804568,-128.26331680060017,exploratory; nominal interval; no multiplicity decision
+JLC-R minus NO-JOINT-PADC,aoi_mean_minutes,24,-248.01369919549848,-263.5714367786665,-232.45596161233044,exploratory; nominal interval; no multiplicity decision
+JLC-R minus SIMPLE-PADC-CADENCE,aoi_mean_minutes,24,-655.0581095377604,-757.7021911943601,-552.4140278811607,exploratory; nominal interval; no multiplicity decision

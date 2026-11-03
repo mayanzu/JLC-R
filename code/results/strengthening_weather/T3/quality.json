@@ -1,0 +1,141 @@
+{
+  "trajectory": "T3",
+  "station": "Bondville_IL",
+  "local_start": "2024-01-01T00:00:00",
+  "local_end_exclusive": "2024-01-18T00:00:00",
+  "utc_offset_hours": -6,
+  "time_basis": "local standard time; UTC input; no DST",
+  "warmup_days": 2,
+  "scored_days": 14,
+  "forecast_tail_days": 1,
+  "source_files": [
+    {
+      "file": "bon24001.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24001.dat",
+      "sha256": "9e44317c07db57ce01060700c8edcb57917214460230121d56c89ea0831881a9"
+    },
+    {
+      "file": "bon24002.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24002.dat",
+      "sha256": "fced869d6e8f01de90c51bc41f826ee20643ade856dd935e73d38b3cee4b8ea3"
+    },
+    {
+      "file": "bon24003.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24003.dat",
+      "sha256": "f260576ede187ad9d32abca434a5dc7e090c7ebb118feab68afd5107c68e86f6"
+    },
+    {
+      "file": "bon24004.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24004.dat",
+      "sha256": "3e4f70312646d4cfbd1e16d12221740e01f36d15cf01e0b2b3f47295e14aa86e"
+    },
+    {
+      "file": "bon24005.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24005.dat",
+      "sha256": "2e855bfac1ac40599451b1c8a808312a4dc03067fe9abea605c3f3eb0b679c34"
+    },
+    {
+      "file": "bon24006.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24006.dat",
+      "sha256": "42e3719e772cc6df2f88b31858586a0a67b25456e3b53293904f04b96964882a"
+    },
+    {
+      "file": "bon24007.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24007.dat",
+      "sha256": "5d027305655da0efcb9d875002729b093cd0e0efa06effb950e1085e0df2d30c"
+    },
+    {
+      "file": "bon24008.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24008.dat",
+      "sha256": "bde377e4c4a67f7d9f06bd7c225ac25b1eca9f93278b4333a2c58d0abf91bd16"
+    },
+    {
+      "file": "bon24009.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24009.dat",
+      "sha256": "db8cf5b8bd57be9c7cd1ea9b1ca5587c135ce308ddec98f1883bf3281a384e55"
+    },
+    {
+      "file": "bon24010.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24010.dat",
+      "sha256": "71dff216200c82cc089164cb6369a714aa8d37a05cbe9906a1f616f7cdd34a9a"
+    },
+    {
+      "file": "bon24011.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24011.dat",
+      "sha256": "1c33435efd0579ea2f952092e17c5576f018c08c482c7de0818d57a4830b7c7c"
+    },
+    {
+      "file": "bon24012.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24012.dat",
+      "sha256": "002e06679b6f36ed20b2943917e04201b7a261af5350cc4fad76a2431c4fb00b"
+    },
+    {
+      "file": "bon24013.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24013.dat",
+      "sha256": "611f93ff3b39363ee2b36219c30166d3f9883a4529049bcf27fce984ee467368"
+    },
+    {
+      "file": "bon24014.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24014.dat",
+      "sha256": "ec78b1d7e2a89e3f04b6509bec641c1129655d1e1e54b112d2bfd877a9156572"
+    },
+    {
+      "file": "bon24015.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24015.dat",
+      "sha256": "abdaaac1191c98090f06fe939f885f477c9848fa8a89a99df0dde4e5f4a19146"
+    },
+    {
+      "file": "bon24016.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24016.dat",
+      "sha256": "08bf2acfcbdc2a5dd555697949e36895e6c588e4e68ba76d06f0c598b60e6eea"
+    },
+    {
+      "file": "bon24017.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24017.dat",
+      "sha256": "a3a2b1e798b474869ecf0cda3e862c33e62cd36ab8f0ce57f16c876066f4bffd"
+    },
+    {
+      "file": "bon24018.dat",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24018.dat",
+      "sha256": "6bd1f1473e1a0ec4aea3b512822f57e8255dac15bcfb04e4a2124542687a9b8d"
+    }
+  ],
+  "minutes": 24480,
+  "missing_ghi_qc_minutes": 12,
+  "reconstructed_minutes": 12,
+  "unresolved_minutes": 0,
+  "invalid_after_reconstruction_minutes": 0,
+  "negative_valid_clamped_minutes": 14640,
+  "interpolated_minutes": 0,
+  "max_interpolated_gap_minutes": 0,
+  "qc_rule": "QC0 GHI; otherwise QC0 DNI*cos(zenith)+QC0 DHI; negatives clamped; interior gaps <=5 min linearly interpolated, larger/edge gaps fail",
+  "missing_fraction": 0.0004901960784313725,
+  "normalization_min": 0.0,
+  "normalization_max": 0.5461508199579787,
+  "normalization_finite": true,
+  "normalization_rule": "update only for g>0.1, completed observations, unchanged 06:00-18:00 reference",
+  "point_clip_fraction": 0.6904761904761905,
+  "scenario_clip_fraction": 0.44682126322751325,
+  "forecast_rmse_j_per_round": 0.01006415613213466,
+  "measured_daylight_hours": 9.5,
+  "processed_sha256": "3b1a1176142fa665262ab1f36b56e3651f1d086785ee0a4d1f82f39bc2a837b4",
+  "old_winter_numeric_equivalence": null,
+  "conversion": "H_i=s*shade_i*0.12*GHI/1000; no second daylight multiplier",
+  "scored_mean_daily_irradiation_kwh_m2": 1.3515536272778776,
+  "scored_daily_irradiation_kwh_m2": [
+    0.4246966666666667,
+    1.962002595093313,
+    1.751935,
+    1.199595,
+    0.72514,
+    0.8956966666666667,
+    0.5251333333333333,
+    0.4826783333333333,
+    1.7469031867969762,
+    0.15381333333333333,
+    1.6898666666666669,
+    2.07625,
+    2.2303966666666666,
+    3.0576433333333335
+  ]
+}

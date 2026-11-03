@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-30T01:10:07.371071+00:00",
+  "sha256": {
+    ".pdf": "84d3076c4f775be0d4c8aff0df278e610d99ef9ab3d7c5f0b4b77046f4fdfe65",
+    ".svg": "f5db6381b0f87607e5855f061867c584155426fbdc3f725b50d398ef6af93fa0"
+  },
+  "visual_review": "Inspected real-data figure at full panel scale: values, uncertainty, labels and marks are legible and not clipped.",
+  "pdf_text": "PASS: minimum detected 7.1 pt",
+  "rendered_collision": {
+    "fail": 0,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "source_preflight": "21 PASS, no warnings",
+  "alignment": "PASS: two panel plot areas",
+  "intentional_overlays": "none"
+}

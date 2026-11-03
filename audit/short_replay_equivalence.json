@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "scope": "24 short migration replays, not a new formal performance matrix",
+  "cases": 24,
+  "rounds_per_case": 192,
+  "already_used_network_seeds": [
+    1320352547
+  ],
+  "inputs": 8,
+  "methods": 3,
+  "import_orders": 4,
+  "unlocked_override_checks": 3,
+  "formal_source_hashes_unchanged": true,
+  "no_parameter_selection": true,
+  "public_snapshot_changed": false,
+  "seconds": 149.9213831424713,
+  "records": [
+    {
+      "index": 0,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "cadence_plans": 4800,
+        "activation_rows": 238
+      }
+    },
+    {
+      "index": 1,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "planning_rows": 200,
+        "activity_rows": 19200
+      }
+    },
+    {
+      "index": 2,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "control_rows": 8562,
+        "meter_rows": 8250
+      }
+    },
+    {
+      "index": 60,
+      "method": "JLC-R-RC2",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "cadence_plans": 4800,
+        "activation_rows": 904
+      }
+    },
+    {
+      "index": 61,
+      "method": "EADCM-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "planning_rows": 200,
+        "activity_rows": 19200
+      }
+    },
+    {
+      "index": 62,
+      "method": "LANTERN-CE",
+      "condition": "SYNTHETIC_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "control_rows": 7891,
+        "meter_rows": 7543
+      }
+    },
+    {
+      "index": 120,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "cadence_plans": 4800,
+        "activation_rows": 7652
+      }
+    },
+    {
+      "index": 121,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "planning_rows": 200,
+        "activity_rows": 19200
+      }
+    },
+    {
+      "index": 122,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "control_rows": 4107,
+        "meter_rows": 3830
+      }
+    },
+    {
+      "index": 180,
+      "method": "JLC-R-RC2",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "cadence_plans": 4800,
+        "activation_rows": 8492
+      }
+    },
+    {
+      "index": 181,
+      "method": "EADCM-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "planning_rows": 200,
+        "activity_rows": 19200
+      }
+    },
+    {
+      "index": 182,
+      "method": "LANTERN-CE",
+      "condition": "WINTER_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "control_rows": 3956,
+        "meter_rows": 3690
+      }
+    },
+    {
+      "index": 240,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "cadence_plans": 4800,
+        "activation_rows": 450
+      }
+    },
+    {
+      "index": 241,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "planning_rows": 200,
+        "activity_rows": 19200
+      }
+    },
+    {
+      "index": 242,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "control_rows": 8284,
+        "meter_rows": 7930
+      }
+    },
+    {
+      "index": 300,
+      "method": "JLC-R-RC2",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "cadence_plans": 4800,
+        "activation_rows": 1416
+      }
+    },
+    {
+      "index": 301,
+      "method": "EADCM-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "planning_rows": 200,
+        "activity_rows": 19200
+      }
+    },
+    {
+      "index": 302,
+      "method": "LANTERN-CE",
+      "condition": "T2_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "control_rows": 7213,
+        "meter_rows": 6855
+      }
+    },
+    {
+      "index": 360,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "cadence_plans": 4800,
+        "activation_rows": 9047
+      }
+    },
+    {
+      "index": 361,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "planning_rows": 200,
+        "activity_rows": 19200
+      }
+    },
+    {
+      "index": 362,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 1.0,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "control_rows": 4114,
+        "meter_rows": 3870
+      }
+    },
+    {
+      "index": 420,
+      "method": "JLC-R-RC2",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "cadence_plans": 4800,
+        "activation_rows": 9366
+      }
+    },
+    {
+      "index": 421,
+      "method": "EADCM-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "planning_rows": 200,
+        "activity_rows": 19200
+      }
+    },
+    {
+      "index": 422,
+      "method": "LANTERN-CE",
+      "condition": "T3_G20",
+      "supply": 0.7,
+      "seed": 1320352547,
+      "rounds": 192,
+      "arrays_equal": true,
+      "settled_terminal_states_equal": true,
+      "trace_rows": {
+        "control_rows": 3640,
+        "meter_rows": 3371
+      }
+    }
+  ]
+}

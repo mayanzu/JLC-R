@@ -1,0 +1,3 @@
+# Preserve the exact bytes used by the frozen source/data checksums.
+# Git must not normalize line endings when staging or checking out this package.
+* -text

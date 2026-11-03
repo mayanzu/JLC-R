@@ -1,0 +1,91 @@
+{
+  "days": 14,
+  "policies": [
+    "JLC-R-HYB-V63"
+  ],
+  "seeds": [
+    140101,
+    140202,
+    140303,
+    140404
+  ],
+  "specification": "V63_CONFIRM_SPEC.md",
+  "stage": "JLC-R current controller",
+  "supplies": [
+    1.0,
+    0.7
+  ],
+  "conditions": [
+    {
+      "config": {
+        "fdc_enabled": true,
+        "fdc_selective": true,
+        "guard_listen_s": 0.02,
+        "hyb_enabled": true,
+        "hyb_exit_scale": 0.7,
+        "hyb_thin_scale": 0.6,
+        "joint_sync_execution": true,
+        "sync_extra_listen_s": 0.08,
+        "sync_interval_s": 200,
+        "sync_jitter_s": 0.008,
+        "sync_turnaround_s": 0.001,
+        "sync_window_count": 5
+      },
+      "name": "SYNTHETIC_G20"
+    },
+    {
+      "config": {
+        "fdc_enabled": true,
+        "fdc_selective": true,
+        "guard_listen_s": 0.02,
+        "hyb_enabled": true,
+        "hyb_exit_scale": 0.7,
+        "hyb_thin_scale": 0.6,
+        "joint_sync_execution": true,
+        "sync_extra_listen_s": 0.08,
+        "sync_interval_s": 200,
+        "sync_jitter_s": 0.008,
+        "sync_turnaround_s": 0.001,
+        "sync_window_count": 5
+      },
+      "name": "WINTER_G20",
+      "weather_file": "code/results/expansion_measured/weather/ghi_15min.csv"
+    },
+    {
+      "config": {
+        "fdc_enabled": true,
+        "fdc_selective": true,
+        "guard_listen_s": 0.02,
+        "hyb_enabled": true,
+        "hyb_exit_scale": 0.7,
+        "hyb_thin_scale": 0.6,
+        "joint_sync_execution": true,
+        "sync_extra_listen_s": 0.08,
+        "sync_interval_s": 200,
+        "sync_jitter_s": 0.008,
+        "sync_turnaround_s": 0.001,
+        "sync_window_count": 5
+      },
+      "name": "T2_G20",
+      "weather_file": "code/results/strengthening_weather/T2/ghi_15min.csv"
+    },
+    {
+      "config": {
+        "fdc_enabled": true,
+        "fdc_selective": true,
+        "guard_listen_s": 0.02,
+        "hyb_enabled": true,
+        "hyb_exit_scale": 0.7,
+        "hyb_thin_scale": 0.6,
+        "joint_sync_execution": true,
+        "sync_extra_listen_s": 0.08,
+        "sync_interval_s": 200,
+        "sync_jitter_s": 0.008,
+        "sync_turnaround_s": 0.001,
+        "sync_window_count": 5
+      },
+      "name": "T3_G20",
+      "weather_file": "code/results/strengthening_weather/T3/ghi_15min.csv"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "scope": "Post hoc descriptive summaries from saved node coverage; no simulation or hypothesis test.",
+  "distance_bands_m": {
+    "near": "d <= 120",
+    "mid": "120 < d < 200",
+    "far": "d >= 200"
+  },
+  "geographic_cells": "4 x 3 grid assigned by the same clipped position rule as the simulator",
+  "worst_cell": "Minimum of 12 geographic-cell mean source coverages, within each run.",
+  "source_p5": "Linear 5th percentile across the 100 sources in each run.",
+  "zero_coverage": "100 times the number of sources with zero fresh coverage divided by 100 sources.",
+  "winter_aggregation": "Per-run outcomes; equal means over 12 seeds and the four winter weather-supply cells.",
+  "case_count": 480,
+  "source_records": 48000,
+  "geographic_cell_records": 5760,
+  "network_seeds": 12,
+  "maximum_discrepancies": {
+    "network_mean": 2.842170943040401e-14,
+    "source_p5": 7.105427357601002e-15,
+    "zero_count": 0
+  },
+  "winter_means": [
+    {
+      "method": "Base-hybrid",
+      "weather_supply_cells": 4,
+      "seeds_per_cell": 12,
+      "near_pct": 16.980332299795617,
+      "mid_pct": 9.641183595527732,
+      "far_pct": 4.722135767457455,
+      "worst_cell_pct": 2.7483781779494203,
+      "source_p5_pct": 1.9200303819444444,
+      "zero_coverage_pct": 0.10416666666666666
+    },
+    {
+      "method": "EADCM-CE",
+      "weather_supply_cells": 4,
+      "seeds_per_cell": 12,
+      "near_pct": 60.51279811673833,
+      "mid_pct": 32.28909782298115,
+      "far_pct": 3.2488189831123195,
+      "worst_cell_pct": 0.17231936177248677,
+      "source_p5_pct": 0.0,
+      "zero_coverage_pct": 17.895833333333336
+    },
+    {
+      "method": "JLC-R-RC2",
+      "weather_supply_cells": 4,
+      "seeds_per_cell": 12,
+      "near_pct": 35.394955842391305,
+      "mid_pct": 22.51686856197067,
+      "far_pct": 15.085344068068778,
+      "worst_cell_pct": 10.395884880283132,
+      "source_p5_pct": 5.486576140873016,
+      "zero_coverage_pct": 0.0
+    },
+    {
+      "method": "LANTERN-CE",
+      "weather_supply_cells": 4,
+      "seeds_per_cell": 12,
+      "near_pct": 15.70255379621888,
+      "mid_pct": 11.74002119963898,
+      "far_pct": 6.464285697667123,
+      "worst_cell_pct": 4.871765470840061,
+      "source_p5_pct": 3.9819723462301586,
+      "zero_coverage_pct": 0.0
+    },
+    {
+      "method": "Pre-recovery-JLC-R",
+      "weather_supply_cells": 4,
+      "seeds_per_cell": 12,
+      "near_pct": 17.59493512601529,
+      "mid_pct": 9.574547273661896,
+      "far_pct": 4.948445352561887,
+      "worst_cell_pct": 3.0104962630306753,
+      "source_p5_pct": 2.132626488095238,
+      "zero_coverage_pct": 0.0625
+    }
+  ],
+  "source_sha256": {
+    "nodes": "2211e5806bf727814fb17661b60c5dc0829556471d249342ecbb2c6e30600faa",
+    "runs": "f417f437b2f25d8d0bd53f12b7005f6b0d000a97f6782b853c9c1128bfc34951",
+    "configs": "debe82337a0c23f1fe7a7774c84104acd96fe12cd6a3a7ccdc5baa08ee8452e3",
+    "topology": "c5cb4d946619529ca14a96bb2b2c650952d713920cf41c058bff4228acf6ea10",
+    "cells": "8fd1104eb19a7423ca11fd97224357aee2ef99f732158d97e9e84bd2be3f67ee"
+  },
+  "script_sha256": "f8f795d53b53f7dbdca46bcbeb507badfce5e43f784f22791abd4e356e3dd41f",
+  "limitations": "Spatial source summaries do not identify routes, loss locations, or causal mechanisms."
+}

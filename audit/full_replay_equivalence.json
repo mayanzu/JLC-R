@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "case_index": 0,
+  "rounds": 1344,
+  "already_used_seed": 1320352547,
+  "arrays_exact": true,
+  "all_saved_metrics_exact": true,
+  "csv_bytes_exact": [
+    "node_ledgers.csv",
+    "cadence_plans.csv",
+    "intentional_sleep.csv"
+  ],
+  "new_independent_confirmation": false,
+  "formal_records_modified": false
+}

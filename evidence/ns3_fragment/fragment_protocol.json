@@ -1,0 +1,33 @@
+{
+  "status": "predefined before ns-3 fragment trials",
+  "ns3_version": "Ubuntu 24.04 libns3 3.41",
+  "study_scope": "three-node LR-WPAN link calibration; not an implementation or ranking of network controllers",
+  "logical_application_bytes_per_sender": 500,
+  "fragment_mapping": "five 100-byte data fragments each carrying a 4-byte application fragmentation identifier, 104-byte MAC payload per frame; receiver counts a message complete only when all five distinct fragments arrive",
+  "pan_and_phy": "2.4 GHz, one PAN, short addresses, ACK enabled, range propagation 120 m; rate from ns-3 LR-WPAN 250 kbps; no 6LoWPAN",
+  "mac": "unslotted CSMA-CA, max frame retries 3, min BE 3, max BE 5, max CSMA backoffs 4",
+  "scenarios": {
+    "single": "one sender at -100 m, starts at 1 s",
+    "serial": "two hidden senders at -100/+100 m, starts at 1.0 s and 1.1 s",
+    "contending": "two mutually audible senders at -50/+50 m, both start at 1.0 s",
+    "hidden": "two mutually hidden senders at -100/+100 m, both start at 1.0 s"
+  },
+  "trials_per_scenario": 128,
+  "rng": "ns-3 global seed 1, independent run numbers 1..128, streams assigned beginning 100",
+  "endpoints": [
+    "sender-level fragment-success and five-distinct-fragment message completion",
+    "elapsed time from five MAC requests to last confirmation and last unique reception",
+    "PHY transmit attempts/bytes (ACKs counted separately by device), PHY receive drops",
+    "illustrative transceiver energy from ns-3 state durations and CC2420 typical 3.3 V currents"
+  ],
+  "energy_assumptions": {
+    "voltage_V": 3.3,
+    "tx_current_A": 0.0174,
+    "rx_current_A": 0.0188,
+    "source": "https://www.ti.com/product/CC2420",
+    "state_mapping": "TX_ON and BUSY_TX use TX current; RX_ON and BUSY_RX use RX current; remaining/transitional states use 0 in this illustrative estimate",
+    "caveat": "This is not hardware measurement and excludes CPU, sensing, voltage conversion and any omitted state consumption; TX_ON is an approximate state mapping."
+  },
+  "guard_interpretation": "The 20 ms Guard is an abstract charged transaction opportunity and is not claimed to contain a complete 500-byte packet, ACKs, backoffs, or retransmissions.",
+  "reporting": "Report all four scenarios and all outcomes, including unsuccessful fragments and indefinite timing where no full message completes."
+}

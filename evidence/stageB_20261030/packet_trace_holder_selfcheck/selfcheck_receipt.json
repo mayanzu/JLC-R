@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "case_index": 1,
+  "sampled_expired_packets_checked_against_actual_queue": 591,
+  "scope": "one observational replay; deterministic sequence modulo 97 sample",
+  "outcomes": "round arrays exactly match the prior frozen case and node-ledger bytes match",
+  "not_an_independent_outcome": true
+}

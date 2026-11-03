@@ -1,0 +1,94 @@
+{
+  "purpose": "Illustrative temperature signal reconstruction at the sink under the existing T3/Bondville network traces",
+  "status": "Exploratory replay specified after the principal simulation results; not an agronomic validation or new independent weather experiment",
+  "location": "Bondville SURFRAD meteorological tower in an agricultural region; 10 m air-temperature instrument",
+  "station_source": "https://gml.noaa.gov/grad/surfrad/bondvill.html",
+  "measurement_source": "https://gml.noaa.gov/grad/surfrad/overview.html",
+  "format_source": "https://github.com/pvlib/pvlib-python/blob/main/pvlib/iotools/surfrad.py",
+  "temperature": "daily files: column 39 in degrees Celsius and QC flag column 40, one-minute average; accept flag 0 and -80 < T < 65 C only",
+  "alignment": "Original T3 local standard time (UTC-6); score from local 2024-01-03 00:00 for 1344 15-minute rounds. Take the valid one-minute measurement timestamped at the start of each round.",
+  "synthetic_mapping": "Each simulated source samples the same single measured station signal; no spatial variation, crop-canopy temperature, sensing noise or radio/packet changes are inferred.",
+  "decision": "Illustrative 0 C station-air threshold, not a crop or frost-damage threshold. A sink observation is usable only when its delivered birth is nonnegative, at most four simulation rounds old, and the birth-time station sample has valid QC.",
+  "metrics": "On truth-valid source-rounds: unavailable fraction and mean absolute reconstruction error conditional on usable. On truth-valid station-air <=0 C source-rounds: percentage usable and alarmed, usable and not alarmed, or unavailable. Unavailable is not silently labelled safe.",
+  "units": "One aggregate per paired network seed; 12 previously used seeds per method and supply. One weather time series repeated across sources is not 100 independent fields.",
+  "methods": "All five original methods plus the separately verified historical PADC-AGE adaptation; evaluate T3 at both existing supply levels.",
+  "weather_file_sha256": {
+    "bon24001.dat": {
+      "sha256": "9e44317c07db57ce01060700c8edcb57917214460230121d56c89ea0831881a9",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24001.dat"
+    },
+    "bon24002.dat": {
+      "sha256": "fced869d6e8f01de90c51bc41f826ee20643ade856dd935e73d38b3cee4b8ea3",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24002.dat"
+    },
+    "bon24003.dat": {
+      "sha256": "f260576ede187ad9d32abca434a5dc7e090c7ebb118feab68afd5107c68e86f6",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24003.dat"
+    },
+    "bon24004.dat": {
+      "sha256": "3e4f70312646d4cfbd1e16d12221740e01f36d15cf01e0b2b3f47295e14aa86e",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24004.dat"
+    },
+    "bon24005.dat": {
+      "sha256": "2e855bfac1ac40599451b1c8a808312a4dc03067fe9abea605c3f3eb0b679c34",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24005.dat"
+    },
+    "bon24006.dat": {
+      "sha256": "42e3719e772cc6df2f88b31858586a0a67b25456e3b53293904f04b96964882a",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24006.dat"
+    },
+    "bon24007.dat": {
+      "sha256": "5d027305655da0efcb9d875002729b093cd0e0efa06effb950e1085e0df2d30c",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24007.dat"
+    },
+    "bon24008.dat": {
+      "sha256": "bde377e4c4a67f7d9f06bd7c225ac25b1eca9f93278b4333a2c58d0abf91bd16",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24008.dat"
+    },
+    "bon24009.dat": {
+      "sha256": "db8cf5b8bd57be9c7cd1ea9b1ca5587c135ce308ddec98f1883bf3281a384e55",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24009.dat"
+    },
+    "bon24010.dat": {
+      "sha256": "71dff216200c82cc089164cb6369a714aa8d37a05cbe9906a1f616f7cdd34a9a",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24010.dat"
+    },
+    "bon24011.dat": {
+      "sha256": "1c33435efd0579ea2f952092e17c5576f018c08c482c7de0818d57a4830b7c7c",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24011.dat"
+    },
+    "bon24012.dat": {
+      "sha256": "002e06679b6f36ed20b2943917e04201b7a261af5350cc4fad76a2431c4fb00b",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24012.dat"
+    },
+    "bon24013.dat": {
+      "sha256": "611f93ff3b39363ee2b36219c30166d3f9883a4529049bcf27fce984ee467368",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24013.dat"
+    },
+    "bon24014.dat": {
+      "sha256": "ec78b1d7e2a89e3f04b6509bec641c1129655d1e1e54b112d2bfd877a9156572",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24014.dat"
+    },
+    "bon24015.dat": {
+      "sha256": "abdaaac1191c98090f06fe939f885f477c9848fa8a89a99df0dde4e5f4a19146",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24015.dat"
+    },
+    "bon24016.dat": {
+      "sha256": "08bf2acfcbdc2a5dd555697949e36895e6c588e4e68ba76d06f0c598b60e6eea",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24016.dat"
+    },
+    "bon24017.dat": {
+      "sha256": "a3a2b1e798b474869ecf0cda3e862c33e62cd36ab8f0ce57f16c876066f4bffd",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24017.dat"
+    },
+    "bon24018.dat": {
+      "sha256": "6bd1f1473e1a0ec4aea3b512822f57e8255dac15bcfb04e4a2124542687a9b8d",
+      "url": "https://gml.noaa.gov/aftp/data/radiation/surfrad/Bondville_IL/2024/bon24018.dat"
+    }
+  },
+  "weather_quality_sha256": "f801e63b4198fcfae195fbc602c56016aeaa786fa2a0eea04013a40842d620d5",
+  "rc2_summary_sha256": "f417f437b2f25d8d0bd53f12b7005f6b0d000a97f6782b853c9c1128bfc34951",
+  "old_inventory_sha256": "5b65a6f5741c81127e17c47d5d60dc35c501248a074171cd38c4c76a1139bdc3",
+  "script_sha256": "4a8b3b6c79a2cb5e9d59f0e05a6c3e88a26b19b1795c4f6286b3473778eeda5a",
+  "sampling": "This is a postprocessing replay of fixed existing packet times; decisions do not use station temperature, no sample or network rerun is implied."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "network_seeds": 24,
+  "paired_records": 192,
+  "contrasts": [
+    "EADCM-CE",
+    "LANTERN-CE",
+    "Base-hybrid",
+    "Pre-recovery-JLC-R"
+  ],
+  "endpoints": [
+    "coverage_pct",
+    "source_coverage_p5_pct"
+  ],
+  "no_seed_exclusions": true,
+  "uncertainty": "nominal paired t 95% interval, df=23",
+  "marker": "filled if Holm-8 adjusted p < 0.05; open otherwise",
+  "sources": [
+    "paired_seed_differences.csv",
+    "five_method_holm8.csv"
+  ]
+}

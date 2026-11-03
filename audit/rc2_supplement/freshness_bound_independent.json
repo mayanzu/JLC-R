@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "toy_sensing_patterns": 32,
+  "toy_delivery_trajectories": 4683,
+  "case_records": 480,
+  "independent_field_checks": 3840,
+  "simulations_started": 0,
+  "method": "Boolean rolling freshness windows; independent single-source exhaustive schedules; independent age recursion."
+}
