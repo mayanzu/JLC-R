@@ -1,36 +1,74 @@
-# JLC-R 最小代码闭包
+# JLC-R
 
-当前实现：JLC-R-SOURCE-SPATIAL-20261106。入口 `code/simulation/jlc_r.py:JLCR`，默认拓扑加权源竞争 `spatial`。
+Joint Listening-Credit and Reservation (JLC-R) coordinates listening capacity, communication credit and source-aware admission in solar-powered multihop sensor networks. This repository contains the minimal runtime dependency closure of the current controller.
 
-仅保留 30 个传递依赖源码模块、一个运行入口、一个完整性核查入口、运行配置、依赖声明、源码哈希清单、许可和 Git 换行保持配置。18 个冻结父模块保持原字节。文件名包含历史编号的模块属于当前运行依赖，不是可删除的独立旧算法包。
+- **Implementation:** `JLC-R-SOURCE-SPATIAL-20261106`
+- **Public entry:** `code/simulation/jlc_r.py:JLCR`
+- **Default admission mode:** `spatial` (topology-weighted source competition)
+- **Versioned algorithm snapshot:** [`v2026.11.06-spatial`](https://github.com/mayanzu/JLC-R/tree/v2026.11.06-spatial)
 
-仓库：https://github.com/mayanzu/JLC-R 。固定版本标签：`v2026.11.06-spatial`。
+## Installation
 
-```powershell
-git clone --branch v2026.11.06-spatial https://github.com/mayanzu/JLC-R.git
+Use Python 3.12. Clone the latest code and install the NumPy and SciPy dependencies:
+
+```shell
+git clone --depth 1 https://github.com/mayanzu/JLC-R.git
 cd JLC-R
+python -m pip install -r requirements.txt
 ```
 
-## 安装与核查
+## Verification
 
-Python 3.12，在本目录执行：
+Check file hashes and the runtime dependency closure:
 
-```powershell
-python -m pip install -r requirements.txt
+```shell
 python -B verify.py
+```
+
+Add a two-round synthetic smoke check of the default controller, resource accounting and credit floor:
+
+```shell
 python -B verify.py --smoke
 ```
 
-普通核查仅验证闭包和哈希，自动忽略 Git 元数据及 Python 字节码缓存。`.gitattributes` 保持源文件原始字节，避免 Git 换行转换改变冻结模块哈希。`--smoke` 额外执行两轮合成输入检查，不写结果文件，不启动完整性能实验。
+Verification ignores Git metadata and Python bytecode caches. The smoke check writes no result files and does not start a full performance experiment. `.gitattributes` preserves source bytes across Git checkouts so that line-ending conversion does not alter the frozen-module hashes.
 
-## 运行
+## Running the controller
 
-```powershell
+Run a 14-day synthetic-weather scenario:
+
+```shell
 python -B run.py --seed 1320352547 --days 14 --supply 1.0 --output "../jlc-r-runs/example01"
 ```
 
-输出目录必须全新且位于本代码包之外。默认使用合成天气；`--weather` 可传入外部 15 分钟 GHI CSV（表头之后第二列为非负 W/m² 数值，长度覆盖预热、运行和预测尾段）。实测数据和论文结果不随代码包保存。
+The output directory must be new and outside this code package. The runner saves the configuration, input identity and simulation metrics in `run.json`.
 
-`--source-protection` 默认为 `spatial`，显式匹配控制为 `unweighted`、`off`、`admission`、`headroom`；`priority` 和 `joint` 保留公共入口支持的另外两种显式模式。算法锁定 3 天预算、reference 触发与 relay_repair 内核。`config.json` 导出自主研究工作区的当前共享执行配置；没有沿用旧 RC2 目录的配置或实验身份。
+Synthetic weather is the default. To supply measured irradiance, pass `--weather path/to/ghi_15min.csv`. The CSV must have a header and nonnegative, finite global horizontal irradiance (GHI, W/m²) in its second column, sampled every 15 minutes. Its length must cover the scenario's warm-up period, evaluated rounds and forecast tail. Measured inputs and saved experimental results are maintained separately from this code package.
 
-本包执行算法，不包含论文数值复现所需的逐种子数据。完整论文与证据保存在主研究项目的版本化归档中。
+Use `python -B run.py --help` for all command-line options.
+
+## Configuration and admission modes
+
+`config.json` exports the shared execution settings of the current research controller. The controller locks the reserve-budget horizon to three days, the trigger mode to `reference` and the inherited mechanism to `relay_repair`.
+
+The `--source-protection` option selects:
+
+| Mode | Admission rule |
+|---|---|
+| `spatial` | Topology-weighted incoming-versus-waiting source competition; the default. |
+| `unweighted` | The same source competition with every geometric hop weight set to one. |
+| `off` | Packet-funded admission without source-opportunity protection. |
+| `admission` | Waiting-source protection without incoming-source competition. |
+| `headroom` | Unconditional headroom for a waiting sample. |
+
+The public entry also retains the explicit `priority` and `joint` modes.
+
+## Repository contents
+
+The package contains 30 transitive runtime source modules, a standalone runner, an integrity verifier, execution configuration, dependency declarations, a source manifest, this README, the MIT license and Git byte-preservation settings. All 18 frozen parent modules retain their original bytes; historical identifiers in their filenames identify dependencies required by the current controller.
+
+This package supports algorithm execution. Reproducing the manuscript's numerical tables additionally requires the separately maintained per-seed records and experimental inputs.
+
+## License
+
+[MIT](LICENSE).
