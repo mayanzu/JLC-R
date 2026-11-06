@@ -1,1 +1,0 @@
-Exact sign-flip sensitivity covers both predefined Source P5 contrasts, enumerates all 2^24 patterns and applies a separate Holm-2 family; it assumes symmetric seed-level null contrasts. The NOAA processing script regenerates the timestamped 15-minute trajectory from the included daily inputs.

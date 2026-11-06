@@ -1,56 +1,36 @@
-# JLC-R — Reproducibility Package
+# JLC-R 最小代码闭包
 
-This reproducibility repository accompanies the manuscript
-"Joint Listening-Credit Planning and Relay Protection for Fresh Data Collection
-in Solar-Powered Wireless Sensor Networks." It contains the simulator source
-code, configuration files, processed NOAA SURFRAD irradiance inputs, ns-3
-link-layer framing scripts, seed-level evaluation records, and verification and
-reproduction scripts for both the 24-seed primary evaluation and the 12-seed
-diagnostic cohort.
+当前实现：JLC-R-SOURCE-SPATIAL-20261106。入口 `code/simulation/jlc_r.py:JLCR`，默认拓扑加权源竞争 `spatial`。
 
-## Quick start
+仅保留 30 个传递依赖源码模块、一个运行入口、一个完整性核查入口、运行配置、依赖声明、源码哈希清单、许可和 Git 换行保持配置。18 个冻结父模块保持原字节。文件名包含历史编号的模块属于当前运行依赖，不是可删除的独立旧算法包。
 
-```bash
+仓库：https://github.com/mayanzu/JLC-R 。固定版本标签：`v2026.11.06-spatial`。
+
+```powershell
+git clone --branch v2026.11.06-spatial https://github.com/mayanzu/JLC-R.git
+cd JLC-R
+```
+
+## 安装与核查
+
+Python 3.12，在本目录执行：
+
+```powershell
 python -m pip install -r requirements.txt
-# Full saved-evidence verification (target directory must not exist and must be outside the package):
-python -B scripts/verify_current.py --work-dir /path/to/new-verification-directory
-# Inspect or rerun a single 24-seed case (omit --dry-run to execute):
-python -B scripts/rerun_current_case.py --study confirmation --case-index 1 --output /path/to/new-rerun --dry-run
+python -B verify.py
+python -B verify.py --smoke
 ```
 
-`verify_current.py` extracts compressed case records into the supplied working
-directory and verifies the 12-seed diagnostic cohort, the 24-seed Stage B
-ledgers and statistical families, the Stage C 960 planner/deadline records, and
-the ns-3 fragmentation records without launching new simulations. See
-`docs/current_paper_evidence.md` for the complete evidence map across all
-manuscript tables and figures.
+普通核查仅验证闭包和哈希，自动忽略 Git 元数据及 Python 字节码缓存。`.gitattributes` 保持源文件原始字节，避免 Git 换行转换改变冻结模块哈希。`--smoke` 额外执行两轮合成输入检查，不写结果文件，不启动完整性能实验。
 
-## 12-seed diagnostic cohort commands
+## 运行
 
-The commands below operate on the 12-seed diagnostic cohort (`results/`):
-
-```bash
-# Read-only verification of hashes, node energy/sample ledgers, outcomes, and paired tests:
-python scripts/reproduce.py --mode verify
-
-# Regenerate diagnostic tables, figure assets, statistical families, and 40 condition means:
-python scripts/reproduce.py --mode reproduce
-
-# Inspect or explicitly rerun a recorded 12-seed confirmation or factorial case:
-python scripts/reproduce.py --mode rerun --study confirmation --dry-run
-python scripts/reproduce.py --mode rerun --study confirmation --case-index 0
-python scripts/reproduce.py --mode rerun --study factorial --dry-run
-python scripts/reproduce.py --mode rerun --study factorial --case-index 0
+```powershell
+python -B run.py --seed 1320352547 --days 14 --supply 1.0 --output "../jlc-r-runs/example01"
 ```
 
-## Package contents
+输出目录必须全新且位于本代码包之外。默认使用合成天气；`--weather` 可传入外部 15 分钟 GHI CSV（表头之后第二列为非负 W/m² 数值，长度覆盖预热、运行和预测尾段）。实测数据和论文结果不随代码包保存。
 
-- `code/simulation/` and `configs/`: Complete JLC-R controller (`jlc_r.py:JLCR`), common-environment adaptations of EADCM and LANTERN (`docs/external_baseline_audit.md`), ablation variants, and locked protocol configurations.
-- `evidence/stageB_20261030/`: 24-seed primary five-method evaluation, winter spatial decomposition, core credit-floor and hold ablations, PADC comparators, September 2024 Table Mountain trajectory, winter $q=8$ cadence extension, 1.32-fold link-layer framing overhead stress, and winter packet-path replays.
-- `evidence/stageC_20261030/`: 24-seed matched budget-generation controls (simple proportional planner and point planner) and freshness-window sensitivity ($D \in \{2, 8\}$).
-- `evidence/ns3_fragment/` and `audit/rc2_supplement/`: ns-3 3.41 IEEE 802.15.4 fragmentation (5 × 104-byte MAC payloads) and three-node LR-WPAN component checks.
-- `evidence/additional_mechanism_audit/`: Runtime Guard, bounded recovery, and forwarding-hold counter records and audit script.
-- `evidence/current_paper_figures/`: Final manuscript figures (`fig1_system` through `fig6_boundaries` in PDF and SVG) and plotting scripts.
-- `results/` and `results/rc2_supplement/`: 12-seed diagnostic cohort records (`confirmation_480.csv`, `node_records_48000.csv.gz`), $2^3$ outer-mechanism factorial records (`factorial_seed_records_768.csv`), PADC-AGE comparison, sampling-conditional freshness ceiling masks (`sensing_mask_480.npz`), Bondville air-temperature replay, and strawberry-field soil-moisture/valve replay.
-- `data/surfrad/` and `data/strawberry/`: Provenance metadata for processed NOAA SURFRAD irradiance inputs and CC BY 4.0 field-monitoring data from Manzano et al. (2023), Mendeley Data V3, DOI `10.17632/cjb4vy4mzj.3` (see `THIRD_PARTY_NOTICES.md`).
-- `docs/`: Evidence maps (`current_paper_evidence.md`, `reproduction_map.md`), analytical proofs (`analytical_proofs.md`), baseline adaptation notes (`external_baseline_audit.md`), data dictionary (`data_dictionary.md`), and technical documentation (`technical_documentation/technical_documentation.md`).
+`--source-protection` 默认为 `spatial`，显式匹配控制为 `unweighted`、`off`、`admission`、`headroom`；`priority` 和 `joint` 保留公共入口支持的另外两种显式模式。算法锁定 3 天预算、reference 触发与 relay_repair 内核。`config.json` 导出自主研究工作区的当前共享执行配置；没有沿用旧 RC2 目录的配置或实验身份。
+
+本包执行算法，不包含论文数值复现所需的逐种子数据。完整论文与证据保存在主研究项目的版本化归档中。

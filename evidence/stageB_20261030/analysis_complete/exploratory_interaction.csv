@@ -1,2 +1,0 @@
-contrast,endpoint,n,mean_difference,ci95_low,ci95_high,interpretation
-(full - no floor) - (no hold - neither),source_coverage_p5_pct,24,-0.9852043030753969,-1.557399755576187,-0.4130088505746068,exploratory; nominal interval

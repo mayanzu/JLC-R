@@ -1,7 +1,0 @@
-{
-  "cases": 6,
-  "workers": 2,
-  "protocol_sha256": "4ce267661157a7d374f0783c9219b2a635c7ad06b646fb2ce62ff9105caf9bcf",
-  "extra_protocol_sha256": "24f03809b8dd1100f251b7ac634a43af9a374117d0d3630d40b20b64342c175a",
-  "runner_sha256": "378a46b918133a814fb1ba2ba9c93d1c771475615ae1554e131547305778c02c"
-}

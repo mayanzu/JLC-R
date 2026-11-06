@@ -1,5 +1,0 @@
-comparison,endpoint,n,mean_difference,ci95_low,ci95_high,interpretation
-JLC-R minus EADCM-CE,coverage_pct,24,35.53909350198413,32.470511325991716,38.60767567797654,exploratory; one shared weather trajectory; nominal interval
-JLC-R minus EADCM-CE,source_coverage_p5_pct,24,25.239025297619047,20.758468841515878,29.719581753722217,exploratory; one shared weather trajectory; nominal interval
-JLC-R minus EADCM-CE,source_coverage_jain,24,0.40009199624031955,0.38279022180500066,0.41739377067563843,exploratory; one shared weather trajectory; nominal interval
-JLC-R minus EADCM-CE,aoi_mean_minutes,24,-1978.8056663876487,-2153.580785675252,-1804.0305471000452,exploratory; one shared weather trajectory; nominal interval

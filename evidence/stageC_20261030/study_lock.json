@@ -1,8 +1,0 @@
-{
-  "created_utc": "2026-10-30T08:58:41.547426+00:00",
-  "runner_sha256": "ef25dc03ee6595ab70d30004e3bcd51ffe3f447c58b68a32d1d84fbc45db13c0",
-  "protocol_sha256": "baf5a97690d453711d0f4eb1ad32d2026939577eae8dc15487cb22e05d614a2c",
-  "stage_b_protocol_sha256": "4ce267661157a7d374f0783c9219b2a635c7ad06b646fb2ce62ff9105caf9bcf",
-  "pilot_completion_sha256": "2c7fb1b129643e775f6d6991a4f2b20b36514c0e6e785cf297852a89c0681823",
-  "note": "confirmation requires these hashes to match run_stage_c.py and protocol_predefined.json"
-}
